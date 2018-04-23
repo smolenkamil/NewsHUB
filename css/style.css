@@ -1,0 +1,317 @@
+body {
+	background-color: lightgray;
+}
+
+/* ----------HEADER----------- */
+
+#header {
+	height: 70px;
+	background-color: #008AA8;
+	box-shadow: 0 3px 10px #707070;
+}
+
+#navbarLeftControlls {
+	margin-left: 342px;
+}
+
+.navbar-brand img {
+	margin-right: 5px;
+}
+
+a.navbar-brand {
+	margin-right: 0;
+	font-size: 18px;
+}
+
+#hamburgerBtn {
+	float: left;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	display: inline;
+	/*float: left;*/
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #53A2BE;
+}
+
+.dropdown-content hr {
+	padding: 0;
+	width: 94%;
+	margin: 0 auto;
+	background-color: #333333;
+}
+
+.dropdown-content {
+   display: none;
+  	position: absolute;
+  	top: 59px;
+	left: -100px;
+   background-color: #53A2BE;
+   min-width: 250px;
+   box-shadow: 2px 3px 10px #707070;
+   z-index: 1;
+}
+
+.dropdown-content a {
+   color: white;
+   font-weight: 600;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #6FB1C8;
+}
+
+.hoverDropdown-content {
+   display: none;
+   position: absolute;
+   left: 250px;
+	top: -54px;
+   background-color: #6FB1C8;
+   min-width: 180px;
+   box-shadow: 2px 3px 10px #707070;
+   z-index: 1;
+}
+
+.hoverDropdown-content a {
+   color: white;
+   font-weight: 600;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+
+.hoverDropdown-content a:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.ddHover:hover .hoverDropdown-content {
+   display: block;
+}
+
+.ddHover:hover .dropbtn {
+    background-color: #6FB1C8;
+}
+
+.show {
+	display: block;
+}
+
+.hamburgerBackground {
+	background-color: #53A2BE;
+}
+
+#aLogo {
+	height: 48px;
+	color: white;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+a#aLogo {
+	margin: 0;
+	padding-top: auto;
+	padding-bottom: auto;
+}
+
+a#aLogo:hover {
+	color: white;
+	background-color: #53A2BE;
+}
+
+#navbarRightControlls {
+	margin-right: 405px;
+	width: auto;
+}
+
+#navbarForm {
+	margin-right: 35px;
+	float: left;
+}
+#navbarSearch {
+	color: white;
+	background-color: #53A2BE;
+}
+#navbarSearch::placeholder {
+	color: white;
+}
+#searchBtn img {
+	height: 30px;
+	width: 30px;
+}
+
+#loginBtn {
+	float: left;
+	margin-right: 5px;
+	border: none;
+}
+
+#signupBtn {
+	float: left;
+	background-color: #FF8080;
+	border: none;
+	font-weight: 600;
+}
+
+/* ----------SOCIAL MEDIA STICKY BAR (LEFT)----------- */
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.instagram {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/* ----------CONTENT----------- */
+
+#content {
+	max-width: 1060px;
+	height: 1000px;
+	margin: 0 auto;
+	padding: 20px;
+	position: relative;
+	background-color: white;
+}
+
+/* --------NEWS CONTAINER-------- */
+
+#newsContainer {
+	width: 100%;
+	height: 500px;
+	float: left;
+}
+
+/* -----------WEATHER----------- */
+
+#weatherContainer {
+	width: 270px;
+	height: 320px;
+	position: absolute;
+	left: 1060px;
+	top: 0px;
+	box-shadow: 0 3px 10px #888888;
+	background-color: #9ECBDA;
+}
+
+#weatherContainer h3 {
+	margin-top: 20px; 
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	color: #00506D;
+	margin-bottom: 0;
+}
+
+#date {
+	text-align: center;
+	font-weight: 600;
+	color: #00506D;
+}
+
+#weatherImage {
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+#temperature {
+	text-align: center;
+	margin-bottom: 0;
+	font-size: 50px;
+	font-weight: 700;
+	color: #333333;
+}
+
+h2 + h6 {
+	text-align: center;
+	margin: 0;
+}
+
+.weatherInfo {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	margin-left: 30px;
+}
+
+/* ----------FOOTER----------- */
+
+#footer {
+	height: 60px;
+	background-color: #434343;
+}
+
+#footer p {
+	color: white;
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#aFooter {
+	margin: 0;
+	margin-left: 400px;
+	padding: 5px;
+	color: white;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+a#aFooter:hover {
+	color: white;
+	background-color: #595959;
+}
+
+#footerContent {
+	margin-right: 50%;
+}
