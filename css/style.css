@@ -11,11 +11,12 @@ body {
 }
 
 #navbarLeftControlls {
-	margin-left: 342px;
+	margin-left:17%;
+	
 }
 
 .navbar-brand img {
-	margin-right: 5px;
+	margin-right: 1%;
 }
 
 a.navbar-brand {
@@ -127,7 +128,7 @@ a#aLogo:hover {
 }
 
 #navbarRightControlls {
-	margin-right: 405px;
+	margin-right: 17%;
 	width: auto;
 }
 
@@ -210,11 +211,10 @@ a#aLogo:hover {
   background: #bb0000;
   color: white;
 }
-
 /* ----------CONTENT----------- */
 
 #content {
-	max-width: 1060px;
+	max-width: 65%;
 	height: 1000px;
 	margin: 0 auto;
 	padding: 20px;
@@ -232,11 +232,18 @@ a#aLogo:hover {
 
 /* -----------WEATHER----------- */
 
+@media only screen and (max-width: 1500px) {
+    #weatherContainer {
+        visibility: hidden;
+    }
+}
+
+
 #weatherContainer {
-	width: 270px;
+	width: 25%;
 	height: 320px;
 	position: absolute;
-	left: 1060px;
+	right: -25%;
 	top: 0px;
 	box-shadow: 0 3px 10px #888888;
 	background-color: #9ECBDA;
@@ -300,7 +307,7 @@ h2 + h6 {
 
 #aFooter {
 	margin: 0;
-	margin-left: 400px;
+	margin-left: 17%;
 	padding: 5px;
 	color: white;
 	font-size: 25px;
