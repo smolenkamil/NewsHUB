@@ -2,11 +2,11 @@
   height: 70px;
   background-color: #008AA8;
   box-shadow: 0 3px 10px #707070;
+  margin: 0;
 }
 .logo{
   height: 80%;
   position: relative;
   display: inline;
-  left:17%;
   top: 10%;
 }
