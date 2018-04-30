@@ -6,11 +6,14 @@ import { HeaderComponent } from './header/header';
 import { MenuComponent } from './menu/menu';
 import { SearchComponent } from './searchBar/searchBar';
 import { ContenerComponent } from './contener/contener';
+import {ArticleComponent} from "./article/article";
 import { FooterComponent } from './footer/footer';
 
 @NgModule({
   declarations: [HeaderComponent,
     MenuComponent,
+    ContenerComponent,
+    ArticleComponent,
     SearchComponent,
     ContenerComponent,
     FooterComponent
@@ -19,6 +22,6 @@ import { FooterComponent } from './footer/footer';
     BrowserModule
   ],
   providers: [],
-  bootstrap: [ HeaderComponent, MenuComponent, SearchComponent, ContenerComponent, FooterComponent ]
+  bootstrap: [ HeaderComponent, MenuComponent,SearchComponent, ContenerComponent, ArticleComponent , FooterComponent]
 })
 export class AppModule { }
