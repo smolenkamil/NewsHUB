@@ -1,14 +1,14 @@
-.header {
-  height: 70px;
+#header {
+  min-height: 70px;
   background-color: #008AA8;
   box-shadow: 0 3px 10px #707070;
   margin: 0;
+  position: sticky;
 }
 .logo{
-  height: 80%;
+  height: 52px;
   position: relative;
   display: inline;
-  /*top: 10%;*/
-  margin-top: 6px;
+  margin-top: 8px;
   float: left;
 }
