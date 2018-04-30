@@ -1,0 +1,57 @@
+@media only screen and (max-width: 1300px) {
+  #weatherContainer {
+    visibility: hidden;
+  }
+}
+
+#weatherContainer {
+  width: 27%;
+  max-width: 300px;
+  height: 320px;
+  position: absolute;
+  right: -27%;
+  top: 0px;
+  box-shadow: 0 3px 10px #888888;
+  background-color: #9ECBDA;
+}
+
+#weatherContainer h3 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #00506D;
+  margin-bottom: 0;
+}
+
+#date {
+  text-align: center;
+  font-weight: 600;
+  color: #00506D;
+}
+
+#weatherImage {
+  float: left;
+  margin-left: 2%;
+  margin-bottom: 20px;
+}
+
+#temperature {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 50px;
+  font-weight: 700;
+  color: #333333;
+}
+
+h2 + h6 {
+  text-align: center;
+  margin: 0;
+}
+
+.weatherInfo {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  margin-left: 7%;
+}

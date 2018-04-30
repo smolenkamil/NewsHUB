@@ -6,22 +6,32 @@ import { HeaderComponent } from './header/header';
 import { MenuComponent } from './menu/menu';
 import { SearchComponent } from './searchBar/searchBar';
 import { ContenerComponent } from './contener/contener';
-import {ArticleComponent} from "./article/article";
+import { ArticleComponent } from './article/article';
+import { WeatherComponent } from './weather/weather';
 import { FooterComponent } from './footer/footer';
 
 @NgModule({
-  declarations: [HeaderComponent,
+  declarations: [
+    HeaderComponent,
     MenuComponent,
-    ContenerComponent,
-    ArticleComponent,
     SearchComponent,
     ContenerComponent,
+    ArticleComponent,
+    WeatherComponent,
     FooterComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [ HeaderComponent, MenuComponent,SearchComponent, ContenerComponent, ArticleComponent , FooterComponent]
+  bootstrap: [
+    HeaderComponent,
+    MenuComponent,
+    SearchComponent,
+    ContenerComponent,
+    ArticleComponent,
+    WeatherComponent,
+    FooterComponent
+  ]
 })
 export class AppModule { }
