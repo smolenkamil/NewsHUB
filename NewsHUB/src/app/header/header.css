@@ -8,5 +8,7 @@
   height: 80%;
   position: relative;
   display: inline;
-  top: 10%;
+  /*top: 10%;*/
+  margin-top: 6px;
+  float: left;
 }

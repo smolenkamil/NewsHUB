@@ -1,0 +1,16 @@
+#navbarForm {
+  float: right;
+  margin-right: 17%;
+  margin-top: 15px;
+}
+#navbarSearch {
+  color: white;
+  background-color: #53A2BE;
+}
+#navbarSearch::placeholder {
+  color: white;
+}
+#searchBtn img {
+  height: 30px;
+  width: 30px;
+}
