@@ -1,0 +1,15 @@
+#content {
+  max-width: 65%;
+  height: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  background-color: white;
+  z-index: -1;
+}
+
+#newsContainer {
+  width: 100%;
+  height: 500px;
+  float: left;
+}
