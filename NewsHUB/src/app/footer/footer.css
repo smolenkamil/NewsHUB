@@ -1,0 +1,32 @@
+#footer {
+  height: 60px;
+  background-color: #434343;
+}
+
+#footer p {
+  color: white;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+#aFooter {
+  margin: 0;
+  margin-left: 17%;
+  padding: 5px;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#footerContent {
+  margin-right: 50%;
+}
+
+.logo{
+  height: 80%;
+  position: relative;
+  display: inline;
+  left: 17%;
+}
