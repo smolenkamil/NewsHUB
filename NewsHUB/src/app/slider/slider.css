@@ -5,38 +5,43 @@ body {font-family: Verdana, sans-serif;}
 img {vertical-align: middle;}
 
 .slideshow-container {
-  width: 100%;
+  width: 98%;
+  height: 75%;
   position: relative;
   margin: 10px auto 10px auto;
   padding: 2%;
   background-color: #00506D;
 }
 
-.mySlides {display: none;}
+.mySlides {
+  display: none;
+  font-size: 20px;
+}
 
 .mySlides img {
+  width: 40%;
   border: 5px solid white;
+  border-radius: 10px;
 }
 
 .first {display: block;}
 
 .title {
   position: absolute;
-  font-size: 50px;
+  font-size: 250%;
   font-weight: 700;
-  bottom: 60%;
-  left: 43.5%;
+  top: 20%;
+  left: 43%;
   color: white;
 }
 
 .text {
-  color: white;
-  font-size: 15px;
-  padding: 8px 12px;
   position: absolute;
+  font-size: 100%;
+  color: white;
   bottom: 15%;
   left: 42%;
-  width: 60%;
+  width: 56.5%;
 }
 
 .dots {
