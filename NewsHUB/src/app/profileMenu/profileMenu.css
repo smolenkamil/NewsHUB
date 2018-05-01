@@ -21,7 +21,7 @@
   display: none;
   position: absolute;
   top: 70px;
-  left: 530px;
+  left: 610px;
   background-color: #53A2BE;
   min-width: 250px;
   box-shadow: 2px 3px 10px #707070;
@@ -33,6 +33,7 @@
   font-weight: 600;
   padding: 12px 16px;
   text-decoration: none;
+  font-size: 18px;
   display: block;
 }
 
