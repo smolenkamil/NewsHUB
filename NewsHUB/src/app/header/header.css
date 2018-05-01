@@ -4,6 +4,8 @@
   box-shadow: 0 3px 10px #707070;
   margin: 0;
   position: sticky;
+  padding-left: 17%;
+  padding-right: 17%;
 }
 .logo{
   height: 52px;
