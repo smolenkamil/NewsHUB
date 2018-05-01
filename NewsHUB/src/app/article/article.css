@@ -1,9 +1,10 @@
 .article{
   width: 30%;
-  height: 30%;
+  min-height: 500px;
   float: left;
   margin-left: 2.5%;
   background-color: #e4e4e4;
+  align-content: center;
   border:solid;
   border-width: thin;
   border-color: black;
@@ -11,14 +12,15 @@
   border-radius: 20px;
 }
 .headline{
-  margin-top: 5%;
-  font-size: 25px;
+  margin: 5%;
+  font-size: 20px;
   text-align: center;
   color: black;
   font-weight: bold;
 }
 .imagee{
   max-width: 95%;
+  max-height: 300px ;
   margin-top: 3%;
   margin-left: 2.5%;
   border-radius: 20px;
@@ -27,8 +29,9 @@
   border-color: black;
 }
 .content{
+  text-align: left;
   font-size: 15px;
-  text-align: center;
+  margin: 15px;
   color: black;
   font-weight: normal;
 }
