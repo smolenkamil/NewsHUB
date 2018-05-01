@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header';
 import { MenuComponent } from './menu/menu';
 import { SearchComponent } from './searchBar/searchBar';
 import { ContenerComponent } from './contener/contener';
+import { SliderComponent } from './slider/slider';
 import { ArticleComponent } from './article/article';
 import { WeatherComponent } from './weather/weather';
 import { FooterComponent } from './footer/footer';
@@ -16,6 +17,7 @@ import { FooterComponent } from './footer/footer';
     MenuComponent,
     SearchComponent,
     ContenerComponent,
+    SliderComponent,
     ArticleComponent,
     WeatherComponent,
     FooterComponent
@@ -29,6 +31,7 @@ import { FooterComponent } from './footer/footer';
     MenuComponent,
     SearchComponent,
     ContenerComponent,
+    SliderComponent,
     ArticleComponent,
     WeatherComponent,
     FooterComponent
