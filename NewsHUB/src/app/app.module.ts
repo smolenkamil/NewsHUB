@@ -9,8 +9,8 @@ import { ProfileMenuComponent } from './profileMenu/profileMenu';
 import { ContenerComponent } from './contener/contener';
 import { SliderComponent } from './slider/slider';
 import { ArticleComponent } from './article/article';
-import { WeatherComponent } from './weather/weather';
 import { FooterComponent } from './footer/footer';
+import {DatePipeComponent, WeatherComponent} from './weather/weather';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,8 @@ import { FooterComponent } from './footer/footer';
     SliderComponent,
     ArticleComponent,
     WeatherComponent,
-    FooterComponent
+    FooterComponent,
+    DatePipeComponent
   ],
   imports: [
     BrowserModule
@@ -37,7 +38,8 @@ import { FooterComponent } from './footer/footer';
     SliderComponent,
     ArticleComponent,
     WeatherComponent,
-    FooterComponent
+    FooterComponent,
+    DatePipeComponent
   ]
 })
 export class AppModule { }

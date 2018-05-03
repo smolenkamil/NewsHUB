@@ -25,3 +25,12 @@ export class WeatherComponent implements OnInit{
     console.log(this.weather.description);
   }
 }
+
+@Component({
+  selector: 'date-pipe',
+  template: `<span>{{today|date:'dd.MM.yyyy'}}</span>`
+
+})
+export class DatePipeComponent {
+  today = Date.now();
+}
