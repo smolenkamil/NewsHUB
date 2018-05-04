@@ -6,7 +6,10 @@
   padding-bottom: 30px;
   position: relative;
   background-color: white;
-  z-index: -1;
+  /*z-index: 0;*/
+}
+.after{
+  clear: both;
 }
 
 #newsContainer {
