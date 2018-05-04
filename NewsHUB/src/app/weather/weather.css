@@ -10,13 +10,17 @@
   height: 320px;
   position: absolute;
   right: -27%;
-  top: 0px;
+  top: 0;
   box-shadow: 0 3px 10px #888888;
   background-color: #9ECBDA;
 }
 
-#weatherContainer h3 {
-  margin-top: 20px;
+#top {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#top h3 {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
@@ -24,16 +28,34 @@
   margin-bottom: 0;
 }
 
-#date {
+#top p {
+  margin: 0;
+}
+
+#dateCity {
   text-align: center;
   font-weight: 600;
   color: #00506D;
 }
 
+#middle {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  width: 95%;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 #weatherImage {
+  width: 85px;
+  height: 85px;
   float: left;
-  margin-left: 2%;
+  margin-left: 5%;
   margin-bottom: 20px;
+  filter: drop-shadow(2px 3px 2px gray);
 }
 
 #temperature {
@@ -44,9 +66,11 @@
   color: #333333;
 }
 
-h2 + h6 {
+#description {
   text-align: center;
   margin: 0;
+  font-weight: 600;
+  color: #333333;
 }
 
 .weatherInfo {
@@ -54,4 +78,8 @@ h2 + h6 {
   margin: 0;
   padding: 0;
   margin-left: 7%;
+}
+
+.weatherInfo span {
+  font-weight: 600;
 }

@@ -1,34 +1,58 @@
 .article{
   width: 30%;
-  height: 30%;
+  min-height: 450px;
   float: left;
   margin-left: 2.5%;
-  background-color: #e4e4e4;
+  /*background-color: #e4e4e4;*/
+  align-content: center;
+  /*border:solid;*/
+  /*border-width: thin;*/
+  /*border-color: black;*/
+  /*box-shadow: 0 3px 10px white;*/
+  /*border-radius: 20px;*/
+}
+.imagePane{
+  position: relative;
+
+}
+.background{
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  margin-left: 2.5%;
+  margin-right: -2.5%;
+  /*margin: 4%;*/
+  background-color: #53A2BE;
+  opacity: 0.9;
   border:solid;
   border-width: thin;
   border-color: black;
-  box-shadow: 0 3px 10px white;
-  border-radius: 20px;
 }
 .headline{
-  margin-top: 5%;
-  font-size: 25px;
+  /*position: absolute;*/
+  bottom: 2%;
+  margin: 4%;
+  font-size: 20px;
   text-align: center;
-  color: black;
+  color:mintcream;
   font-weight: bold;
 }
-.imagee{
-  max-width: 95%;
+.placeholder{
+  max-width: 100%;
+  max-height: 400px ;
   margin-top: 3%;
   margin-left: 2.5%;
-  border-radius: 20px;
+  /*border-radius: 20px;*/
   border:solid;
   border-width: thin;
   border-color: black;
 }
 .content{
-  font-size: 15px;
   text-align: center;
+  font-size: 15px;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 2%;
   color: black;
   font-weight: normal;
 }
