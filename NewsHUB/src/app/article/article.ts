@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {SliderComponent} from "../slider/slider";
 
 @Component({
   selector: 'article',
