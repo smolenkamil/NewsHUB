@@ -7,12 +7,13 @@ import { MenuComponent } from './menu/menu';
 import { SearchComponent } from './searchBar/searchBar';
 import { ProfileMenuComponent } from './profileMenu/profileMenu';
 import { ContenerComponent } from './contener/contener';
-import { SliderComponent } from './slider/slider';
+import { SliderComponent} from './slider/slider';
 import { ArticleComponent } from './article/article';
 import { FooterComponent } from './footer/footer';
 import {DatePipeComponent, WeatherComponent} from './weather/weather';
 import {BtnSingUpComponent} from "./btnSingUp/btnSingUP";
 import {BtnLogInComponent} from "./btnLogIn/btnLogIn";
+import {SliderArticleComponent} from "./sliderArticle/sliderArticle";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {BtnLogInComponent} from "./btnLogIn/btnLogIn";
     FooterComponent,
     DatePipeComponent,
     BtnSingUpComponent,
-    BtnLogInComponent
+    BtnLogInComponent,
+    SliderArticleComponent
   ],
   imports: [
     BrowserModule
@@ -45,7 +47,8 @@ import {BtnLogInComponent} from "./btnLogIn/btnLogIn";
     FooterComponent,
     DatePipeComponent,
     BtnSingUpComponent,
-    BtnLogInComponent
+    BtnLogInComponent,
+    SliderArticleComponent
   ]
 })
 export class AppModule { }
