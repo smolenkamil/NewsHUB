@@ -26,6 +26,7 @@
   font-weight: 700;
   color: #00506D;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 #top p {
@@ -58,8 +59,14 @@
   filter: drop-shadow(2px 3px 2px gray);
 }
 
+#middle h2 {
+  margin: 0;
+}
+
 #temperature {
   text-align: center;
+  vertical-align: baseline;
+  margin-top: 7px;
   margin-bottom: 0;
   font-size: 50px;
   font-weight: 700;
