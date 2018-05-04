@@ -1,10 +1,14 @@
 <div id="weatherContainer">
-  <h3>Pogoda na dziś</h3>
-  <p id="date"><date-pipe></date-pipe>, {{weather.name}}</p>
-  <img src="{{weather.icon}}" id="weatherImage" width="100" height="100">
-  <h2 id="temperature"><span>{{weather.temp}}</span>°C</h2>
-  <h6 id="location">{{weather.description}}</h6>
-  <p class="weatherInfo" id="wind">Wiatr: <span>{{weather.speed}}</span> km/h</p>
-  <p class="weatherInfo" id="pressure">Ciśnienie: <span>{{weather.pressure}}</span> hPa</p>
-  <p class="weatherInfo" id="humidity">Wilgotność: <span>{{weather.humidity}}</span>%</p>
+  <div id="top">
+    <h3>Pogoda na dziś</h3>
+    <p id="dateCity"><date-pipe></date-pipe>, {{weather.name}}</p>
+  </div>
+  <div id="middle">
+    <img src="{{weather.icon}}" id="weatherImage">
+    <h2 id="temperature">{{weather.temp}}°C</h2>
+    <h6 id="description">{{weather.description}}</h6>
+  </div>
+  <p class="weatherInfo" id="wind">Wiatr: <span>{{weather.speed}} km/h</span></p>
+  <p class="weatherInfo" id="pressure">Ciśnienie: <span>{{weather.pressure}} hPa</span></p>
+  <p class="weatherInfo" id="humidity">Wilgotność: <span>{{weather.humidity}}%</span></p>
 </div>
