@@ -18,9 +18,6 @@ export class ArticleComponent implements OnInit{
 
   ngOnInit(){
     this.article = this.newsx.getArticle();
-    console.log(this.article.title);
-    console.log(this.article.description);
-    console.log(this.article.urlToImg);
   }
 
 }

@@ -6,37 +6,43 @@ img {vertical-align: middle;}
 
 .slideshow-container {
   width: 100%;
+  height: 20vw;
   position: relative;
   margin: 10px auto 10px auto;
   padding: 2%;
   background-color: #00506D;
 }
 
-.mySlides {display: none;}
+.mySlides {
+  display: none;
+  font-size: 20px;
+}
 
 .mySlides img {
+  width: 40%;
   border: 5px solid white;
+  border-radius: 10px;
 }
 
 .first {display: block;}
 
 .title {
+  /*float:left;*/
   position: absolute;
-  font-size: 50px;
+  font-size: 2.5vw;
   font-weight: 700;
-  bottom: 60%;
-  left: 43.5%;
+  top:5vw;
+  left: 45%;
   color: white;
 }
 
 .text {
-  color: white;
-  font-size: 15px;
-  padding: 8px 12px;
   position: absolute;
-  bottom: 15%;
+  font-size: 1.1vw;
+  color: white;
+  top:10vw;
   left: 42%;
-  width: 60%;
+  width: 56.5%;
 }
 
 .dots {
@@ -58,7 +64,4 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
+
