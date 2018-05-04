@@ -23,6 +23,7 @@ export class WeatherComponent implements OnInit{
     console.log(this.weather.pressure);
     console.log(this.weather.humidity);
     console.log(this.weather.description);
+    console.log(this.weather.icon);
   }
 }
 
