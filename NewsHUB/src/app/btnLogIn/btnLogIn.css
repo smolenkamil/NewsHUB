@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1200px) {
+  #logInBtn {
+    visibility: hidden;
+  }
+}
+
+#logInBtn {
+  float: right;
+  margin-top: 15px;
+  border: none;
+  margin-right: 10px;
+  margin-right: 10px;
+}

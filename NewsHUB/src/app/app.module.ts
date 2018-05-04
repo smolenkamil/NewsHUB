@@ -11,19 +11,23 @@ import { SliderComponent } from './slider/slider';
 import { ArticleComponent } from './article/article';
 import { FooterComponent } from './footer/footer';
 import {DatePipeComponent, WeatherComponent} from './weather/weather';
+import {BtnSingUpComponent} from "./btnSingUp/btnSingUP";
+import {BtnLogInComponent} from "./btnLogIn/btnLogIn";
 
 @NgModule({
   declarations: [
     HeaderComponent,
     MenuComponent,
     SearchComponent,
-    ProfileMenuComponent,
+    // ProfileMenuComponent,
     ContenerComponent,
     SliderComponent,
     ArticleComponent,
     WeatherComponent,
     FooterComponent,
-    DatePipeComponent
+    DatePipeComponent,
+    BtnSingUpComponent,
+    BtnLogInComponent
   ],
   imports: [
     BrowserModule
@@ -33,13 +37,15 @@ import {DatePipeComponent, WeatherComponent} from './weather/weather';
     HeaderComponent,
     MenuComponent,
     SearchComponent,
-    ProfileMenuComponent,
+    // ProfileMenuComponent,
     ContenerComponent,
     SliderComponent,
     ArticleComponent,
     WeatherComponent,
     FooterComponent,
-    DatePipeComponent
+    DatePipeComponent,
+    BtnSingUpComponent,
+    BtnLogInComponent
   ]
 })
 export class AppModule { }
