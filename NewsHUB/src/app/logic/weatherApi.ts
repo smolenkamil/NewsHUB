@@ -2,7 +2,7 @@ import * as $ from 'jquery';
 import { Weather } from "./weather";
 
 export class WeatherProvider {
-  readonly MAIN_URL = "http://api.openweathermap.org/data/2.5/"
+  readonly MAIN_URL = "https://api.openweathermap.org/data/2.5/"
   readonly ENDPOINT = "weather"
   defaultCityId = "756135"  //Warsaw
   cityId = "?id="+this.defaultCityId
