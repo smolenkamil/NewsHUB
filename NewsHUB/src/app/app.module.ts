@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { HeaderComponent } from './header/header';
 import { MenuComponent } from './menu/menu';
 import { SearchComponent } from './searchBar/searchBar';
@@ -14,6 +13,7 @@ import {DatePipeComponent, WeatherComponent} from './weather/weather';
 import {BtnSingUpComponent} from "./btnSingUp/btnSingUP";
 import {BtnLogInComponent} from "./btnLogIn/btnLogIn";
 import {SliderArticleComponent} from "./sliderArticle/sliderArticle";
+import { UserDataComponent } from "./userData/userData";
 
 @NgModule({
   declarations: [
@@ -22,14 +22,15 @@ import {SliderArticleComponent} from "./sliderArticle/sliderArticle";
     SearchComponent,
     // ProfileMenuComponent,
     ContenerComponent,
-    SliderComponent,
-    ArticleComponent,
+    // SliderComponent,
+    // ArticleComponent,
     WeatherComponent,
     FooterComponent,
     DatePipeComponent,
     BtnSingUpComponent,
     BtnLogInComponent,
-    SliderArticleComponent
+    // SliderArticleComponent,
+    UserDataComponent
   ],
   imports: [
     BrowserModule
@@ -41,14 +42,15 @@ import {SliderArticleComponent} from "./sliderArticle/sliderArticle";
     SearchComponent,
     // ProfileMenuComponent,
     ContenerComponent,
-    SliderComponent,
-    ArticleComponent,
+    // SliderComponent,
+    // ArticleComponent,
     WeatherComponent,
     FooterComponent,
     DatePipeComponent,
     BtnSingUpComponent,
     BtnLogInComponent,
-    SliderArticleComponent
+    // SliderArticleComponent,
+    UserDataComponent
   ]
 })
 export class AppModule { }

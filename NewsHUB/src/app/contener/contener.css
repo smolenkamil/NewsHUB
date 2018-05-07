@@ -17,3 +17,9 @@
   height: 500px;
   float: left;
 }
+
+#profileContainer {
+  width: 100%;
+  height: 800px;
+  float: left;
+}
