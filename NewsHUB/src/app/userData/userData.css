@@ -10,3 +10,25 @@ label {
   border-right: 1px solid gray;
   /*background-color: #6FB1C8;*/
 }
+
+#userImage {
+  position: relative;
+  width: 8vw;
+  height: 8vw;
+  margin-left: 3.7vw;
+  margin-top: 6vw;
+}
+
+#editPencil {
+  position: absolute;
+  width: 1.1vw;
+  height: 1.1vw;
+  top: 14.9vw;
+  left: 11.8vw;
+}
+
+#username {
+  font-weight: 600;
+  font-size: 1.2vw;
+  text-align: center;
+}
