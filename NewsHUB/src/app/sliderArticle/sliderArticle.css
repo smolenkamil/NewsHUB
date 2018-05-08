@@ -4,32 +4,38 @@ body {font-family: Verdana, sans-serif;}
 
 .imageContainer {
   position: absolute;
-  width: 40%;
-  height: 100%;
   top: 0;
   left: 1%;
 }
 
 .imageContainer img {
-  width: 100%;
+  width: 25.7vw;
+  height: 16.8vw;
   max-height: 85%;
   display: block;
   margin-top: 6%;
   margin-bottom: auto;
-  border: 5px solid white;
+  border: 3px solid white;
   border-radius: 10px;
+  object-fit: cover;
   vertical-align: center;
+}
+
+.textShadow {
+  position: absolute;
+  top: 5%;
+  left: 42%;
+  width: 57%;
+  height: 89%;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.4);
 }
 
 .title {
   position: absolute;
-  font-size: 1.7vw;
   font-weight: 700;
-  height: 43%;
-  max-height: 43%;
-  top: 1.2vw;
-  left: 42%;
-  width: 56%;
+  height: 54%;
+  width: 100%;
   color: white;
   text-align: center;
 }
@@ -39,18 +45,20 @@ body {font-family: Verdana, sans-serif;}
   bottom: 0;
   display: table-cell;
   vertical-align: bottom;
+  font-size: 1.5vw;
 }
 
-.text {
+.description {
   position: absolute;
-  font-size: 1vw;
-  height: 42%;
-  max-height: 42%;
+  font-size: 0.9vw;
+  height: 37%;
+  max-height: 37%;
   color: white;
   text-align: center;
-  top: 10.8vw;
-  left: 42%;
-  width: 56%;
+  top: 10.5vw;
+  width: 100%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 
