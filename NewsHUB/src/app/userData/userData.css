@@ -1,11 +1,12 @@
 label {
   text-align: right;
+  font-size: 0.9vw;
 }
 
 .leftContent {
   float: left;
   width: 15.5vw;
-  height: 29vw;
+  height: 35vw;
   margin-left: 2%;
   border-right: 1px solid gray;
   /*background-color: #6FB1C8;*/
@@ -16,14 +17,14 @@ label {
   width: 8vw;
   height: 8vw;
   margin-left: 3.7vw;
-  margin-top: 8vw;
+  margin-top: 11.5vw;
 }
 
 #editPencil {
   position: absolute;
   width: 1.1vw;
   height: 1.1vw;
-  top: 16.7vw;
+  top: 20.3vw;
   left: 11.8vw;
 }
 
@@ -39,4 +40,24 @@ h5 {
   font-weight: 600;
   margin-left: 1.5vw;
   margin-bottom: 0.8vw;
+}
+
+.form-control {
+  font-size: 0.9vw;
+}
+
+.dl {
+  margin-bottom: 2vw;
+}
+
+.dl .col-sm-2.col-form-label {
+  padding-top: 0;
+}
+
+.custom-select {
+  font-size: 0.9vw;
+}
+
+.form-group.row {
+  height: 2.5vw;
 }
