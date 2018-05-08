@@ -20,7 +20,7 @@ import {SliderArticleComponent} from "./sliderArticle/sliderArticle";
     HeaderComponent,
     MenuComponent,
     SearchComponent,
-    // ProfileMenuComponent,
+    ProfileMenuComponent,
     ContenerComponent,
     SliderComponent,
     ArticleComponent,
