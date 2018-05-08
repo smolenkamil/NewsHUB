@@ -4,8 +4,8 @@ label {
 
 .leftContent {
   float: left;
-  width: 300px;
-  height: 500px;
+  width: 15.5vw;
+  height: 29vw;
   margin-left: 2%;
   border-right: 1px solid gray;
   /*background-color: #6FB1C8;*/
@@ -16,14 +16,14 @@ label {
   width: 8vw;
   height: 8vw;
   margin-left: 3.7vw;
-  margin-top: 6vw;
+  margin-top: 8vw;
 }
 
 #editPencil {
   position: absolute;
   width: 1.1vw;
   height: 1.1vw;
-  top: 14.9vw;
+  top: 16.7vw;
   left: 11.8vw;
 }
 
@@ -31,4 +31,12 @@ label {
   font-weight: 600;
   font-size: 1.2vw;
   text-align: center;
+}
+
+h5 {
+  display: inline-block;
+  font-size: 1vw;
+  font-weight: 600;
+  margin-left: 1.5vw;
+  margin-bottom: 0.8vw;
 }
