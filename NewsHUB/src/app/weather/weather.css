@@ -7,22 +7,23 @@
 #weatherContainer {
   width: 27%;
   max-width: 300px;
-  height: 320px;
+  max-height: 19vw;
   position: absolute;
   right: -27%;
   top: 0;
+  padding-bottom: 1vw;
   box-shadow: 0 3px 10px #888888;
   background-color: #9ECBDA;
 }
 
 #top {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
 }
 
 #top h3 {
   text-align: center;
-  font-size: 30px;
+  font-size: 1.8vw;
   font-weight: 700;
   margin-top: 0;
   color: #00506D;
@@ -35,16 +36,17 @@
 
 #dateCity {
   text-align: center;
+  font-size: 0.8vw;
   font-weight: 600;
   color: #00506D;
 }
 
 #middle {
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding-top: 0.6vw;
+  padding-bottom: 1.1vw;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10%;
+  margin-bottom: 1vw;
   width: 95%;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -84,7 +86,7 @@
   margin: 0;
   padding: 0;
   margin-left: 7%;
-  font-size: 1vw;
+  font-size: 0.9vw;
 }
 
 .weatherInfo span {
