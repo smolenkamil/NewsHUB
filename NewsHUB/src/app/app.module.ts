@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { HeaderComponent } from './header/header';
 import { MenuComponent } from './menu/menu';
 import { SearchComponent } from './searchBar/searchBar';
