@@ -2,8 +2,6 @@
 
 body {font-family: Verdana, sans-serif;}
 
-img {vertical-align: middle;}
-
 .slideshow-container {
   width: 100%;
   height: 20vw;
@@ -18,32 +16,33 @@ img {vertical-align: middle;}
   font-size: 20px;
 }
 
-.mySlides img {
-  width: 40%;
-  border: 5px solid white;
-  border-radius: 10px;
-}
+/*.mySlides img {*/
+  /*width: 40%;*/
+  /*border: 5px solid white;*/
+  /*border-radius: 10px;*/
+  /*vertical-align: middle;*/
+/*}*/
 
-.first {display: block;}
+/*.title {*/
+  /*!*float:left;*!*/
+  /*position: absolute;*/
+  /*font-size: 1.5vw;*/
+  /*font-weight: 700;*/
+  /*top: 1.1vw;*/
+  /*left: 43%;*/
+  /*width: 55%;*/
+  /*color: white;*/
+  /*text-align: center;*/
+/*}*/
 
-.title {
-  /*float:left;*/
-  position: absolute;
-  font-size: 2.5vw;
-  font-weight: 700;
-  top:5vw;
-  left: 45%;
-  color: white;
-}
-
-.text {
-  position: absolute;
-  font-size: 1.1vw;
-  color: white;
-  top:10vw;
-  left: 42%;
-  width: 56.5%;
-}
+/*.text {*/
+  /*position: absolute;*/
+  /*font-size: 1.1vw;*/
+  /*color: white;*/
+  /*top:10vw;*/
+  /*left: 42%;*/
+  /*width: 56.5%;*/
+/*}*/
 
 .dots {
   text-align: center;
@@ -59,6 +58,8 @@ img {vertical-align: middle;}
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+
+.first {display: block;}
 
 .active {
   background-color: #717171;
