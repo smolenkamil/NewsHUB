@@ -14,7 +14,7 @@ label {
 
 .leftContent {
   float: left;
-  width: 15.5vw;
+  width: 14vw;
   height: 32vw;
   margin-left: 2%;
   border-right: 1px solid gray;
@@ -22,20 +22,16 @@ label {
 }
 
 #userImage {
-  /*position: relative;*/
   width: 8vw;
   height: 8vw;
-  margin-left: 3.7vw;
-  margin-top: 11.5vw;
+  margin-left: 2.8vw;
+  margin-top: 10vw;
 }
 
 #editPencil {
-  /*position: absolute;*/
   width: 1.1vw;
   height: 1.1vw;
-  margin-top: 18vw;
-  /*top: 20.3vw;*/
-  /*left: 11.8vw;*/
+  margin-top: 16.8vw;
 }
 
 #username {
@@ -47,7 +43,7 @@ label {
 h5 {
   display: inline-block;
   font-size: 1vw;
-  font-weight: 600;
+  font-weight: 700;
   margin-left: 1.5vw;
   margin-bottom: 0.8vw;
 }
