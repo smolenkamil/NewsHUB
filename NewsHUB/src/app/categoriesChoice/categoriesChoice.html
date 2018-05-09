@@ -1,34 +1,78 @@
-<div>
+<div id="categoriesChoiceContent">
   <div class="leftContent">
     <img id="userImage" src="assets/user_black.png" alt="user_image">
-    <h3>Kategorie</h3>
+    <h3>Newsy</h3>
   </div>
 
-  <form>
-    <h5>Kategorie</h5>
-    <div class="form-check-inline">
-      <label class="form-check-label">
-        <input class="form-check-input" type="checkbox" id="businessInput" value="business">
-        Biznes
-      </label>
-    </div>
-    <div class="form-check-inline">
-      <label class="form-check-label">
-        <input class="form-check-input" type="checkbox" id="entertainmentInput" value="entertainment">
-        Rozrywka
-      </label>
-    </div>
-    <div class="form-check-inline">
-      <label class="form-check-label">
-        <input class="form-check-input" type="checkbox" id="healthInput" value="health">
-        Zdrowie
-      </label>
-    </div>
-    <div class="form-check-inline">
-      <label class="form-check-label">
-        <input class="form-check-input" type="checkbox" id="scienceInput" value="science">
-        Nauka
-      </label>
-    </div>
-  </form>
+  <div class="rightContent">
+    <form>
+      <h5>Kategorie</h5>
+      <div class="form-check-inline first">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="categories" id="businessInput" value="business">
+          Biznes
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="categories" id="entertainmentInput" value="entertainment">
+          Rozrywka
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="categories" id="healthInput" value="health">
+          Zdrowie
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="categories" id="scienceInput" value="science">
+          Nauka
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="categories" id="sportsInput" value="sports">
+          Sport
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="categories" id="technologyInput" value="technology">
+          Technologia
+        </label>
+      </div>
+
+      <h5>Nagłówki</h5>
+      <div class="form-check-inline first">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="headlines" id="topInput" value="top-headlines" checked>
+          Najpopularniejsze
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="headlines" id="everythingInput" value="everything">
+          Wszystkie
+        </label>
+      </div>
+
+      <h5>Kraj</h5>
+
+      <div class="form-group row">
+        <label for="selectCountry" class="col-sm-1 col-form-label">Kraj</label>
+        <div class="col-sm-4">
+          <select class="custom-select" id="selectCountry" disabled>
+            <option value="1">Argentyna</option>
+            <option value="2">Australia</option>
+            <option value="3">Austria</option>
+            <option value=""></option>
+          </select>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
+
+
