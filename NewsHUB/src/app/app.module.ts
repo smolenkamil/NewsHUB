@@ -15,6 +15,7 @@ import {BtnLogInComponent} from "./btnLogIn/btnLogIn";
 import {SliderArticleComponent} from "./sliderArticle/sliderArticle";
 import { UserDataComponent } from "./userData/userData";
 import {CategoriesChoiceComponent} from "./categoriesChoice/categoriesChoice";
+import {ProfileContainerComponent} from "./profileContainer/profileContainer";
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {CategoriesChoiceComponent} from "./categoriesChoice/categoriesChoice";
     BtnLogInComponent,
     // SliderArticleComponent,
     UserDataComponent,
-    CategoriesChoiceComponent
+    CategoriesChoiceComponent,
+    ProfileContainerComponent
   ],
   imports: [
     BrowserModule
@@ -53,7 +55,8 @@ import {CategoriesChoiceComponent} from "./categoriesChoice/categoriesChoice";
     BtnLogInComponent,
     // SliderArticleComponent,
     UserDataComponent,
-    CategoriesChoiceComponent
+    CategoriesChoiceComponent,
+    ProfileContainerComponent
   ]
 })
 export class AppModule { }
