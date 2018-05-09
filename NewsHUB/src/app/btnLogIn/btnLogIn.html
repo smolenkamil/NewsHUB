@@ -3,29 +3,35 @@
 <div id="id01" class="modal">
   <form class="modal-content animate" action="/action_page.php">
     <span onclick="document.getElementById('id01').style.display='none'"
-          class="close" title="Close Modal">&times;</span>
-    <div style="" id="napis">
-      Zaloguj się do swojego konta
-      <hr id="hr1" noshade="noshade" />
+          class="close">&times;</span>
+    <div id="napis">
+      <p>Zaloguj się do swojego konta</p>
     </div>
+    <hr id="hr1" noshade="noshade"/>
     <div class="container" id="mainContainer">
       <div>
-        <img src="assets/user.png" width="30" height="30" class="d-inline align-top" alt="">
-        <input type="text" placeholder="Email" name="uname" required>
+        <button type="submit" class="btn btn-dark" id="facebook"><img src="assets/facebook-logo.png" id="facebookIcon">Kontynuuj z Facebookiem</button>
       </div>
       <div>
-        <img src="assets/user.png" width="30" height="30" class="d-inline align-top" alt="">
-        <input type="password" placeholder="Hasło" name="psw" required>
+        <button type="submit" class="btn btn-light" id="gmail"><img src="assets/google.png" id="googleIcon">Kontynuuj z kontem Google</button>
+      </div>
+      <div class="email">
+        <img src="assets/envelope.png" class="icon">
+        <input class="rubryczki" type="text" placeholder="Email" name="uname" required>
+      </div>
+      <div class="password">
+        <img src="assets/padlock.png" class="icon">
+        <input class="rubryczki" type="password" placeholder="Hasło" name="psw" required>
+      </div>
+      <div class="log">
+        <button type="submit" class="btn btn-dark" id="log">Zaloguj</button>
       </div>
       <div>
-        <button type="submit">Zaloguj</button>
-      </div>
-      <div>
-        <span class="psw"><a href="#">Zapomniałem hasła</a></span>
+        <span class="psw"><a href="#" class="pswd">Nie pamiętasz hasła?</a></span>
       </div>
       <hr>
-      <div>
-        Nie masz konta? <a href="#">Zarejestruj się</a>
+      <div class="konto">
+        Nie masz konta? <a href="#" class="pswd">Zarejestruj się</a>
       </div>
     </div>
   </form>

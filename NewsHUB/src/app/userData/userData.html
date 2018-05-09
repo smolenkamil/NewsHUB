@@ -1,9 +1,12 @@
-<div>
+<div id="userDataContent">
   <div class="leftContent">
-
+    <img id="userImage" src="assets/user_color.png" alt="user_image">
+    <img id="editPencil" src="assets/pencil.png" alt="edit_photo">
+    <h3 id="username">janek99</h3>
   </div>
 
   <form>
+    <h5>Dane personalne</h5>
     <div class="form-group row">
       <label for="inputName" class="col-sm-2 col-form-label">Imię</label>
       <div class="col-sm-4">
@@ -16,10 +19,10 @@
         <input type="text" class="form-control" id="inputSurname" placeholder="Kowalski">
       </div>
     </div>
-    <div class="form-group row">
+    <div class="form-group row dl">
       <label for="inputUsername" class="col-sm-2 col-form-label">Nazwa użytkownika</label>
       <div class="col-sm-4">
-        <input type="text" class="form-control" id="inputUsername" placeholder="jankow99">
+        <input type="text" class="form-control" id="inputUsername" placeholder="janek99">
       </div>
     </div>
     <div class="form-group row">
@@ -28,15 +31,23 @@
         <input type="email" class="form-control" id="inputEmail" placeholder="jan.kowalski@emil.pl">
       </div>
     </div>
+    <h5>Zmiana hasła</h5>
     <div class="form-group row">
-      <label for="selectCity" class="col-sm-2 col-form-label">Miasto</label>
+      <label for="inputPasswd" class="col-sm-2 col-form-label">Stare hasło</label>
       <div class="col-sm-4">
-        <select class="custom-select" id="selectCity">
-          <option selected>Warszawa</option>
-          <option value="1">Poznań</option>
-          <option value="2">Kraków</option>
-          <option value="3">Gdańsk</option>
-        </select>
+        <input type="password" class="form-control" id="inputPasswd" placeholder="*********">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputNewPasswd" class="col-sm-2 col-form-label">Nowe hasło</label>
+      <div class="col-sm-4">
+        <input type="password" class="form-control" id="inputNewPasswd" placeholder="">
+      </div>
+    </div>
+    <div class="form-group row dl">
+      <label for="inputNewPasswdAgain" class="col-sm-2 col-form-label">Powtórz nowe hasło</label>
+      <div class="col-sm-4">
+        <input type="password" class="form-control" id="inputNewPasswdAgain" placeholder="">
       </div>
     </div>
   </form>

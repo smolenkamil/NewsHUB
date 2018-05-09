@@ -1,0 +1,69 @@
+#categoriesChoiceContent {
+  width: 96%;
+  height: 22vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vw;
+  border-bottom: 1px solid lightgray;
+  /*background-color: #00FFFF;*/
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+h5 {
+  display: block;
+  font-size: 1vw;
+  font-weight: 700;
+  margin-left: 1.5vw;
+  margin-top: 2vw;
+  margin-bottom: 0.8vw;
+}
+
+.leftContent {
+  float: left;
+  width: 14vw;
+  height: 20vw;
+  margin-left: 2%;
+  border-right: 1px solid gray;
+  /*background-color: #6FB1C8;*/
+}
+
+#newsImage {
+  width: 8vw;
+  height: 8vw;
+  margin-left: 2.8vw;
+  margin-top: 4.2vw;
+}
+
+.rightContent {
+  float: left;
+  height: 20vw;
+  /*background-color: #1c94c4;*/
+}
+
+.first {
+  margin-left: 1.5vw;
+}
+
+.form-check-label {
+  font-size: 1.1vw;
+}
+
+.form-group.row {
+  height: 2.5vw;
+  margin-top: 1.3vw;
+  margin-left: 0.4vw;
+}
+
+.form-group.row label {
+  text-align: right;
+  font-size: 0.9vw;
+}
+
+.custom-select {
+  font-size: 0.9vw;
+}
