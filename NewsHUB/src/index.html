@@ -10,25 +10,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
-  <!-- Firebase App is always required and must be first -->
-  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
-  <!-- Add additional services you want to use -->
-  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-messaging.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-functions.js"></script>
-  <script>
-    // Firebase App is always required and must be first
-    var firebase = require("firebase/app");
 
-    // Add additional services you want to use
-    require("firebase/auth");
-    require("firebase/database");
-    require("firebase/firestore");
-    require("firebase/messaging");
-    require("firebase/functions");
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+  <script>
     // Initialize Firebase
     var config = {
       apiKey: "AIzaSyAMc1KI-zlkosp7qLKeMB4_F5Nvv82C-FM",
@@ -40,14 +24,14 @@
     };
     firebase.initializeApp(config);
   </script>
+
   <!-- Firebase Auth -->
-  <script src="https://www.gstatic.com/firebasejs/ui/3.0.0/firebase-ui-auth__pl.js"></script>
-  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/3.0.0/firebase-ui-auth.css" />
+  <script src="https://www.gstatic.com/firebasejs/ui/3.0.0/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/3.0.0/firebaseui.css" />
   <script type="text/javascript">
     // FirebaseUI config.
     var uiConfig = {
-      signInFlow: 'popup',
-      signInSuccessUrl: './logged.html',
+      signInSuccessUrl: './index.html',
       signInOptions: [
         // Leave the lines as is for the providers you want to offer your users.
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
@@ -61,220 +45,64 @@
     // Initialize the FirebaseUI Widget using Firebase.
     var ui = new firebaseui.auth.AuthUI(firebase.auth());
     // The start method will wait until the DOM is loaded.
-    if (ui.isPendingRedirect()) {
-      ui.start('#firebaseui-auth-container', uiConfig);
-    }
+    ui.start('#firebaseui-auth-container', uiConfig);
   </script>
-  <!--<script type="text/javascript">-->
-  <!--initApp = function() {-->
-  <!--firebase.auth().onAuthStateChanged(function(user) {-->
-  <!--if (user) {-->
-  <!--// User is signed in.-->
-  <!--var displayName = user.displayName;-->
-  <!--var email = user.email;-->
-  <!--var emailVerified = user.emailVerified;-->
-  <!--var photoURL = user.photoURL;-->
-  <!--var uid = user.uid;-->
-  <!--var phoneNumber = user.phoneNumber;-->
-  <!--var providerData = user.providerData;-->
-  <!--user.getIdToken().then(function(accessToken) {-->
-  <!--document.getElementById('sign-in-status').textContent = 'Signed in';-->
-  <!--document.getElementById('sign-in').textContent = 'Sign out';-->
-  <!--document.getElementById('account-details').textContent = JSON.stringify({-->
-  <!--displayName: displayName,-->
-  <!--email: email,-->
-  <!--emailVerified: emailVerified,-->
-  <!--phoneNumber: phoneNumber,-->
-  <!--photoURL: photoURL,-->
-  <!--uid: uid,-->
-  <!--accessToken: accessToken,-->
-  <!--providerData: providerData-->
-  <!--}, null, '  ');-->
-  <!--});-->
-  <!--} else {-->
-  <!--// User is signed out.-->
-  <!--document.getElementById('sign-in-status').textContent = 'Signed out';-->
-  <!--document.getElementById('sign-in').textContent = 'Sign in';-->
-  <!--document.getElementById('account-details').textContent = 'null';-->
-  <!--}-->
-  <!--}, function(error) {-->
-  <!--console.log(error);-->
-  <!--});-->
-  <!--};-->
 
-  <!--window.addEventListener('load', function() {-->
-  <!--initApp()-->
-  <!--});-->
-  <!--</script>-->
-
-  <!-- QUICK START EXAMPLE -->
   <script type="text/javascript">
-    /**
-     * Handles the sign in button press.
-     */
-    function toggleSignIn() {
-      if (firebase.auth().currentUser) {
-        // [START signout]
-        firebase.auth().signOut();
-        // [END signout]
-      } else {
-        var email = document.getElementById('email').value;
-        var password = document.getElementById('password').value;
-        if (email.length < 4) {
-          alert('Please enter an email address.');
-          return;
-        }
-        if (password.length < 4) {
-          alert('Please enter a password.');
-          return;
-        }
-        // Sign in with email and pass.
-        // [START authwithemail]
-        firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-          // Handle Errors here.
-          var errorCode = error.code;
-          var errorMessage = error.message;
-          // [START_EXCLUDE]
-          if (errorCode === 'auth/wrong-password') {
-            alert('Wrong password.');
-          } else {
-            alert(errorMessage);
-          }
-          console.log(error);
-          document.getElementById('log').disabled = false;
-          // [END_EXCLUDE]
-        });
-        // [END authwithemail]
-      }
-      document.getElementById('log').disabled = true;
-    }
-    /**
-     * Handles the sign up button press.
-     */
-    function handleSignUp() {
-      var email = document.getElementById('email').value;
-      var password = document.getElementById('password').value;
-      if (email.length < 4) {
-        alert('Please enter an email address.');
-        return;
-      }
-      if (password.length < 4) {
-        alert('Please enter a password.');
-        return;
-      }
-      // Sign in with email and pass.
-      // [START createwithemail]
-      firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        // [START_EXCLUDE]
-        if (errorCode == 'auth/weak-password') {
-          alert('The password is too weak.');
-        } else {
-          alert(errorMessage);
-        }
-        console.log(error);
-        // [END_EXCLUDE]
-      });
-      // [END createwithemail]
-    }
-    /**
-     * Sends an email verification to the user.
-     */
-    function sendEmailVerification() {
-      // [START sendemailverification]
-      firebase.auth().currentUser.sendEmailVerification().then(function() {
-        // Email Verification sent!
-        // [START_EXCLUDE]
-        alert('Email Verification Sent!');
-        // [END_EXCLUDE]
-      });
-      // [END sendemailverification]
-    }
-    function sendPasswordReset() {
-      var email = document.getElementById('email').value;
-      // [START sendpasswordemail]
-      firebase.auth().sendPasswordResetEmail(email).then(function() {
-        // Password Reset Email Sent!
-        // [START_EXCLUDE]
-        alert('Password Reset Email Sent!');
-        // [END_EXCLUDE]
-      }).catch(function(error) {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        // [START_EXCLUDE]
-        if (errorCode == 'auth/invalid-email') {
-          alert(errorMessage);
-        } else if (errorCode == 'auth/user-not-found') {
-          alert(errorMessage);
-        }
-        console.log(error);
-        // [END_EXCLUDE]
-      });
-      // [END sendpasswordemail];
-    }
-    /**
-     * initApp handles setting up UI event listeners and registering Firebase auth listeners:
-     *  - firebase.auth().onAuthStateChanged: This listener is called when the user is signed in or
-     *    out, and that is where we update the UI.
-     */
-    function initApp() {
-      // Listening for auth state changes.
-      // [START authstatelistener]
+    initApp = function() {
       firebase.auth().onAuthStateChanged(function(user) {
-        // [START_EXCLUDE silent]
-        document.getElementById('quickstart-verify-email').disabled = true;
-        // [END_EXCLUDE]
         if (user) {
           // User is signed in.
           var displayName = user.displayName;
           var email = user.email;
           var emailVerified = user.emailVerified;
           var photoURL = user.photoURL;
-          var isAnonymous = user.isAnonymous;
           var uid = user.uid;
+          var phoneNumber = user.phoneNumber;
           var providerData = user.providerData;
-          // [START_EXCLUDE]
-          document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
-          document.getElementById('log').textContent = 'Sign out';
-          document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
-          if (!emailVerified) {
-            document.getElementById('quickstart-verify-email').disabled = false;
-          }
-          // [END_EXCLUDE]
+          user.getIdToken().then(function(accessToken) {
+            // document.getElementById('sign-in-status').textContent = 'zalogowano';
+            document.getElementById('sign-in').textContent = 'wyloguj się';
+            if (document.getElementById('account-details')) {
+              document.getElementById('account-details').textContent = JSON.stringify({
+                displayName: displayName,
+                email: email,
+                emailVerified: emailVerified,
+                phoneNumber: phoneNumber,
+                photoURL: photoURL,
+                uid: uid,
+                accessToken: accessToken,
+                providerData: providerData
+              }, null, '  ');
+            }
+          });
         } else {
           // User is signed out.
-          // [START_EXCLUDE]
-          document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
-          document.getElementById('log').textContent = 'Sign in';
-          document.getElementById('quickstart-account-details').textContent = 'null';
-          // [END_EXCLUDE]
+          // document.getElementById('sign-in-status').textContent = 'wylogowano';
+          document.getElementById('sign-in').textContent = 'zaloguj się';
+          if (document.getElementById('account-details')) {
+            document.getElementById('account-details').textContent = 'null';
+          }
         }
-        // [START_EXCLUDE silent]
-        document.getElementById('log').disabled = false;
-        // [END_EXCLUDE]
+      }, function(error) {
+        console.log(error);
       });
-      // [END authstatelistener]
-      document.getElementById('log').addEventListener('click', toggleSignIn, false);
-      document.getElementById('quickstart-sign-up').addEventListener('click', handleSignUp, false);
-      document.getElementById('quickstart-verify-email').addEventListener('click', sendEmailVerification, false);
-      document.getElementById('quickstart-password-reset').addEventListener('click', sendPasswordReset, false);
-    }
-    window.onload = function() {
-      initApp();
     };
+    window.addEventListener('load', function() {
+      initApp()
+    });
   </script>
+
 </head>
 <body>
+
+  <!--<app-root></app-root>-->
+
   <header></header>
   <kontener>
-    <!-- Próba -->
-    <div id="firebaseui-auth-container"></div>
-
   </kontener>
   <stopka></stopka>
+
   <!-- Bootstrap JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
