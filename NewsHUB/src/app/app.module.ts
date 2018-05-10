@@ -13,6 +13,7 @@ import {DatePipeComponent, WeatherComponent} from './weather/weather';
 import {BtnSingUpComponent} from "./btnSingUp/btnSingUP";
 import {BtnLogInComponent} from "./btnLogIn/btnLogIn";
 import {SliderArticleComponent} from "./sliderArticle/sliderArticle";
+import {Contener2Component} from "./contener2/contener2";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {SliderArticleComponent} from "./sliderArticle/sliderArticle";
     DatePipeComponent,
     BtnSingUpComponent,
     BtnLogInComponent,
-    SliderArticleComponent
+    SliderArticleComponent,
+    Contener2Component
   ],
   imports: [
     BrowserModule
@@ -47,7 +49,8 @@ import {SliderArticleComponent} from "./sliderArticle/sliderArticle";
     DatePipeComponent,
     BtnSingUpComponent,
     BtnLogInComponent,
-    SliderArticleComponent
+    SliderArticleComponent,
+    Contener2Component
   ]
 })
 export class AppModule { }
