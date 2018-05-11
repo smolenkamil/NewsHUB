@@ -6,19 +6,23 @@ import {FormsModule} from '@angular/forms';
 // import {AngularFireAuthModule} from 'angularfire2/auth';
 import {AuthService} from './auth.service';
 
-
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
 import { SearchComponent } from './searchBar/searchBar.component';
 import { ProfileMenuComponent } from './profileMenu/profileMenu.component';
 import { ContainerComponent } from './container/container.component';
 import { SliderComponent} from './slider/slider.component';
-import { ArticleComponent } from './article/article.component';
 import { FooterComponent } from './footer/footer.component';
 import {DatePipeComponent, WeatherComponent} from './weather/weather.component';
 import {BtnLogInComponent} from "./btnLogIn/btnLogIn.component";
 import {SliderArticleComponent} from "./sliderArticle/sliderArticle.component";
 import {AppComponent} from './app.component';
+import {ProfileContainerComponent} from "./profileContainer/profileContainer.component";
+import {UserDataComponent} from "./userData/userData.component";
+import {CategoriesChoiceComponent} from "./categoriesChoice/categoriesChoice.component";
+import {WeatherChoiceComponent} from "./weatherChoice/weatherChoice.component";
+import {HomepageComponent} from "./homepage/homepage.component";
+import {ArticleComponent} from "./article/article.component";
 
 const firebaseconfig = {
   apiKey: "AIzaSyAMc1KI-zlkosp7qLKeMB4_F5Nvv82C-FM",
@@ -43,7 +47,12 @@ const firebaseconfig = {
     DatePipeComponent,
     BtnLogInComponent,
     SliderArticleComponent,
-    AppComponent
+    AppComponent,
+    ProfileContainerComponent,
+    UserDataComponent,
+    CategoriesChoiceComponent,
+    WeatherChoiceComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +62,7 @@ const firebaseconfig = {
     // AngularFireAuthModule
   ],
   providers: [
-    // AuthService
+    AuthService
   ],
   bootstrap: [
     HeaderComponent,
@@ -68,7 +77,12 @@ const firebaseconfig = {
     DatePipeComponent,
     BtnLogInComponent,
     SliderArticleComponent,
-    AppComponent
+    AppComponent,
+    ProfileContainerComponent,
+    UserDataComponent,
+    CategoriesChoiceComponent,
+    WeatherChoiceComponent,
+    HomepageComponent
   ]
 })
 export class AppModule { }
