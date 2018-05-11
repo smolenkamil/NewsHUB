@@ -1,15 +1,1 @@
-@media only screen and (max-width: 1200px) {
-  #signupBtn {
-    visibility: hidden;
-  }
-}
-
-#signupBtn {
-  float: right;
-  margin-top: 15px;
-  background-color: #FF8080;
-  border: none;
-  margin-right: 10px;
-}
-
 

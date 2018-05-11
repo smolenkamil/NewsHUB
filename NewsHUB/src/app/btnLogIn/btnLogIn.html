@@ -1,32 +1,13 @@
+
 <button type="button" class="btn btn-light" id="logInBtn" onclick="document.getElementById('id01').style.display='block'">ZALOGUJ</button>
+
 
 <div id="id01" class="modal">
   <form class="modal-content animate" action="/action_page.php">
     <span onclick="document.getElementById('id01').style.display='none'"
           class="close" title="Close Modal">&times;</span>
-    <div style="" id="napis">
+       <div style="" id="napis">
       Zaloguj się do swojego konta
       <hr id="hr1" noshade="noshade" />
     </div>
-    <div class="container" id="mainContainer">
-      <div>
-        <img src="assets/user.png" width="30" height="30" class="d-inline align-top" alt="">
-        <input type="text" placeholder="Email" name="uname" required>
-      </div>
-      <div>
-        <img src="assets/user.png" width="30" height="30" class="d-inline align-top" alt="">
-        <input type="password" placeholder="Hasło" name="psw" required>
-      </div>
-      <div>
-        <button type="submit">Zaloguj</button>
-      </div>
-      <div>
-        <span class="psw"><a href="#">Zapomniałem hasła</a></span>
-      </div>
-      <hr>
-      <div>
-        Nie masz konta? <a href="#">Zarejestruj się</a>
-      </div>
-    </div>
-  </form>
-</div>
+    <div id="firebaseui-auth-container"></div>
