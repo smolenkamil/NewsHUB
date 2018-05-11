@@ -3,9 +3,9 @@ import { WeatherProvider } from "../logic/weatherApi";
 import { Weather } from "../logic/weather";
 
 @Component({
-  selector: 'weather',
-  templateUrl: './weather.html',
-  styleUrls: ['./weather.css']
+  selector: 'app-weather',
+  templateUrl: './weather.component.html',
+  styleUrls: ['./weather.component.css']
 })
 export class WeatherComponent implements OnInit{
   weatherx: WeatherProvider;
