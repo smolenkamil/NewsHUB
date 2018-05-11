@@ -11,7 +11,6 @@ import { SliderComponent} from './slider/slider';
 import { ArticleComponent } from './article/article';
 import { FooterComponent } from './footer/footer';
 import {DatePipeComponent, WeatherComponent} from './weather/weather';
-import {BtnSingUpComponent} from "./btnSingUp/btnSingUP";
 import {BtnLogInComponent} from "./btnLogIn/btnLogIn";
 import {SliderArticleComponent} from "./sliderArticle/sliderArticle";
 
@@ -27,7 +26,6 @@ import {SliderArticleComponent} from "./sliderArticle/sliderArticle";
     WeatherComponent,
     FooterComponent,
     DatePipeComponent,
-    BtnSingUpComponent,
     BtnLogInComponent,
     SliderArticleComponent
   ],
@@ -46,7 +44,6 @@ import {SliderArticleComponent} from "./sliderArticle/sliderArticle";
     WeatherComponent,
     FooterComponent,
     DatePipeComponent,
-    BtnSingUpComponent,
     BtnLogInComponent,
     SliderArticleComponent
   ]

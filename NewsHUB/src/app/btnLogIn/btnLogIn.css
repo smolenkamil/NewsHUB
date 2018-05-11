@@ -9,7 +9,6 @@
   margin-top: 15px;
   border: none;
   margin-right: 10px;
-  margin-right: 10px;
 }
 
 .modal {
@@ -27,12 +26,13 @@
   padding-top: 60px;
 }
 
-
- .modal-content {
+.modal-content {
   background-color: #f1f1f1;
   margin: 5px auto;
+  padding-bottom: 20px;
   border: 1px solid #888;
   width: 25%;
+  height: auto;
 }
 
 
@@ -45,8 +45,7 @@
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: #FF8080;
   cursor: pointer;
 }
@@ -58,6 +57,7 @@
 
 #napis{
   text-align: center;
+  font-size: 19px;
   font-weight: bold;
   color: #525259;
 }
