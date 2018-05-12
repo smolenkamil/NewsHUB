@@ -1,28 +1,26 @@
 <nav id="header">
   <hamburgerBtn></hamburgerBtn>
 
-  <!--<img routerLink="homepage" class="logoTop" src="assets/newshub_logo_small.png"/>-->
+  <img routerLink="homepage" class="logoTop" src="assets/newshub_logo_small.png"/>
 
-  <!--<button type="button" class="btn btn-light" id="logInBtn" onclick="document.getElementById('id01').style.display='block'">ZALOGUJ</button>-->
-  <!--<div id="id01" class="modal">-->
-    <!--<form class="modal-content animate">-->
-      <!--<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Zamknij">&times;</span>-->
-      <!--<div id="napis">-->
-        <!--Zaloguj się do swojego konta-->
-        <!--<hr id="hr1" noshade="noshade" />-->
-      <!--</div>-->
-      <!--<div id="firebaseui-auth-container"></div>-->
-    <!--</form>-->
-  <!--</div>-->
+  <button type="button" class="btn btn-light" id="logInBtn" onclick="document.getElementById('id01').style.display='block'">ZALOGUJ</button>
+  <div id="id01" class="modal">
+    <form class="modal-content animate">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Zamknij">&times;</span>
+      <div id="napis">
+        Zaloguj się do swojego konta
+        <hr id="hr1" noshade="noshade" />
+      </div>
+      <div id="firebaseui-auth-container"></div>
+    </form>
+  </div>
 
-  <!--<searchBar></searchBar>-->
+  <searchBar></searchBar>
 </nav>
 
 <div id="content">
   <div id="newsContainer">
-    <router-outlet>
-      <div id="firebaseui-auth-container"></div>
-    </router-outlet>
+    <router-outlet></router-outlet>
   </div>
   <weather></weather>
 </div>

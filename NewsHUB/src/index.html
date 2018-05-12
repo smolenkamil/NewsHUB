@@ -82,9 +82,9 @@
         console.log('info');
         firebase.auth().onAuthStateChanged(function(user) {
           if (user) {
-            document.getElementById('user_name').innerHTML = user.displayName;
-            document.getElementById('user_email').innerHTML = user.email;
-            document.getElementById('user_photo').setAttribute('src', user.photoURL);
+            document.getElementById('username').innerHTML = user.displayName;
+            document.getElementById('inputEmail').setAttribute('placeholder', user.email);
+            document.getElementById('userImage').setAttribute('src', user.photoURL);
           } else {
             document.getElementById('main_container').classList.add('hidden');
             document.getElementById('logged_out_text').classList.remove('hidden');

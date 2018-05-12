@@ -1,21 +1,21 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
-import {ArticleComponent} from "./article/article";
-import {BtnLogInComponent} from "./btnLogIn/btnLogIn";
+// import {BtnLogInComponent} from "./btnLogIn/btnLogIn";
 // import {ContainerComponent} from "./container/container.component";
 // import {FooterComponent} from "./footer/footer.component";
 // import {HeaderComponent} from "./header/header.component";
 import {MenuComponent} from "./menu/menu";
+import {ArticleComponent} from "./article/article";
 import {ProfileMenuComponent} from "./profileMenu/profileMenu";
 import {SearchComponent} from "./searchBar/searchBar";
 import {SliderComponent} from "./slider/slider";
 import {SliderArticleComponent} from "./sliderArticle/sliderArticle";
 import {WeatherComponent} from "./weather/weather";
 import {CategoriesChoiceComponent} from "./categoriesChoice/categoriesChoice";
-import {ProfileContainerComponent} from "./profileContainer/profileContainer.component";
 import {UserDataComponent} from "./userData/userData";
 import {WeatherChoiceComponent} from "./weatherChoice/weatherChoice";
+import {ProfileContainerComponent} from "./profileContainer/profileContainer.component";
 import {HomepageComponent} from "./homepage/homepage.component";
 
 const routes: Routes = [

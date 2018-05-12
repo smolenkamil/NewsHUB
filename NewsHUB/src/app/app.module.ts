@@ -7,14 +7,14 @@ import {AngularFireAuthModule} from 'angularfire2/auth';
 import {AuthService} from './auth.service';
 
 // import { HeaderComponent } from './header/header.component';
+// import { ContainerComponent } from './container/container.component';
+// import { FooterComponent } from './footer/footer.component';
+// import {BtnLogInComponent} from "./btnLogIn/btnLogIn";
 import { MenuComponent } from './menu/menu';
 import { SearchComponent } from './searchBar/searchBar';
 import { ProfileMenuComponent } from './profileMenu/profileMenu';
-// import { ContainerComponent } from './container/container.component';
 import { SliderComponent} from './slider/slider';
-// import { FooterComponent } from './footer/footer.component';
 import {DatePipeComponent, WeatherComponent} from './weather/weather';
-// import {BtnLogInComponent} from "./btnLogIn/btnLogIn";
 import {SliderArticleComponent} from "./sliderArticle/sliderArticle";
 import {AppComponent} from './app.component';
 import {ProfileContainerComponent} from "./profileContainer/profileContainer.component";
@@ -36,16 +36,16 @@ const firebaseConfig = {
 @NgModule({
   declarations: [
     // HeaderComponent,
+    // ContainerComponent,
+    // FooterComponent,
+    // BtnLogInComponent,
     MenuComponent,
     SearchComponent,
     ProfileMenuComponent,
-    // ContainerComponent,
     SliderComponent,
     ArticleComponent,
     WeatherComponent,
-    // FooterComponent,
     DatePipeComponent,
-    // BtnLogInComponent,
     SliderArticleComponent,
     AppComponent,
     ProfileContainerComponent,
@@ -66,23 +66,23 @@ const firebaseConfig = {
   ],
   bootstrap: [
     // HeaderComponent,
-    MenuComponent,
-    SearchComponent,
-    ProfileMenuComponent,
     // ContainerComponent,
-    SliderComponent,
-    ArticleComponent,
-    WeatherComponent,
     // FooterComponent,
-    DatePipeComponent,
     // BtnLogInComponent,
-    SliderArticleComponent,
-    AppComponent,
-    ProfileContainerComponent,
-    UserDataComponent,
-    CategoriesChoiceComponent,
-    WeatherChoiceComponent,
-    HomepageComponent
+    // MenuComponent,
+    // SearchComponent,
+    // ProfileMenuComponent,
+    // SliderComponent,
+    // ArticleComponent,
+    // WeatherComponent,
+    // DatePipeComponent,
+    // SliderArticleComponent,
+    AppComponent
+    // ProfileContainerComponent,
+    // UserDataComponent,
+    // CategoriesChoiceComponent,
+    // WeatherChoiceComponent,
+    // HomepageComponent
   ]
 })
 export class AppModule { }
