@@ -6,6 +6,8 @@
 
 #logInBtn {
   float: right;
+  background-color: #ff8080;
+  color: white;
   margin-top: 15px;
   border: none;
   margin-right: 10px;
