@@ -1,15 +1,30 @@
 <nav id="header">
-  <app-hamburger></app-hamburger>
-  <img routerLink="homepage" class="logoTop" src="assets/newshub_logo_small.png"/>
-  <app-btnLogIn></app-btnLogIn>
-  <app-searchBar></app-searchBar>
+  <hamburgerBtn></hamburgerBtn>
+
+  <!--<img routerLink="homepage" class="logoTop" src="assets/newshub_logo_small.png"/>-->
+
+  <!--<button type="button" class="btn btn-light" id="logInBtn" onclick="document.getElementById('id01').style.display='block'">ZALOGUJ</button>-->
+  <!--<div id="id01" class="modal">-->
+    <!--<form class="modal-content animate">-->
+      <!--<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Zamknij">&times;</span>-->
+      <!--<div id="napis">-->
+        <!--Zaloguj się do swojego konta-->
+        <!--<hr id="hr1" noshade="noshade" />-->
+      <!--</div>-->
+      <!--<div id="firebaseui-auth-container"></div>-->
+    <!--</form>-->
+  <!--</div>-->
+
+  <!--<searchBar></searchBar>-->
 </nav>
 
 <div id="content">
   <div id="newsContainer">
-    <router-outlet></router-outlet>
+    <router-outlet>
+      <div id="firebaseui-auth-container"></div>
+    </router-outlet>
   </div>
-  <app-weather></app-weather>
+  <weather></weather>
 </div>
 
 <nav class="navbar" id="footer">

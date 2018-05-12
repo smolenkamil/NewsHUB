@@ -3,9 +3,9 @@ import {NewsProvider} from "../logic/news";
 import {Article} from "../logic/article";
 
 @Component({
-  selector: 'app-sliderArticle',
-  templateUrl: './sliderArticle.component.html',
-  styleUrls: ['./sliderArticle.component.css']
+  selector: 'sliderArticle',
+  templateUrl: './sliderArticle.html',
+  styleUrls: ['./sliderArticle.css']
 })
 
 export class SliderArticleComponent implements OnInit{

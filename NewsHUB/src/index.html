@@ -3,17 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>NewsHUB</title>
-  <!--<base href="/NewsHUB/">-->
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-  <!--<header></header>-->
-  <!--<kontener></kontener>-->
-  <!--<stopka></stopka>-->
 
   <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
   <script>
@@ -59,41 +54,43 @@
     initApp = function() {
       firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
-          // User is signed in.
-          var displayName = user.displayName;
-          var email = user.email;
-          var emailVerified = user.emailVerified;
-          var photoURL = user.photoURL;
-          var uid = user.uid;
-          var phoneNumber = user.phoneNumber;
-          var providerData = user.providerData;
           user.getIdToken().then(function(accessToken) {
-            document.getElementById('sign-in-status').textContent = 'ZALOGUJ';
-            document.getElementById('sign-in').textContent = 'WYLOGOWANO';
-            document.getElementById('account-details').textContent = JSON.stringify({
-              displayName: displayName,
-              email: email,
-              emailVerified: emailVerified,
-              phoneNumber: phoneNumber,
-              photoURL: photoURL,
-              uid: uid,
-              accessToken: accessToken,
-              providerData: providerData
-            }, null, '  ');
+            document.getElementById('logInBtn').textContent = 'Wyloguj';
+            document.getElementById('username').innerHTML = user.displayName;
+            document.getElementById('inputEmail').setAttribute('placeholder', user.email);
+            document.getElementById('userImage').setAttribute('src', user.photoURL);
           });
         } else {
           // User is signed out.
-          document.getElementById('sign-in-status').textContent = 'WYLOGOWANO';
-          document.getElementById('sign-in').textContent = 'ZALOGUJ';
-          document.getElementById('account-details').textContent = 'null';
+          document.getElementById('logInBtn').textContent = 'Zaloguj';
+          // document.getElementById('main_container').classList.add('hidden');
+          // document.getElementById('logged_out_text').classList.remove('hidden');
         }
       }, function(error) {
         console.log(error);
       });
     };
-
     window.addEventListener('load', function() {
       initApp()
+    });
+    window.addEventListener('click', function() {
+      if (document.getElementById('firebaseui-auth-container')) {
+        console.log('click');
+        ui.start('#firebaseui-auth-container', uiConfig);
+      }
+      if (document.getElementById('account-details')) {
+        console.log('info');
+        firebase.auth().onAuthStateChanged(function(user) {
+          if (user) {
+            document.getElementById('user_name').innerHTML = user.displayName;
+            document.getElementById('user_email').innerHTML = user.email;
+            document.getElementById('user_photo').setAttribute('src', user.photoURL);
+          } else {
+            document.getElementById('main_container').classList.add('hidden');
+            document.getElementById('logged_out_text').classList.remove('hidden');
+          }
+        })
+      }
     });
   </script>
 

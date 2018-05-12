@@ -6,23 +6,23 @@ import {AngularFireModule} from 'angularfire2';
 import {AngularFireAuthModule} from 'angularfire2/auth';
 import {AuthService} from './auth.service';
 
-import { HeaderComponent } from './header/header.component';
-import { MenuComponent } from './menu/menu.component';
-import { SearchComponent } from './searchBar/searchBar.component';
-import { ProfileMenuComponent } from './profileMenu/profileMenu.component';
-import { ContainerComponent } from './container/container.component';
-import { SliderComponent} from './slider/slider.component';
-import { FooterComponent } from './footer/footer.component';
-import {DatePipeComponent, WeatherComponent} from './weather/weather.component';
-import {BtnLogInComponent} from "./btnLogIn/btnLogIn.component";
-import {SliderArticleComponent} from "./sliderArticle/sliderArticle.component";
+// import { HeaderComponent } from './header/header.component';
+import { MenuComponent } from './menu/menu';
+import { SearchComponent } from './searchBar/searchBar';
+import { ProfileMenuComponent } from './profileMenu/profileMenu';
+// import { ContainerComponent } from './container/container.component';
+import { SliderComponent} from './slider/slider';
+// import { FooterComponent } from './footer/footer.component';
+import {DatePipeComponent, WeatherComponent} from './weather/weather';
+// import {BtnLogInComponent} from "./btnLogIn/btnLogIn";
+import {SliderArticleComponent} from "./sliderArticle/sliderArticle";
 import {AppComponent} from './app.component';
 import {ProfileContainerComponent} from "./profileContainer/profileContainer.component";
-import {UserDataComponent} from "./userData/userData.component";
-import {CategoriesChoiceComponent} from "./categoriesChoice/categoriesChoice.component";
-import {WeatherChoiceComponent} from "./weatherChoice/weatherChoice.component";
+import {UserDataComponent} from "./userData/userData";
+import {CategoriesChoiceComponent} from "./categoriesChoice/categoriesChoice";
+import {WeatherChoiceComponent} from "./weatherChoice/weatherChoice";
 import {HomepageComponent} from "./homepage/homepage.component";
-import {ArticleComponent} from "./article/article.component";
+import {ArticleComponent} from "./article/article";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAMc1KI-zlkosp7qLKeMB4_F5Nvv82C-FM",
@@ -35,17 +35,17 @@ const firebaseConfig = {
 
 @NgModule({
   declarations: [
-    HeaderComponent,
+    // HeaderComponent,
     MenuComponent,
     SearchComponent,
-    // ProfileMenuComponent,
-    ContainerComponent,
+    ProfileMenuComponent,
+    // ContainerComponent,
     SliderComponent,
     ArticleComponent,
     WeatherComponent,
-    FooterComponent,
+    // FooterComponent,
     DatePipeComponent,
-    BtnLogInComponent,
+    // BtnLogInComponent,
     SliderArticleComponent,
     AppComponent,
     ProfileContainerComponent,
@@ -65,17 +65,17 @@ const firebaseConfig = {
     AuthService
   ],
   bootstrap: [
-    HeaderComponent,
+    // HeaderComponent,
     MenuComponent,
     SearchComponent,
-    // ProfileMenuComponent,
-    ContainerComponent,
+    ProfileMenuComponent,
+    // ContainerComponent,
     SliderComponent,
     ArticleComponent,
     WeatherComponent,
-    FooterComponent,
+    // FooterComponent,
     DatePipeComponent,
-    BtnLogInComponent,
+    // BtnLogInComponent,
     SliderArticleComponent,
     AppComponent,
     ProfileContainerComponent,
