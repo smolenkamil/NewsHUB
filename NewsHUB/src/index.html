@@ -24,9 +24,6 @@
   firebase.initializeApp(config);
   </script>
 
-  <!--<script src="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.js"></script>-->
-  <!--<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.css" />-->
-
   <script  src="https://www.gstatic.com/firebasejs/ui/3.0.0/firebase-ui-auth__pl.js"> </script>
   <link  type="text/css"  rel = "stylesheet"  href="https://www.gstatic.com/firebasejs/ui/3.0.0/firebase-ui-auth.css"/>
 
@@ -55,14 +52,15 @@
       firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
           user.getIdToken().then(function(accessToken) {
-            document.getElementById('logInBtn').textContent = 'Wyloguj';
+            document.getElementById('logInBtn').textContent = 'WYLOGUJ';
             document.getElementById('username').innerHTML = user.displayName;
+            document.getElementById('inputUsername').setAttribute('placeholder', user.displayName);
             document.getElementById('inputEmail').setAttribute('placeholder', user.email);
             document.getElementById('userImage').setAttribute('src', user.photoURL);
           });
         } else {
           // User is signed out.
-          document.getElementById('logInBtn').textContent = 'Zaloguj';
+          document.getElementById('logInBtn').textContent = 'ZALOGUJ';
           // document.getElementById('main_container').classList.add('hidden');
           // document.getElementById('logged_out_text').classList.remove('hidden');
         }
@@ -73,6 +71,7 @@
     window.addEventListener('load', function() {
       initApp()
     });
+
     window.addEventListener('click', function() {
       if (document.getElementById('firebaseui-auth-container')) {
         console.log('click');
@@ -86,8 +85,8 @@
             document.getElementById('inputEmail').setAttribute('placeholder', user.email);
             document.getElementById('userImage').setAttribute('src', user.photoURL);
           } else {
-            document.getElementById('main_container').classList.add('hidden');
-            document.getElementById('logged_out_text').classList.remove('hidden');
+            // document.getElementById('main_container').classList.add('hidden');
+            // document.getElementById('logged_out_text').classList.remove('hidden');
           }
         })
       }

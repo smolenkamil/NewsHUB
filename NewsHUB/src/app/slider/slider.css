@@ -6,7 +6,7 @@ body {font-family: Verdana, sans-serif;}
   width: 100%;
   height: 20vw;
   position: relative;
-  margin: 10px auto 10px auto;
+  margin: 1vw auto 1vw auto;
   padding: 2%;
   background-color: #00506D;
 }
@@ -18,7 +18,7 @@ body {font-family: Verdana, sans-serif;}
 
 .dots {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 2.5vw;
 }
 
 .dot {
