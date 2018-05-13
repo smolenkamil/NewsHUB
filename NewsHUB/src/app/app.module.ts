@@ -20,6 +20,7 @@ import {WeatherChoiceComponent} from "./weatherChoice/weatherChoice";
 import {HomepageComponent} from "./homepage/homepage.component";
 import {ArticleComponent} from "./article/article";
 import {BtnLoginComponent} from "./btnLogIn/btnLogin";
+import {CatMenuComponent} from "./categoriesMenu/categoriesMenu";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAMc1KI-zlkosp7qLKeMB4_F5Nvv82C-FM",
@@ -34,6 +35,7 @@ const firebaseConfig = {
   declarations: [
     BtnLoginComponent,
     MenuComponent,
+    CatMenuComponent,
     SearchComponent,
     ProfileMenuComponent,
     SliderComponent,
