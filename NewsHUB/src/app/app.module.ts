@@ -19,7 +19,7 @@ import {CategoriesChoiceComponent} from "./categoriesChoice/categoriesChoice";
 import {WeatherChoiceComponent} from "./weatherChoice/weatherChoice";
 import {HomepageComponent} from "./homepage/homepage.component";
 import {ArticleComponent} from "./article/article";
-import {BtnLoginComponent} from "./btnLogin/btnLogin";
+import {BtnLoginComponent} from "./btnLogIn/btnLogin";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAMc1KI-zlkosp7qLKeMB4_F5Nvv82C-FM",
