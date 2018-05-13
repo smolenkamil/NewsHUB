@@ -17,13 +17,13 @@ export class WeatherComponent implements OnInit{
 
   ngOnInit() {
     this.weather = this.weatherx.getWeather();
-    console.log(this.weather.temp);
-    console.log(this.weather.name);
-    console.log(this.weather.speed);
-    console.log(this.weather.pressure);
-    console.log(this.weather.humidity);
-    console.log(this.weather.description);
-    console.log(this.weather.icon);
+    // console.log(this.weather.temp);
+    // console.log(this.weather.name);
+    // console.log(this.weather.speed);
+    // console.log(this.weather.pressure);
+    // console.log(this.weather.humidity);
+    // console.log(this.weather.description);
+    // console.log(this.weather.icon);
   }
 }
 

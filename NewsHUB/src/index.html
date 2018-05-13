@@ -3,21 +3,104 @@
 <head>
   <meta charset="utf-8">
   <title>NewsHUB</title>
-  <!--<base href="/NewsHUB/">-->
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
-<body>
-  <header></header>
-  <kontener></kontener>
-  <stopka></stopka>
-  <!-- Bootstrap JavaScript -->
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+   var config = {
+     apiKey: "AIzaSyAMc1KI-zlkosp7qLKeMB4_F5Nvv82C-FM",
+     authDomain: "newshub-3011.firebaseapp.com",
+     databaseURL: "https://newshub-3011.firebaseio.com",
+     projectId: "newshub-3011",
+     storageBucket: "newshub-3011.appspot.com",
+     messagingSenderId: "159798983174"
+    };
+  firebase.initializeApp(config);
+  </script>
+
+  <script  src="https://www.gstatic.com/firebasejs/ui/3.0.0/firebase-ui-auth__pl.js"> </script>
+  <link  type="text/css"  rel = "stylesheet"  href="https://www.gstatic.com/firebasejs/ui/3.0.0/firebase-ui-auth.css"/>
+
+  <script type="text/javascript">
+    // FirebaseUI config.
+    var uiConfig = {
+      signInSuccessUrl: './index.html',
+      signInOptions: [
+        // Leave the lines as is for the providers you want to offer your users.
+        firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+        firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+        firebase.auth.EmailAuthProvider.PROVIDER_ID,
+      ],
+      // Terms of service url.
+      tosUrl: '/homepage'
+    };
+
+    // Initialize the FirebaseUI Widget using Firebase.
+    var ui = new firebaseui.auth.AuthUI(firebase.auth());
+    // The start method will wait until the DOM is loaded.
+    ui.start('#firebaseui-auth-container', uiConfig);
+  </script>
+
+  <script type="text/javascript">
+    initApp = function() {
+      firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+          user.getIdToken().then(function(accessToken) {
+            document.getElementById('logInBtn').textContent = 'WYLOGUJ';
+            document.getElementById('username').innerHTML = user.displayName;
+            document.getElementById('inputUsername').setAttribute('placeholder', user.displayName);
+            document.getElementById('inputEmail').setAttribute('placeholder', user.email);
+            document.getElementById('userImage').setAttribute('src', user.photoURL);
+          });
+        } else {
+          // User is signed out.
+          document.getElementById('logInBtn').textContent = 'ZALOGUJ';
+          // document.getElementById('main_container').classList.add('hidden');
+          // document.getElementById('logged_out_text').classList.remove('hidden');
+        }
+      }, function(error) {
+        console.log(error);
+      });
+    };
+    window.addEventListener('load', function() {
+      initApp()
+    });
+
+    window.addEventListener('click', function() {
+      if (document.getElementById('firebaseui-auth-container')) {
+        console.log('click');
+        ui.start('#firebaseui-auth-container', uiConfig);
+      }
+      if (document.getElementById('account-details')) {
+        console.log('info');
+        firebase.auth().onAuthStateChanged(function(user) {
+          if (user) {
+            document.getElementById('username').innerHTML = user.displayName;
+            document.getElementById('inputEmail').setAttribute('placeholder', user.email);
+            document.getElementById('userImage').setAttribute('src', user.photoURL);
+          } else {
+            // document.getElementById('main_container').classList.add('hidden');
+            // document.getElementById('logged_out_text').classList.remove('hidden');
+          }
+        })
+      }
+    });
+  </script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <app-root></app-root>
 </body>
+
 </html>

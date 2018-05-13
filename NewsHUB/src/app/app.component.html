@@ -1,0 +1,20 @@
+<nav id="header">
+  <hamburgerBtn></hamburgerBtn>
+  <img routerLink="homepage" class="logoTop" src="assets/newshub_logo_small.png"/>
+  <btnLogin></btnLogin>
+  <searchBar></searchBar>
+</nav>
+
+<div id="content">
+  <div id="newsContainer">
+    <router-outlet></router-outlet>
+  </div>
+  <weather></weather>
+</div>
+
+<nav class="navbar" id="footer">
+  <img class="logoBottom" src="assets/newshub_logo_small.png"/>
+  <div id="footerContent">
+    <p>Copyright Ⓒ 2018 Drużyna Pierścienia. All rights reserved.</p>
+  </div>
+</nav>
