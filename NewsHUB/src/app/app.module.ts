@@ -23,6 +23,7 @@ import {BtnLoginComponent} from "./btnLogIn/btnLogin";
 import {AboutProjectComponent} from "./aboutProject/aboutProject.component";
 import {CatMenuComponent} from "./categoriesMenu/categoriesMenu";
 import {BtnAboutProjectComponent} from "./btnAboutProject/btnAboutProject";
+import {SearchContainerComponent} from "./searchContainer/searchContainer";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAMc1KI-zlkosp7qLKeMB4_F5Nvv82C-FM",
@@ -37,6 +38,7 @@ const firebaseConfig = {
   declarations: [
     BtnLoginComponent,
     MenuComponent,
+    SearchContainerComponent,
     CatMenuComponent,
     SearchComponent,
     ProfileMenuComponent,
