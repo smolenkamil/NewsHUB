@@ -11,10 +11,11 @@ export class ArticleComponent implements OnInit, OnChanges{
 
   newsx: NewsProvider;
   article: Article;
+  @Input('articleId')ident:number;
   @Input('cat')catNumber:number;
 
   ngOnChanges(chang: SimpleChanges){
-    this.article = this.newsx.getArticles(chang.catNumber.currentValue)[1];
+    this.article = this.newsx.getArticles(chang.catNumber.currentValue)[this.ident];
   }
 
   constructor(){
@@ -25,7 +26,7 @@ export class ArticleComponent implements OnInit, OnChanges{
   ngOnInit(){
     if(this.catNumber===undefined)
       this.catNumber=6;
-    this.article = this.newsx.getArticles(this.catNumber)[1];
+    this.article = this.newsx.getArticles(this.catNumber)[this.ident];
   }
 
 }
