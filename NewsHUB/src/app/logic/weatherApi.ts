@@ -7,7 +7,7 @@ export class WeatherProvider {
   defaultCityId = "756135"  //Warsaw
   cityId = "?id="+this.defaultCityId
   metricUnits = "&units=metric"
-  langPl = "&lang=pl"
+  langPl = "&lang=en"
   readonly APIKEY = "&APPID=e7aa07ccc31d9b3a6b07d4e7e5ed9349"
 
   //day weather icons
