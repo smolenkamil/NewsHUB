@@ -18,6 +18,6 @@ export class SliderArticleComponent implements OnInit{
   }
 
   ngOnInit(){
-    this.sliderArticle = this.newsx.getArticle();
+    this.sliderArticle = this.newsx.getArticle(0);
   }
 }
