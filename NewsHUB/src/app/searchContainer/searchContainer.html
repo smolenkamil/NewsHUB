@@ -1,2 +1,2 @@
-Szukasz hasła: {{searchTag}}
+<div id="info">You are looking for:<span class="special"> {{searchTag}} </span>. Found<span class="special"> {{articles.length}} </span>articles.</div>
 <article [tagx]=searchTag *ngFor="let article of articles; let i = index" [articleId]="i"></article>
