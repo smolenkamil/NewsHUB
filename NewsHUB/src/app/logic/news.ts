@@ -11,26 +11,30 @@ export class NewsProvider{
 
   getArticles(cat):Article[]{
     this.articles = [];
-    $.ajaxSetup({'async': false});
-    $.getJSON(this.MAIN_URL+"?category="+this.CATEGORIES[cat]+"&country=gb"+this.APIKEY, (data) => {
-      let ix = 0;
-      for(let i=0;i<data.articles.length;i++){
-        if(data.articles[i].title!==null && data.articles[i].urlToImage !== null && data.articles[i].description !== null ) {
-          this.articles[ix] = new Article(data.articles[i].title,data.articles[i].description,data.articles[i].urlToImage )
-          ix++;
+    // $.ajaxSetup({'async': false});
+    // $.getJSON(this.MAIN_URL+"?category="+this.CATEGORIES[cat]+"&country=gb"+this.APIKEY, (data) => {
+    //   let ix = 0;
+    //   for(let i=0;i<data.articles.length;i++){
+    //     if(data.articles[i].title!==null && data.articles[i].urlToImage !== null && data.articles[i].description !== null ) {
+    //       this.articles[ix] = new Article(data.articles[i].title,data.articles[i].description,data.articles[i].urlToImage )
+    //       ix++;
+    //
+    //     }
+    //   }
+    // });
+    // $.getJSON(this.MAIN_URL+"?category="+this.CATEGORIES[cat]+"&country=us"+this.APIKEY, (data) => {
+    //   let ix = this.articles.length;
+    //   for(let i=0;i<data.articles.length;i++){
+    //     if(data.articles[i].title!==null && data.articles[i].urlToImage !== null && data.articles[i].description !== null ) {
+    //       this.articles[ix] = new Article(data.articles[i].title,data.articles[i].description,data.articles[i].urlToImage )
+    //       ix++;
+    //     }
+    //   }
+    // });
 
-        }
-      }
-    });
-    $.getJSON(this.MAIN_URL+"?category="+this.CATEGORIES[cat]+"&country=us"+this.APIKEY, (data) => {
-      let ix = this.articles.length;
-      for(let i=0;i<data.articles.length;i++){
-        if(data.articles[i].title!==null && data.articles[i].urlToImage !== null && data.articles[i].description !== null ) {
-          this.articles[ix] = new Article(data.articles[i].title,data.articles[i].description,data.articles[i].urlToImage )
-          ix++;
-        }
-      }
-    });
+    for(let i=0;i<35;i++){
+      this.articles[i] = new Article("Temat zastępczy dla działu "+this.CATEGORIES[cat]+"! ","bleb belb bleb elbelb bleblebel belbeblbel blebelblebl ebe blebleble bb lebleb lebleblbel. Bblelblelblbelbbellbleb eblebleb lbelebl l elblebblelb blele. lblbelbelellbleble!","http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg" )
+    }
 
 
 
