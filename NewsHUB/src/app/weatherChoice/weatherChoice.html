@@ -1,70 +1,31 @@
 <div id="weatherChoiceContent">
   <div class="leftContent">
     <img id="weatherImage" src="assets/thermometer.png" alt="weather_image">
-    <h3>Pogoda</h3>
+    <h3>Weather</h3>
   </div>
 
   <div class="rightContent">
     <form id="weatherChoiceForm">
-      <h5>Jednostki</h5>
+      <h5>Unit</h5>
       <div class="form-check-inline first">
         <label class="form-check-label">
           <input class="form-check-input" type="radio" name="units" id="standardInput" value="standard">
-          Standardowe
+          Standard
         </label>
       </div>
       <div class="form-check-inline">
         <label class="form-check-label">
           <input class="form-check-input" type="radio" name="units" id="metricInput" value="metric" checked>
-          Metryczne
+          Metric
         </label>
       </div>
       <div class="form-check-inline">
         <label class="form-check-label">
           <input class="form-check-input" type="radio" name="units" id="imperialInput" value="imperial">
-          Imperialne
+          Imperial
         </label>
       </div>
-
-      <h5>Język</h5>
-      <div class="form-group row">
-        <div class="col-sm-4">
-          <select class="custom-select" id="selectLanguage">
-            <option value="ar">Arabski</option>
-            <option value="cz">Czeski</option>
-            <option value="el">Grecki</option>
-            <option value="fa">Perski (Farsi)</option>
-            <option value="gl">Galicyjski</option>
-            <option value="hu">Węgierski</option>
-            <option value="ja">Japoński</option>
-            <option value="kr">Koreański</option>
-            <option value="la">Litewski</option>
-            <option value="lt">Łotewski</option>
-            <option value="mk">Macedoński</option>
-            <option value="sk">Słowacki</option>
-            <option value="sl">Słoweński</option>
-            <option value="vi">Wietnamski</option>
-            <option value="bg">Bułgarski</option>
-            <option value="ca">Kataloński</option>
-            <option value="de">Niemiecki</option>
-            <option value="en">Angielski</option>
-            <option value="fi">Fiński</option>
-            <option value="fr">Francuski</option>
-            <option value="hr">Chorwacki</option>
-            <option value="it">Włoski</option>
-            <option value="nl">Duński</option>
-            <option value="pl" selected>Polski</option>
-            <option value="pt">Portugalski</option>
-            <option value="ro">Rumuński</option>
-            <option value="se">Szwecki</option>
-            <option value="es">Hiszpański</option>
-            <option value="tr">Turecki</option>
-            <option value="ua">Ukraiński</option>
-            <option value="zh_tw">Chiński</option>
-          </select>
-        </div>
-      </div>
-      <h5>Miasto</h5>
+      <h5>City</h5>
       <div class="form-group row">
         <div class="col-sm-4">
           <select class="custom-select" id="selectCity">
@@ -126,7 +87,7 @@
         </div>
       </div>
     </form>
-    <button type="submit" class="btn btn-light" form="weatherChoiceForm" id="dataSubmit">ZAPISZ</button>
+    <button type="submit" class="btn btn-light" form="weatherChoiceForm" id="dataSubmit">SAVE</button>
   </div>
 </div>
 

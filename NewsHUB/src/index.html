@@ -52,7 +52,7 @@
       firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
           user.getIdToken().then(function(accessToken) {
-            document.getElementById('logInBtn').textContent = 'WYLOGUJ';
+            document.getElementById('logInBtn').textContent = 'LOG OUT';
             document.getElementById('username').innerHTML = user.displayName;
             document.getElementById('inputUsername').setAttribute('placeholder', user.displayName);
             document.getElementById('inputEmail').setAttribute('placeholder', user.email);
@@ -60,7 +60,7 @@
           });
         } else {
           // User is signed out.
-          document.getElementById('logInBtn').textContent = 'ZALOGUJ';
+          document.getElementById('logInBtn').textContent = 'LOG IN';
           // document.getElementById('main_container').classList.add('hidden');
           // document.getElementById('logged_out_text').classList.remove('hidden');
         }
