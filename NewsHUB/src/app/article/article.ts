@@ -15,7 +15,6 @@ export class ArticleComponent implements OnInit, OnChanges{
 
   ngOnChanges(chang: SimpleChanges){
     this.article = this.newsx.getArticles(chang.catNumber.currentValue)[1];
-    // this.newsx.eraseArticles();
   }
 
   constructor(){
@@ -27,7 +26,6 @@ export class ArticleComponent implements OnInit, OnChanges{
     if(this.catNumber===undefined)
       this.catNumber=6;
     this.article = this.newsx.getArticles(this.catNumber)[1];
-    // this.newsx.eraseArticles();
   }
 
 }
