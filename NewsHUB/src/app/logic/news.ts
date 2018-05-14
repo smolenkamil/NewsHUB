@@ -9,10 +9,6 @@ export class NewsProvider{
 
   articles: Article[] = [];
 
-  titlex: string[] = [];
-  descriptionx: string[] = [];
-  urlToImgx: string[] = [];
-
   getArticles(cat):Article[]{
     this.articles = [];
     $.ajaxSetup({'async': false});
@@ -35,11 +31,11 @@ export class NewsProvider{
         }
       }
     });
+
+
+
     console.log(this.articles.length)
     return this.articles;
-  }
-
-  eraseArticles():void{
   }
 
 
