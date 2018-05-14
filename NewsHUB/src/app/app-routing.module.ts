@@ -8,7 +8,7 @@ import {SearchContainerComponent} from "./searchContainer/searchContainer";
 
 const routes: Routes = [
   {path: '', redirectTo: 'homepage', pathMatch: 'full'},
-  {path: 'search', component: SearchContainerComponent},
+  {path: 'search/:tag', component: SearchContainerComponent},
   {path: 'homepage/:cat', component: HomepageComponent},
   {path: 'homepage', component: HomepageComponent},
   {path: 'profile', component: ProfileContainerComponent},
