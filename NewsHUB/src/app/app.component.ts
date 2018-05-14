@@ -7,14 +7,15 @@ import { AuthService } from './auth.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  
+
   constructor(public authService: AuthService) { }
 
   ngOnInit() {
     document.getElementById('logInBtn').addEventListener('click', () => {
-      var signIn = document.getElementById('logInBtn');
-      if (signIn.innerHTML == 'Wyloguj') {
+      var logIn = document.getElementById('logInBtn');
+      if (logIn.innerHTML == 'WYLOGUJ') {
         this.authService.logout();
+        document.getElementById('modal').classList.add('hidden');
       }
     });
   }

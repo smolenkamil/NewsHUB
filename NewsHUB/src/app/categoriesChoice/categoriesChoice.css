@@ -68,7 +68,7 @@ h5 {
   font-size: 0.9vw;
 }
 
-#dataSubmit {
+#categoriesSubmit {
   float: right;
   margin-top: 0.5vw;
   border: none;
@@ -82,7 +82,7 @@ h5 {
   background-color: #FF8080;
 }
 
-#dataSubmit:hover {
+#categoriesSubmit:hover {
   background-color: #DE6F6F;
   text-shadow: 1px 2px #888888;
 }

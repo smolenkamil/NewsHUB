@@ -53,16 +53,25 @@
         if (user) {
           user.getIdToken().then(function(accessToken) {
             document.getElementById('logInBtn').textContent = 'WYLOGUJ';
-            document.getElementById('username').innerHTML = user.displayName;
-            document.getElementById('inputUsername').setAttribute('placeholder', user.displayName);
-            document.getElementById('inputEmail').setAttribute('placeholder', user.email);
-            document.getElementById('userImage').setAttribute('src', user.photoURL);
+            if (document.getElementById('profileDiv')) {
+              document.getElementById('username').innerHTML = user.displayName;
+              document.getElementById('inputUsername').setAttribute('placeholder', user.displayName);
+              document.getElementById('inputEmail').setAttribute('placeholder', user.email);
+              document.getElementById('userImage').setAttribute('src', user.photoURL);
+              document.getElementById('profileFiller').classList.add('hidden');
+              // document.getElementById('id01').classList.add('hidden');
+              // document.getElementById('logInBtn').classList.add('hidden');
+            }
           });
         } else {
           // User is signed out.
           document.getElementById('logInBtn').textContent = 'ZALOGUJ';
-          // document.getElementById('main_container').classList.add('hidden');
-          // document.getElementById('logged_out_text').classList.remove('hidden');
+          if (document.getElementById('profileDiv')) {
+            document.getElementById('profileMain').classList.add('hidden');
+            document.getElementById('logInCommunicate').classList.remove('hidden');
+            // document.getElementById('id01').classList.remove('hidden');
+            // document.getElementById('logInBtn').classList.remove('hidden');
+          }
         }
       }, function(error) {
         console.log(error);
@@ -74,19 +83,23 @@
 
     window.addEventListener('click', function() {
       if (document.getElementById('firebaseui-auth-container')) {
-        console.log('click');
         ui.start('#firebaseui-auth-container', uiConfig);
       }
-      if (document.getElementById('account-details')) {
-        console.log('info');
+      if (document.getElementById('profileDiv')) {
         firebase.auth().onAuthStateChanged(function(user) {
           if (user) {
             document.getElementById('username').innerHTML = user.displayName;
+            document.getElementById('inputUsername').setAttribute('placeholder', user.displayName);
             document.getElementById('inputEmail').setAttribute('placeholder', user.email);
             document.getElementById('userImage').setAttribute('src', user.photoURL);
+            document.getElementById('profileFiller').classList.add('hidden');
+            // document.getElementById('id01').classList.add('hidden');
+            // document.getElementById('logInBtn').classList.add('hidden');
           } else {
-            // document.getElementById('main_container').classList.add('hidden');
-            // document.getElementById('logged_out_text').classList.remove('hidden');
+            document.getElementById('profileMain').classList.add('hidden');
+            document.getElementById('logInCommunicate').classList.remove('hidden');
+            // document.getElementById('id01').classList.remove('hidden');
+            // document.getElementById('logInBtn').classList.remove('hidden');
           }
         })
       }

@@ -3,13 +3,16 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {AngularFireModule} from 'angularfire2';
+import {AngularFirestoreModule} from 'angularfire2/firestore';
 import {AngularFireAuthModule} from 'angularfire2/auth';
 import {AuthService} from './auth.service';
+import {AngularFireDatabaseModule} from 'angularfire2/database';
+import {HttpClientModule} from '@angular/common/http';
 
-import { MenuComponent } from './menu/menu';
-import { SearchComponent } from './searchBar/searchBar';
-import { ProfileMenuComponent } from './profileMenu/profileMenu';
-import { SliderComponent} from './slider/slider';
+import {MenuComponent} from './menu/menu';
+import {SearchComponent} from './searchBar/searchBar';
+import {ProfileMenuComponent} from './profileMenu/profileMenu';
+import {SliderComponent} from './slider/slider';
 import {DatePipeComponent, WeatherComponent} from './weather/weather';
 import {SliderArticleComponent} from "./sliderArticle/sliderArticle";
 import {AppComponent} from './app.component';
@@ -55,7 +58,10 @@ const firebaseConfig = {
     FormsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    AngularFireDatabaseModule,
+    HttpClientModule
   ],
   providers: [
     AuthService
