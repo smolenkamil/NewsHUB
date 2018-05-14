@@ -12,4 +12,10 @@ export class SearchComponent {
   sendTag(event){
     this.searchTag=event.target.value;
   }
+  hitEnter(event){
+    if(event.keyCode == 13) {
+      document.getElementById("searchBtn").click();
+    }
+  }
+
 }

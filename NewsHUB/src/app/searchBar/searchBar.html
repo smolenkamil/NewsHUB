@@ -1,4 +1,4 @@
-<form class="form-inline" id="navbarForm">
+<form class="form-inline" id="navbarForm" (keydown)="hitEnter($event)">
   <input class="form-control mr-sm-2" id="navbarSearch" type="search" placeholder="Search articles" aria-label="Search" (input)="sendTag($event)">
   <a [routerLink]="['/search', searchTag]" id="searchBtn">
     <img src="assets/search.png">
