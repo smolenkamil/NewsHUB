@@ -13,9 +13,14 @@ export class ArticleComponent implements OnInit, OnChanges{
   article: Article;
   @Input('articleId')ident:number;
   @Input('cat')catNumber:number;
+  @Input('tagx')tag:string;
 
   ngOnChanges(chang: SimpleChanges){
-    this.article = this.newsx.getArticles(chang.catNumber.currentValue)[this.ident];
+    console.log("ngOnChanges")
+    if(this.tag===undefined)
+      this.article = this.newsx.getArticles(chang.catNumber.currentValue)[this.ident];
+    else
+      this.article = this.newsx.searchArticle(chang.tag.currentValue)[this.ident];
   }
 
   constructor(){
@@ -24,9 +29,13 @@ export class ArticleComponent implements OnInit, OnChanges{
 
 
   ngOnInit(){
+    console.log("ngOnInit")
     if(this.catNumber===undefined)
       this.catNumber=6;
-    this.article = this.newsx.getArticles(this.catNumber)[this.ident];
+    if(this.tag!== undefined)
+      this.article = this.newsx.searchArticle(this.tag)[this.ident];
+    else
+      this.article = this.newsx.getArticles(this.catNumber)[this.ident];
   }
 
 }
