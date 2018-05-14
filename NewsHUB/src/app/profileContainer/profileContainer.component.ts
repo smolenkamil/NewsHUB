@@ -11,8 +11,8 @@ export class ProfileContainerComponent implements OnInit {
 
   ngOnInit() {
     document.getElementById('logOutBtn').addEventListener('click', () => {
-      var logIn = document.getElementById('logOutBtn');
-      if (logIn.innerHTML == 'logout' || logIn.innerHTML == 'WYLOGUJ') {
+      var logOut = document.getElementById('logOutBtn');
+      if (logOut.innerHTML == 'logout' || logOut.innerHTML == 'WYLOGUJ') {
         this.authService.logout();
       }
     });

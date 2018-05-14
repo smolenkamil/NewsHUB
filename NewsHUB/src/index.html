@@ -52,7 +52,7 @@
       firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
           user.getIdToken().then(function(accessToken) {
-            // document.getElementById('logInBtn').textContent = 'LOG OUT';
+            document.getElementById('logInBtn').textContent = 'LOG OUT';
             if (document.getElementById('profileDiv')) {
               document.getElementById('username').innerHTML = user.displayName;
               document.getElementById('inputUsername').setAttribute('placeholder', user.displayName);

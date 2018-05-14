@@ -6,5 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./btnLogin.css']
 })
 export class BtnLoginComponent implements OnInit {
-  ngOnInit() {}
+
+  ngOnInit() {
+  }
 }
