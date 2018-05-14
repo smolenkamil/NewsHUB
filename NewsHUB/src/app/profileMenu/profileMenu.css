@@ -1,73 +1,26 @@
-.dropdown {
+@media only screen and (max-width: 1200px) {
+  #logInBtn {
+    visibility: hidden;
+  }
+}
+
+.profileBtn {
   position: relative;
   display: inline;
 }
 
-.dropdown:hover .dropdown-content {
+.profileBtn:hover {
   display: block;
 }
 
 #profileBtn {
   padding: 11px;
   float: right;
+  margin-right: 10px;
 }
 
-.dropbtn:hover, .dropbtn:focus {
+#profileBtn:hover, #profileBtn:focus {
   background-color: #53A2BE;
   padding: 11px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 70px;
-  left: 780px;
-  background-color: #53A2BE;
-  min-width: 250px;
-  box-shadow: 2px 3px 10px #707070;
-  z-index: 1;
-}
-
-.navbar-brand {
-  color: white;
-  font-weight: 600;
-  padding: 12px 16px;
-  text-decoration: none;
-  font-size: 18px;
-  display: block;
-}
-
-.navbar-brand img {
-  float: left;
-  margin-right: 6%;
-}
-
-.dropdown-content hr {
-  padding: 0;
-  width: 94%;
-  margin: 0 auto;
-  background-color: #333333;
-}
-
-.navbar-brand:hover {
-  background-color: #6FB1C8;
-  width: 100%;
-}
-
-.navbar-brand:hover img {
-  margin-right: 6%;
-}
-
-.navbar-brand:first-child {
-  line-height: 1;
-  height: 65px;
-  vertical-align: baseline;
-}
-
-#userName {
-  font-size: 20px;
-}
-
-#userEmail {
-  font-size: 13px;
+  margin-right: 10px;
 }
