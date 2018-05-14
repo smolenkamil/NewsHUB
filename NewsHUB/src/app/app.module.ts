@@ -24,6 +24,8 @@ import {HomepageComponent} from "./homepage/homepage.component";
 import {ArticleComponent} from "./article/article";
 import {BtnLoginComponent} from "./btnLogIn/btnLogin";
 import {AboutProjectComponent} from "./aboutProject/aboutProject.component";
+import {CatMenuComponent} from "./categoriesMenu/categoriesMenu";
+import {BtnAboutProjectComponent} from "./btnAboutProject/btnAboutProject";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAMc1KI-zlkosp7qLKeMB4_F5Nvv82C-FM",
@@ -38,6 +40,7 @@ const firebaseConfig = {
   declarations: [
     BtnLoginComponent,
     MenuComponent,
+    CatMenuComponent,
     SearchComponent,
     ProfileMenuComponent,
     SliderComponent,
@@ -51,7 +54,8 @@ const firebaseConfig = {
     CategoriesChoiceComponent,
     WeatherChoiceComponent,
     HomepageComponent,
-    AboutProjectComponent
+    AboutProjectComponent,
+    BtnAboutProjectComponent
   ],
   imports: [
     BrowserModule,

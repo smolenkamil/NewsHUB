@@ -64,17 +64,18 @@
 #napis{
   text-align: center;
   font-size: 1.3vw;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 #mainContainer{
   background-color: #fefefe;
 }
 
-#hr1{
-  margin-bottom: 0;
-  margin-top: 0;
-  width: 100%;
+.hr{
+  background-color: #717171;
+  height: 1px;
+  width: 70%;
+  margin-left: 15%;
 }
 
 /*.hidden {*/
