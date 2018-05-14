@@ -52,25 +52,27 @@
       firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
           user.getIdToken().then(function(accessToken) {
-            document.getElementById('logInBtn').textContent = 'WYLOGUJ';
+            // document.getElementById('logInBtn').textContent = 'LOG OUT';
             if (document.getElementById('profileDiv')) {
               document.getElementById('username').innerHTML = user.displayName;
               document.getElementById('inputUsername').setAttribute('placeholder', user.displayName);
               document.getElementById('inputEmail').setAttribute('placeholder', user.email);
               document.getElementById('userImage').setAttribute('src', user.photoURL);
               document.getElementById('profileFiller').classList.add('hidden');
-              // document.getElementById('id01').classList.add('hidden');
-              // document.getElementById('logInBtn').classList.add('hidden');
+              document.getElementById('logInBtn').classList.add('hidden');
+              document.getElementById('logInBtn').setAttribute('onclick', "");
+              document.getElementById('id01').classList.add('hidden');
             }
           });
         } else {
           // User is signed out.
-          document.getElementById('logInBtn').textContent = 'ZALOGUJ';
+          document.getElementById('logInBtn').textContent = 'LOG IN';
           if (document.getElementById('profileDiv')) {
             document.getElementById('profileMain').classList.add('hidden');
             document.getElementById('logInCommunicate').classList.remove('hidden');
-            // document.getElementById('id01').classList.remove('hidden');
-            // document.getElementById('logInBtn').classList.remove('hidden');
+            document.getElementById('logInBtn').setAttribute('onclick', "document.getElementById('id01').style.display='block'");
+            document.getElementById('id01').classList.remove('hidden');
+            document.getElementById('logInBtn').classList.remove('hidden');
           }
         }
       }, function(error) {
@@ -93,13 +95,15 @@
             document.getElementById('inputEmail').setAttribute('placeholder', user.email);
             document.getElementById('userImage').setAttribute('src', user.photoURL);
             document.getElementById('profileFiller').classList.add('hidden');
-            // document.getElementById('id01').classList.add('hidden');
-            // document.getElementById('logInBtn').classList.add('hidden');
+            document.getElementById('logInBtn').setAttribute('onclick', "");
+            document.getElementById('id01').classList.add('hidden');
+            document.getElementById('logInBtn').classList.add('hidden');
           } else {
             document.getElementById('profileMain').classList.add('hidden');
             document.getElementById('logInCommunicate').classList.remove('hidden');
-            // document.getElementById('id01').classList.remove('hidden');
-            // document.getElementById('logInBtn').classList.remove('hidden');
+            document.getElementById('logInBtn').setAttribute('onclick', "document.getElementById('id01').style.display='block'");
+            document.getElementById('id01').classList.remove('hidden');
+            document.getElementById('logInBtn').classList.remove('hidden');
           }
         })
       }

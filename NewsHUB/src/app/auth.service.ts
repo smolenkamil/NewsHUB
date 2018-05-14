@@ -44,9 +44,10 @@ export class AuthService {
   //     });
   // }
   logout() {
-    this.afAuth.auth.signOut().then(() => {
-      this.router.navigate(['/']);
-    });
+    this.afAuth.auth.signOut()
+      .then(() => {
+        this.router.navigate(['homepage']);
+      });
   }
   private oAuthLogin(provider) {
     return this.afAuth.auth.signInWithPopup(provider);
