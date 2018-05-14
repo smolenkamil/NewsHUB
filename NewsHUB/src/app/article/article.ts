@@ -19,12 +19,12 @@ export class ArticleComponent implements OnInit, OnChanges{
   }
 
   constructor(){
-    if(this.catNumber===0)
-      this.catNumber=0;
     this.newsx = new NewsProvider()
   }
 
   ngOnInit(){
+    if(this.catNumber===undefined)
+      this.catNumber=6;
     this.article = this.newsx.getArticle(this.catNumber);
     this.newsx.eraseArticles();
   }
