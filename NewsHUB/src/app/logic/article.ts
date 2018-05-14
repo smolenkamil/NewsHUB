@@ -16,4 +16,16 @@ export class Article{
   get urlToImg(): string {
     return this._urlToImg;
   }
+
+  setTitle(value: string) {
+    this._title = value;
+  }
+
+  setDescription(value: string) {
+    this._description = value;
+  }
+
+  setUrlToImg(value: string) {
+    this._urlToImg = value;
+  }
 }
