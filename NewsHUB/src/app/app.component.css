@@ -12,8 +12,8 @@
 #newsContainer {
   overflow: hidden;
   width: 100%;
-  padding-bottom: 5vw;
   background-color: white;
+  padding-bottom: 5vw;
   float: left;
 }
 

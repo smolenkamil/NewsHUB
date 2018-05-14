@@ -7,6 +7,7 @@ import {AboutProjectComponent} from "./aboutProject/aboutProject.component";
 
 const routes: Routes = [
   {path: '', redirectTo: 'homepage', pathMatch: 'full'},
+  {path: 'homepage/:cat', component: HomepageComponent},
   {path: 'homepage', component: HomepageComponent},
   {path: 'profile', component: ProfileContainerComponent},
   {path: 'about', component: AboutProjectComponent}
