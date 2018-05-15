@@ -22,11 +22,11 @@ import {CategoriesChoiceComponent} from "./categoriesChoice/categoriesChoice";
 import {WeatherChoiceComponent} from "./weatherChoice/weatherChoice";
 import {HomepageComponent} from "./homepage/homepage.component";
 import {ArticleComponent} from "./article/article";
-import {BtnLoginComponent} from "./btnLogIn/btnLogin";
 import {AboutProjectComponent} from "./aboutProject/aboutProject.component";
 import {CatMenuComponent} from "./categoriesMenu/categoriesMenu";
 import {BtnAboutProjectComponent} from "./btnAboutProject/btnAboutProject";
 import {SearchContainerComponent} from "./searchContainer/searchContainer";
+import {LoginContainerComponent} from "./loginContainer/loginContainer.component";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAMc1KI-zlkosp7qLKeMB4_F5Nvv82C-FM",
@@ -39,7 +39,6 @@ const firebaseConfig = {
 
 @NgModule({
   declarations: [
-    BtnLoginComponent,
     MenuComponent,
     SearchContainerComponent,
     CatMenuComponent,
@@ -57,7 +56,8 @@ const firebaseConfig = {
     WeatherChoiceComponent,
     HomepageComponent,
     AboutProjectComponent,
-    BtnAboutProjectComponent
+    BtnAboutProjectComponent,
+    LoginContainerComponent
   ],
   imports: [
     BrowserModule,

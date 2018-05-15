@@ -59,9 +59,6 @@
               document.getElementById('inputEmail').setAttribute('placeholder', user.email);
               document.getElementById('userImage').setAttribute('src', user.photoURL);
               document.getElementById('profileFiller').classList.add('hidden');
-              document.getElementById('logInBtn').classList.add('hidden');
-              document.getElementById('logInBtn').setAttribute('onclick', "");
-              document.getElementById('id01').classList.add('hidden');
             }
           });
         } else {
@@ -70,9 +67,6 @@
           if (document.getElementById('profileDiv')) {
             document.getElementById('profileMain').classList.add('hidden');
             document.getElementById('logInCommunicate').classList.remove('hidden');
-            document.getElementById('logInBtn').setAttribute('onclick', "document.getElementById('id01').style.display='block'");
-            document.getElementById('id01').classList.remove('hidden');
-            document.getElementById('logInBtn').classList.remove('hidden');
           }
         }
       }, function(error) {
@@ -95,15 +89,9 @@
             document.getElementById('inputEmail').setAttribute('placeholder', user.email);
             document.getElementById('userImage').setAttribute('src', user.photoURL);
             document.getElementById('profileFiller').classList.add('hidden');
-            document.getElementById('logInBtn').setAttribute('onclick', "");
-            document.getElementById('id01').classList.add('hidden');
-            document.getElementById('logInBtn').classList.add('hidden');
           } else {
             document.getElementById('profileMain').classList.add('hidden');
             document.getElementById('logInCommunicate').classList.remove('hidden');
-            document.getElementById('logInBtn').setAttribute('onclick', "document.getElementById('id01').style.display='block'");
-            document.getElementById('id01').classList.remove('hidden');
-            document.getElementById('logInBtn').classList.remove('hidden');
           }
         })
       }

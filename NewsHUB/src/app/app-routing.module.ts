@@ -5,6 +5,7 @@ import {ProfileContainerComponent} from "./profileContainer/profileContainer.com
 import {HomepageComponent} from "./homepage/homepage.component";
 import {AboutProjectComponent} from "./aboutProject/aboutProject.component";
 import {SearchContainerComponent} from "./searchContainer/searchContainer";
+import {LoginContainerComponent} from "./loginContainer/loginContainer.component";
 
 const routes: Routes = [
   {path: '', redirectTo: 'homepage', pathMatch: 'full'},
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'homepage/:cat', component: HomepageComponent},
   {path: 'homepage', component: HomepageComponent},
   {path: 'profile', component: ProfileContainerComponent},
-  {path: 'about', component: AboutProjectComponent}
+  {path: 'about', component: AboutProjectComponent},
+  {path: 'login', component: LoginContainerComponent}
 ];
 
 @NgModule({

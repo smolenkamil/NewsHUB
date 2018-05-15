@@ -1,6 +1,7 @@
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 500px) {
   .profileBtn {
-    visibility: hidden;
+    display: none !important;
+    visibility: hidden !important;
   }
 }
 
