@@ -4,8 +4,9 @@ import { Weather } from "./weather";
 export class WeatherProvider {
   readonly MAIN_URL = "https://api.openweathermap.org/data/2.5/"
   readonly ENDPOINT = "weather"
-  defaultCityId = "756135"  //Warsaw
-  cityId = "?id="+this.defaultCityId
+  warsawId = "756135"
+  krakowId = "3094802"
+  cityId = "?id="+this.krakowId
   metricUnits = "&units=metric"
   langPl = "&lang=en"
   readonly APIKEY = "&APPID=e7aa07ccc31d9b3a6b07d4e7e5ed9349"
