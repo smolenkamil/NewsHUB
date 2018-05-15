@@ -20,14 +20,14 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /***/ "./src/app/aboutProject/aboutProject.component.css":
 /***/ (function(module, exports) {
 
-module.exports = "@import url('https://fonts.googleapis.com/css?family=Lora:400,700&subset=latin-ext');\n\n#aboutContent {\n  width: 70%;\n  height: 76vw;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 2vw;\n  font-family: 'Lora', serif;\n  /*background-color: #1c94c4;*/\n}\n\n#projectInfo {\n  width: auto;\n  height: 39vw;\n  padding-bottom: 2vw;\n  margin-top: 3vw;\n  margin-bottom: 4vw;\n  text-align: center;\n  font-size: 0.9vw;\n  border-bottom: 1px solid #888888;\n  /*background-color: #6FB1C8;*/\n}\n\nh1 {\n  text-align: center;\n  margin-bottom: 1.5vw;\n  font-weight: 700;\n  font-family: 'Lora', serif;\n}\n\np a {\n  color: dodgerblue;\n}\n\n.toolsImages {\n  width: 5vw;\n  height: 5vw;\n  float: left;\n  border-radius: 50%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  margin-left: 2.1vw;\n  margin-top: 1.5vw;\n}\n\n#squadInfo {\n  width: auto;\n  height: 32vw;\n  margin-top: 2vw;\n  padding-bottom: 2vw;\n  /*background-color: #6FB1C8;*/\n}\n\n#squadInfo h1 {\n  margin-bottom: 2.5vw;\n}\n\n.person {\n  width: 40%;\n  height: 12vw;\n  float: left;\n  margin-left: 7%;\n  margin-bottom: 2vw;\n  padding-top: 2vw;\n  border: 1px solid #888888;\n  border-radius: 10px;\n  background-color: rgba(158, 203, 213, 0.3);\n}\n\n.person h4 {\n  text-align: center;\n  font-weight: 700;\n  font-family: 'Lora', serif;\n}\n\n.squadPhotos {\n  width: 6vw;\n  height: 6vw;\n  border: 1px solid black;\n  border-radius: 50%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  margin-left: 6vw;\n}\n"
+module.exports = "@import url('https://fonts.googleapis.com/css?family=Lora:400,700&subset=latin-ext');\n\n#aboutContent {\n  width: 70%;\n  height: 120vw;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 2vw;\n  font-family: 'Lora', serif;\n  /*background-color: #1c94c4;*/\n}\n\n#projectInfo {\n  width: auto;\n  height: 39vw;\n  padding-bottom: 2vw;\n  margin-top: 3vw;\n  margin-bottom: 4vw;\n  text-align: center;\n  font-size: 0.9vw;\n  border-bottom: 1px solid #888888;\n  /*background-color: #6FB1C8;*/\n}\n\nh1 {\n  text-align: center;\n  margin-bottom: 1.5vw;\n  font-weight: 700;\n  font-family: 'Lora', serif;\n}\n\np a {\n  color: dodgerblue;\n}\n\n.toolsImages {\n  width: 5vw;\n  height: 5vw;\n  float: left;\n  border-radius: 50%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  margin-left: 2.1vw;\n  margin-top: 1.5vw;\n}\n\n#squadInfo {\n  width: auto;\n  height: 34vw;\n  margin-top: 2vw;\n  padding-bottom: 2vw;\n  border-bottom: 1px solid #888888;\n  /*background-color: #6FB1C8;*/\n}\n\n#squadInfo h1 {\n  margin-bottom: 2.5vw;\n}\n\n.person {\n  width: 40%;\n  height: 12vw;\n  float: left;\n  margin-left: 7%;\n  margin-bottom: 2vw;\n  padding-top: 2vw;\n  border: 1px solid #888888;\n  border-radius: 10px;\n  background-color: rgba(158, 203, 213, 0.3);\n}\n\n.person h4 {\n  text-align: center;\n  font-weight: 700;\n  font-family: 'Lora', serif;\n}\n\n.squadPhotos {\n  width: 6vw;\n  height: 6vw;\n  border: 1px solid black;\n  border-radius: 50%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  margin-left: 6vw;\n}\n\n#workInfo {\n  width: auto;\n  height: auto;\n  margin-top: 2vw;\n  padding-bottom: 2vw;\n  border-bottom: 1px solid #888888;\n  /*background-color: #6FB1C8;*/\n}\n"
 
 /***/ }),
 
 /***/ "./src/app/aboutProject/aboutProject.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"aboutContent\">\n  <div id=\"projectInfo\">\n    <h1>News HUB</h1>\n    <p>\n      The application contains news from a large number of news websites. These messages are obtained using <strong>News API</strong>.\n      On the main page there is an overview of the most popular and the latest news.The application allows you to choose the offered by\n      News API news category, search information and create an account that will enable personalization of displayed content.\n    </p>\n    <p>\n      Account data is stored by using a NoSQL database - <strong>Firebase</strong>. Logging in to the application is possible thanks to the traditional method\n      (email, password) and through the account on the social networking site <strong>Facebook</strong>, or <strong>Google</strong> account.\n    </p>\n    <p>\n      The news on the registered user's home page is customized to his preferences. User\n      will decide which categories will be displayed on the home screen. On the side screen are available\n      information about the weather in the city, which the user chose on the profile page.\n      This functionality will be possible thanks to the use\n      <strong>Open Weather Map API</strong>.\n    </p>\n    <p>\n      The management of project work on the application has been happening on the platform <strong>Trello</strong>\n      (<a href=\"https://trello.com/b/v8KxHUU7\" target=\"_blank\">link</a>),furthermore the <strong>Git</strong> version control system\n      was used to work with the files and  also platform <strong>Github</strong>.\n    </p>\n    <p>\n      The application was implemented on the basis of the prototype, which can be viewed by clicking\n      <a href=\"https://e7fm8t.axshare.com\" target=\"_blank\">on this link</a>, made in the program <strong>Axure RP</strong>.\n      The password for previewing the prototype is a phrase <em>druzynapierscienia</em>.\n    </p>\n    <img src=\"assets/news-api_logo.png\" class=\"toolsImages\" alt=\"NewsAPI\">\n    <img src=\"assets/firebase_logo.png\" class=\"toolsImages\" alt=\"NewsAPI\">\n    <img src=\"assets/OWM_logo.png\" class=\"toolsImages\" alt=\"NewsAPI\">\n    <img src=\"assets/trello_logo.jpg\" class=\"toolsImages\" alt=\"NewsAPI\">\n    <img src=\"assets/git_logo.png\" class=\"toolsImages\" alt=\"NewsAPI\">\n    <img src=\"assets/github_logo.png\" class=\"toolsImages\" alt=\"NewsAPI\">\n  </div>\n  <div id=\"squadInfo\">\n    <h1>Project team</h1>\n    <div class=\"person\">\n      <img src=\"assets/zuza.jpg\" class=\"squadPhotos\" alt=\"Zuza\">\n      <h4>Zuzanna Błażejowska</h4>\n    </div>\n    <div class=\"person\">\n      <img src=\"assets/aga.jpg\" class=\"squadPhotos\" alt=\"Aga\">\n      <h4>Agnieszka Burda</h4>\n    </div>\n    <div class=\"person\">\n      <img src=\"assets/kamil.jpg\" class=\"squadPhotos\" alt=\"Kamil C.\">\n      <h4>Kamil Cała</h4>\n    </div>\n    <div class=\"person\">\n      <img src=\"assets/kazek.jpg\" class=\"squadPhotos\" alt=\"Kamil S.\">\n      <h4>Kamil Smoleń</h4>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div id=\"aboutContent\">\n  <div id=\"projectInfo\">\n    <h1>News HUB</h1>\n    <p>\n      The application contains news from a large number of news websites. These messages are obtained using <strong>News API</strong>.\n      On the main page there is an overview of the most popular and the latest news.The application allows you to choose the offered by\n      News API news category, search information and create an account that will enable personalization of displayed content.\n    </p>\n    <p>\n      Account data is stored by using a NoSQL database - <strong>Firebase</strong>. Logging in to the application is possible thanks to the traditional method\n      (email, password) and through the account on the social networking site <strong>Facebook</strong>, or <strong>Google</strong> account.\n    </p>\n    <p>\n      The news on the registered user's home page is customized to his preferences. User\n      will decide which categories will be displayed on the home screen. On the side screen are available\n      information about the weather in the city, which the user chose on the profile page.\n      This functionality will be possible thanks to the use\n      <strong>Open Weather Map API</strong>.\n    </p>\n    <p>\n      The management of project work on the application has been happening on the platform <strong>Trello</strong>\n      (<a href=\"https://trello.com/b/v8KxHUU7\" target=\"_blank\">link</a>),furthermore the <strong>Git</strong> version control system\n      was used to work with the files and  also platform <strong>Github</strong>.\n    </p>\n    <p>\n      The application was implemented on the basis of the prototype, which can be viewed by clicking\n      <a href=\"https://e7fm8t.axshare.com\" target=\"_blank\">on this link</a>, made in the program <strong>Axure RP</strong>.\n      The password for previewing the prototype is a phrase <em>druzynapierscienia</em>.\n    </p>\n    <img src=\"assets/news-api_logo.png\" class=\"toolsImages\" alt=\"NewsAPI\">\n    <img src=\"assets/firebase_logo.png\" class=\"toolsImages\" alt=\"NewsAPI\">\n    <img src=\"assets/OWM_logo.png\" class=\"toolsImages\" alt=\"NewsAPI\">\n    <img src=\"assets/trello_logo.jpg\" class=\"toolsImages\" alt=\"NewsAPI\">\n    <img src=\"assets/git_logo.png\" class=\"toolsImages\" alt=\"NewsAPI\">\n    <img src=\"assets/github_logo.png\" class=\"toolsImages\" alt=\"NewsAPI\">\n  </div>\n  <div id=\"squadInfo\">\n    <h1>Project team</h1>\n    <div class=\"person\">\n      <img src=\"assets/zuza.jpg\" class=\"squadPhotos\" alt=\"Zuza\">\n      <h4>Zuzanna Błażejowska</h4>\n    </div>\n    <div class=\"person\">\n      <img src=\"assets/aga.jpg\" class=\"squadPhotos\" alt=\"Aga\">\n      <h4>Agnieszka Burda</h4>\n    </div>\n    <div class=\"person\">\n      <img src=\"assets/kamil.jpg\" class=\"squadPhotos\" alt=\"Kamil C.\">\n      <h4>Kamil Cała</h4>\n    </div>\n    <div class=\"person\">\n      <img src=\"assets/kazek.jpg\" class=\"squadPhotos\" alt=\"Kamil S.\">\n      <h4>Kamil Smoleń</h4>\n    </div>\n  </div>\n  <div id=\"workInfo\">\n    <h1>Work report</h1>\n    <div class=\"table-responsive\">\n      <table class=\"table table-hover\">\n        <thead>\n        <tr>\n          <th>Squad member</th>\n          <th>Work done</th>\n          <th>Time</th>\n        </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td>Zuzanna Błażejowska</td>\n            <td>\n              Tutaj<br>\n              wykonana<br>\n              praca\n            </td>\n            <td>\n              1,5h<br>\n              30 mins<br>\n              3h\n            </td>\n          </tr>\n          <tr>\n            <td></td>\n            <td></td>\n            <td><strong>Time in total:</strong></td>\n          </tr>\n          <tr>\n            <td>Agnieszka Burda</td>\n            <td>\n              Tutaj<br>\n              wykonana<br>\n              praca\n            </td>\n            <td>\n              1,5h<br>\n              30 mins<br>\n              3h\n            </td>\n          </tr>\n          <tr>\n            <td></td>\n            <td></td>\n            <td><strong>Time in total:</strong></td>\n          </tr>\n          <tr>\n            <td>Kamil Cała (project manager)</td>\n            <td>\n              Tutaj<br>\n              wykonana<br>\n              praca\n            </td>\n            <td>\n              1,5h<br>\n              30 mins<br>\n              3h\n            </td>\n          </tr>\n          <tr>\n            <td></td>\n            <td></td>\n            <td><strong>Time in total:</strong></td>\n          </tr>\n          <tr>\n            <td>Kamil Smoleń</td>\n            <td>\n              Tutaj<br>\n              wykonana<br>\n              praca\n            </td>\n            <td>\n              1,5h<br>\n              30 mins<br>\n              3h\n            </td>\n          </tr>\n          <tr>\n            <td></td>\n            <td></td>\n            <td><strong>Time in total:</strong></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -87,10 +87,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 var routes = [
-    { path: '', redirectTo: 'homepage', pathMatch: 'full' },
+    { path: '', redirectTo: 'homepage/6', pathMatch: 'full' },
     { path: 'search/:tag', component: __WEBPACK_IMPORTED_MODULE_5__searchContainer_searchContainer__["a" /* SearchContainerComponent */] },
     { path: 'homepage/:cat', component: __WEBPACK_IMPORTED_MODULE_3__homepage_homepage_component__["a" /* HomepageComponent */] },
-    { path: 'homepage', component: __WEBPACK_IMPORTED_MODULE_3__homepage_homepage_component__["a" /* HomepageComponent */] },
+    { path: 'homepage/6', component: __WEBPACK_IMPORTED_MODULE_3__homepage_homepage_component__["a" /* HomepageComponent */] },
     { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_2__profileContainer_profileContainer_component__["a" /* ProfileContainerComponent */] },
     { path: 'about', component: __WEBPACK_IMPORTED_MODULE_4__aboutProject_aboutProject_component__["a" /* AboutProjectComponent */] },
     { path: 'login', component: __WEBPACK_IMPORTED_MODULE_6__loginContainer_loginContainer_component__["a" /* LoginContainerComponent */] }
@@ -121,7 +121,7 @@ module.exports = "@media only screen and (max-width: 500px) {\n  #logInBtn {\n  
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav id=\"header\">\n  <!--<hamburgerBtn></hamburgerBtn>-->\n  <img routerLink=\"homepage\" class=\"logoTop\" src=\"assets/newshub_logo_small.png\"/>\n  <button type=\"button\" class=\"btn btn-light\" id=\"logInBtn\" routerLink=\"login\">LOG IN</button>\n  <profileMenu></profileMenu>\n  <searchBar></searchBar>\n</nav>\n<catMenu></catMenu>\n<div id=\"content\">\n  <div id=\"newsContainer\">\n    <router-outlet></router-outlet>\n  </div>\n  <weather></weather>\n</div>\n\n<nav class=\"navbar\" id=\"footer\">\n  <img class=\"logoBottom\" src=\"assets/newshub_logo_small.png\"/>\n  <div id=\"footerContent\">\n    <p>Copyright Ⓒ 2018 Drużyna Pierścienia. All rights reserved.</p>\n  </div>\n  <btnAboutProject></btnAboutProject>\n</nav>\n"
+module.exports = "<nav id=\"header\">\n  <!--<hamburgerBtn></hamburgerBtn>-->\n  <img routerLink=\"homepage/6\" class=\"logoTop\" src=\"assets/newshub_logo_small.png\"/>\n  <button type=\"button\" class=\"btn btn-light\" id=\"logInBtn\" routerLink=\"login\">LOG IN</button>\n  <profileMenu></profileMenu>\n  <searchBar></searchBar>\n</nav>\n<catMenu></catMenu>\n<div id=\"content\">\n  <div id=\"newsContainer\">\n    <router-outlet></router-outlet>\n  </div>\n  <weather></weather>\n</div>\n\n<nav class=\"navbar\" id=\"footer\">\n  <img class=\"logoBottom\" src=\"assets/newshub_logo_small.png\"/>\n  <div id=\"footerContent\">\n    <p>Copyright Ⓒ 2018 Drużyna Pierścienia. All rights reserved.</p>\n  </div>\n  <btnAboutProject></btnAboutProject>\n</nav>\n"
 
 /***/ }),
 
@@ -304,6 +304,7 @@ module.exports = "<div class=\"article\">\n  <div class=\"imagePane\">\n    <img
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ArticleComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__logic_news__ = __webpack_require__("./src/app/logic/news.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__logic_article__ = __webpack_require__("./src/app/logic/article.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -315,26 +316,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var ArticleComponent = /** @class */ (function () {
     function ArticleComponent() {
         this.newsx = new __WEBPACK_IMPORTED_MODULE_1__logic_news__["a" /* NewsProvider */]();
     }
     ArticleComponent.prototype.ngOnChanges = function (chang) {
-        console.log("ngOnChanges");
-        if (this.tag === undefined)
-            this.article = this.newsx.getArticles(chang.catNumber.currentValue)[this.ident];
-        else
-            this.article = this.newsx.searchArticle(chang.tag.currentValue)[this.ident];
+        this.article = chang.article.currentValue;
     };
     ArticleComponent.prototype.ngOnInit = function () {
-        console.log("ngOnInit");
         if (this.catNumber === undefined)
             this.catNumber = 6;
-        if (this.tag !== undefined)
-            this.article = this.newsx.searchArticle(this.tag)[this.ident];
-        else
-            this.article = this.newsx.getArticles(this.catNumber)[this.ident];
     };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])('articleFromArray'),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__logic_article__["a" /* Article */])
+    ], ArticleComponent.prototype, "article", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])('articleId'),
         __metadata("design:type", Number)
@@ -543,7 +540,7 @@ module.exports = "#catMenu {\n  min-height: 40px;\n  background-color: #53A2BE;\
 /***/ "./src/app/categoriesMenu/categoriesMenu.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav id=\"catMenu\">\n  <a class=\"cat\" [routerLink]=\"['/homepage',category.id]\" [ngStyle]=\"{'color': 'white'}\" *ngFor=\"let category of categories\">{{category.name}}</a>\n</nav>\n"
+module.exports = "<div id=\"catDiv\"></div>\n<nav id=\"catMenu\">\n  <a class=\"cat\" [routerLink]=\"['/homepage',category.id]\" [ngStyle]=\"{'color': 'white'}\" *ngFor=\"let category of categories\">{{category.name}}</a>\n</nav>\n"
 
 /***/ }),
 
@@ -603,7 +600,7 @@ module.exports = ""
 /***/ "./src/app/homepage/homepage.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<slider></slider>\n<article [cat]=catId *ngFor=\"let article of articles; let i = index\" [articleId]=\"i\"></article>\n\n"
+module.exports = "<slider></slider>\n<article [cat]=catId [articleFromArray]=articles[i] *ngFor=\"let article of articles; let i = index\" [articleId]=\"i\"></article>\n"
 
 /***/ }),
 
@@ -632,14 +629,11 @@ var HomepageComponent = /** @class */ (function () {
         this.route = route;
         this.newsx = new __WEBPACK_IMPORTED_MODULE_2__logic_news__["a" /* NewsProvider */]();
     }
-    HomepageComponent.prototype.ngOnChanges = function (chang) {
-        this.articles = this.newsx.getArticles(chang.catNumber.currentValue);
-    };
     HomepageComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.articles = this.newsx.getArticles(this.catId);
         this.route.params.subscribe(function (params) {
             _this.catId = params['cat'];
+            _this.articles = _this.newsx.getArticles(_this.catId);
         });
     };
     HomepageComponent = __decorate([
@@ -701,7 +695,10 @@ var Article = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__article__ = __webpack_require__("./src/app/logic/article.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__("./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__article__ = __webpack_require__("./src/app/logic/article.ts");
+
 
 var NewsProvider = /** @class */ (function () {
     function NewsProvider() {
@@ -709,51 +706,56 @@ var NewsProvider = /** @class */ (function () {
         this.CATEGORIES = ["business", "entertainment", "health", "science", "sports", "technology", "general"];
         this.APIKEY = "&apiKey=575d0735025241fda1b32a047f19dcd3";
         this.articles = [];
+        this.wantedArticles = [];
     }
     NewsProvider.prototype.getArticles = function (cat) {
+        var _this = this;
         this.articles = [];
-        // $.ajaxSetup({'async': false});
-        // $.getJSON(this.MAIN_URL+"?category="+this.CATEGORIES[cat]+"&country=gb"+this.APIKEY, (data) => {
-        //   let ix = 0;
-        //   for(let i=0;i<data.articles.length;i++){
-        //     if(data.articles[i].title!==null && data.articles[i].urlToImage !== null && data.articles[i].description !== null ) {
-        //       this.articles[ix] = new Article(data.articles[i].title,data.articles[i].description,data.articles[i].urlToImage )
-        //       ix++;
-        //
-        //     }
-        //   }
-        // });
-        // $.getJSON(this.MAIN_URL+"?category="+this.CATEGORIES[cat]+"&country=us"+this.APIKEY, (data) => {
-        //   let ix = this.articles.length;
-        //   for(let i=0;i<data.articles.length;i++){
-        //     if(data.articles[i].title!==null && data.articles[i].urlToImage !== null && data.articles[i].description !== null ) {
-        //       this.articles[ix] = new Article(data.articles[i].title,data.articles[i].description,data.articles[i].urlToImage )
-        //       ix++;
-        //     }
-        //   }
-        // });
-        for (var i = 0; i < 17; i++) {
-            this.articles[i] = new __WEBPACK_IMPORTED_MODULE_0__article__["a" /* Article */](this.CATEGORIES[cat] + "  " + i + "    !!", "bleb belb bleb elbelb bleblebel belbeblbel blebelblebl ebe blebleble bb lebleb lebleblbel. Bblelblelblbelbbellbleb eblebleb lbelebl l elblebblelb blele. lblbelbelellbleble!", "http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg");
-        }
+        __WEBPACK_IMPORTED_MODULE_0_jquery__["ajaxSetup"]({ 'async': false });
+        __WEBPACK_IMPORTED_MODULE_0_jquery__["getJSON"](this.MAIN_URL + "?category=" + this.CATEGORIES[cat] + "&country=gb" + this.APIKEY, function (data) {
+            var ix = 0;
+            for (var i = 0; i < data.articles.length; i++) {
+                if (data.articles[i].title !== null && data.articles[i].urlToImage !== null && data.articles[i].description !== null) {
+                    _this.articles[ix] = new __WEBPACK_IMPORTED_MODULE_1__article__["a" /* Article */](data.articles[i].title, data.articles[i].description, data.articles[i].urlToImage);
+                    ix++;
+                }
+            }
+        });
+        __WEBPACK_IMPORTED_MODULE_0_jquery__["getJSON"](this.MAIN_URL + "?category=" + this.CATEGORIES[cat] + "&country=us" + this.APIKEY, function (data) {
+            var ix = _this.articles.length;
+            for (var i = 0; i < data.articles.length; i++) {
+                if (data.articles[i].title !== null && data.articles[i].urlToImage !== null && data.articles[i].description !== null) {
+                    _this.articles[ix] = new __WEBPACK_IMPORTED_MODULE_1__article__["a" /* Article */](data.articles[i].title, data.articles[i].description, data.articles[i].urlToImage);
+                    ix++;
+                }
+            }
+        });
+        console.log("+2");
+        // for(let i=0;i<17;i++){
+        //   this.articles[i] = new Article(this.CATEGORIES[cat]+"  "+ i+ "    !!","bleb belb bleb elbelb bleblebel belbeblbel blebelblebl ebe blebleble bb lebleb lebleblbel. Bblelblelblbelbbellbleb eblebleb lbelebl l elblebblelb blele. lblbelbelellbleble!","http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg" )
+        // }
         console.log(this.articles.length);
         return this.articles;
     };
     NewsProvider.prototype.searchArticle = function (tag) {
+        var _this = this;
         this.wantedArticles = [];
-        // $.ajaxSetup({'async': false});
-        // $.getJSON("https://newsapi.org/v2/everything?q="+tag+this.APIKEY, (data) => {
-        //   let ix = 0;
-        //   for(let i=0;i<data.articles.length;i++){
-        //     if(data.articles[i].title!==null && data.articles[i].urlToImage !== null && data.articles[i].description !== null ) {
-        //       this.articles[ix] = new Article(data.articles[i].title,data.articles[i].description,data.articles[i].urlToImage )
-        //       ix++;
-        //
-        //     }
-        //   }
-        // });
-        for (var i = 0; i < 5; i++) {
-            this.wantedArticles[i] = new __WEBPACK_IMPORTED_MODULE_0__article__["a" /* Article */](tag + "  " + i + "    !!", "bleb belb bleb elbelb bleblebel belbeblbel blebelblebl ebe blebleble bb lebleb lebleblbel. Bblelblelblbelbbellbleb eblebleb lbelebl l elblebblelb blele. lblbelbelellbleble!", "http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg");
-        }
+        __WEBPACK_IMPORTED_MODULE_0_jquery__["ajaxSetup"]({ 'async': false });
+        __WEBPACK_IMPORTED_MODULE_0_jquery__["getJSON"]("https://newsapi.org/v2/top-headlines?q=" + tag + "&pageSize=100" + this.APIKEY, function (data) {
+            console.log(data.status + data.totalResults);
+            var ix = 0;
+            for (var i = 0; i < data.articles.length; i++) {
+                if (data.articles[i].title !== null && data.articles[i].urlToImage !== null && data.articles[i].description !== null) {
+                    _this.wantedArticles[ix] = new __WEBPACK_IMPORTED_MODULE_1__article__["a" /* Article */](data.articles[i].title, data.articles[i].description, data.articles[i].urlToImage);
+                    ix++;
+                }
+            }
+        });
+        console.log("+1");
+        // for(let i=0;i<5;i++){
+        //   this.wantedArticles[i] = new Article(tag+"  "+ i+ "    !!","bleb belb bleb elbelb bleblebel belbeblbel blebelblebl ebe blebleble bb lebleb lebleblbel. Bblelblelblbelbbellbleb eblebleb lbelebl l elblebblelb blele. lblbelbelellbleble!","http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg" )
+        // }
+        console.log(this.wantedArticles.length);
         return this.wantedArticles;
     };
     return NewsProvider;
@@ -769,7 +771,7 @@ var NewsProvider = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Weather; });
 var Weather = /** @class */ (function () {
-    function Weather(temp, name, windSpeed, pressure, humidity, description, icon) {
+    function Weather(temp, name, windSpeed, pressure, humidity, description, icon, clouds) {
         this._temp = temp;
         this._name = name;
         this._speed = windSpeed;
@@ -777,6 +779,7 @@ var Weather = /** @class */ (function () {
         this._humidity = humidity;
         this._description = description;
         this._icon = icon;
+        this._clouds = clouds;
     }
     Object.defineProperty(Weather.prototype, "temp", {
         get: function () {
@@ -827,6 +830,13 @@ var Weather = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
+    Object.defineProperty(Weather.prototype, "clouds", {
+        get: function () {
+            return this._clouds;
+        },
+        enumerable: true,
+        configurable: true
+    });
     return Weather;
 }());
 
@@ -848,8 +858,9 @@ var WeatherProvider = /** @class */ (function () {
     function WeatherProvider() {
         this.MAIN_URL = "https://api.openweathermap.org/data/2.5/";
         this.ENDPOINT = "weather";
-        this.defaultCityId = "756135"; //Warsaw
-        this.cityId = "?id=" + this.defaultCityId;
+        this.warsawId = "756135";
+        this.krakowId = "3094802";
+        this.cityId = "?id=" + this.krakowId;
         this.metricUnits = "&units=metric";
         this.langPl = "&lang=en";
         this.APIKEY = "&APPID=e7aa07ccc31d9b3a6b07d4e7e5ed9349";
@@ -876,18 +887,19 @@ var WeatherProvider = /** @class */ (function () {
     }
     WeatherProvider.prototype.getWeather = function () {
         var _this = this;
-        var tempxx, namexx, speedxx, pressxx, humxx, descxx, iconxx;
+        var tempxx, namexx, speedxx, pressxx, humxx, descxx, iconxx, cloudsxx;
         __WEBPACK_IMPORTED_MODULE_0_jquery__["ajaxSetup"]({ 'async': false });
         __WEBPACK_IMPORTED_MODULE_0_jquery__["getJSON"](this.MAIN_URL + this.ENDPOINT + this.cityId + this.metricUnits + this.langPl + this.APIKEY, function (data) {
             if (data.main.temp !== null && data.name !== null && data.wind.speed !== null
                 && data.main.pressure !== null && data.main.humidity !== null && data.weather[0].description !== null
-                && data.weather[0].icon !== null) {
+                && data.weather[0].icon !== null && data.clouds.all !== null) {
                 _this.tempx = data.main.temp;
                 _this.namex = data.name;
                 _this.windSpeedx = data.wind.speed;
                 _this.pressurex = data.main.pressure;
                 _this.humidityx = data.main.humidity;
                 _this.descriptionx = data.weather[0].description;
+                _this.cloudsx = data.clouds.all;
                 switch (data.weather[0].icon) {
                     //day
                     case '01d':
@@ -957,8 +969,9 @@ var WeatherProvider = /** @class */ (function () {
             humxx = _this.humidityx;
             descxx = _this.descriptionx;
             iconxx = _this.iconx;
+            cloudsxx = _this.cloudsx;
         });
-        return new __WEBPACK_IMPORTED_MODULE_1__weather__["a" /* Weather */](tempxx, namexx, speedxx, pressxx, humxx, descxx, iconxx);
+        return new __WEBPACK_IMPORTED_MODULE_1__weather__["a" /* Weather */](tempxx, namexx, speedxx, pressxx, humxx, descxx, iconxx, cloudsxx);
     };
     return WeatherProvider;
 }());
@@ -970,14 +983,14 @@ var WeatherProvider = /** @class */ (function () {
 /***/ "./src/app/loginContainer/loginContainer.component.css":
 /***/ (function(module, exports) {
 
-module.exports = "#loginContent {\n  width: 100%;\n  height: 30vw;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 2vw;\n  font-family: 'Lora', serif;\n  /*background-color: #1c94c4;*/\n}\n\n#profileContent {\n  width: 100%;\n  overflow: hidden;\n}\n\n#napis{\n  text-align: center;\n  font-size: 1.8vw;\n  font-weight: lighter;\n}\n\n.hr{\n  background-color: #717171;\n  height: 1px;\n  width: 40%;\n  margin-top: 1vw;\n  margin-bottom: 1vw;\n  margin-left: 30%;\n}\n\n#fireAuthCont {\n  width: 100%;\n  height: auto;\n}\n\n#logOutCommunicate {\n  text-align: center;\n}\n\n#goToProfile {\n  color: dodgerblue;\n}\n\n#goToProfile:hover, #goToProfile:focus {\n  text-decoration: underline;\n  cursor: pointer;\n}\n"
+module.exports = "#loginContent {\n  width: 100%;\n  height: 30vw;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 3vw;\n  /*background-color: #1c94c4;*/\n}\n\n#profileContent {\n  width: 100%;\n  overflow: hidden;\n}\n\n#napis{\n  text-align: center;\n  font-size: 1.8vw;\n  font-weight: lighter;\n  font-family: 'Lora', serif;\n}\n\n.hr{\n  background-color: #717171;\n  height: 1px;\n  width: 40%;\n  margin-top: 1vw;\n  margin-bottom: 1vw;\n  margin-left: 30%;\n}\n\n#fireAuthCont {\n  width: 60%;\n  height: 23vw;\n  margin-left: auto;\n  margin-right: auto;\n  /*background-color: #9ECBDA;*/\n}\n\np {\n  text-align: center;\n  font-family: 'Lora', serif;\n  font-size: 1vw;\n}\n\nh5 {\n  font-size: 1.2vw;\n  font-weight: 400;\n  text-align: center;\n  font-family: 'Lora', serif;\n  margin-bottom: 0.8vw;\n}\n\nlabel {\n  text-align: right;\n  font-size: 0.9vw;\n}\n\nlabel img {\n  margin-bottom: 0.2vw;\n}\n\n.form-control {\n  font-size: 0.9vw;\n}\n\n.dl .col-sm-2.col-form-label {\n  padding-top: 0;\n}\n\n.form-group.row {\n  height: 2.5vw;\n  margin-left: 11vw;\n  margin-bottom: 0.2vw;\n}\n\n#signupSubmit {\n  float: left;\n  border: none;\n  margin-top: 0.7vw;\n  margin-left: 16.1vw;\n  color: white;\n  width: 7vw;\n  height: 2vw;\n  font-weight: 600;\n  -webkit-box-shadow: 0.1vw 1vw #000;\n  box-shadow: 0 0.1vw 5px #888888;\n  background-color: #FF8080;\n}\n\n#signupSubmit:hover {\n  background-color: #DE6F6F;\n  text-shadow: 1px 2px #888888;\n}\n\n#logOutCommunicate {\n  text-align: center;\n}\n\n#goToProfile {\n  color: dodgerblue;\n}\n\n#goToProfile:hover, #goToProfile:focus {\n  text-decoration: underline;\n  cursor: pointer;\n}\n"
 
 /***/ }),
 
 /***/ "./src/app/loginContainer/loginContainer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"loginDiv\"></div>\n<div id=\"loginContent\">\n  <div id=\"napis\">\n    Log in to your account\n    <div class=\"hr\"></div>\n  </div>\n  <div id=\"fireAuthCont\">\n    <div id=\"firebaseui-auth-container\"></div>\n  </div>\n  <h4 id=\"logOutCommunicate\" class=\"hidden\">\n    You are already logged in as <strong><span id=\"logUsername\"></span></strong>.<br>Please, log out at the bottom of\n    <a id=\"goToProfile\" routerLink=\"../profile\">this site</a> first, to log in to other account.\n  </h4>\n</div>\n"
+module.exports = "<div id=\"loginDiv\"></div>\n<div id=\"loginContent\">\n  <div id=\"napis\">\n    Log in to your account\n    <div class=\"hr\"></div>\n  </div>\n  <div id=\"fireAuthCont\">\n    <div id=\"firebaseui-auth-container\"></div>\n    <p>or</p>\n    <form id=\"signupForm\">\n      <h5>Sign up with email and password</h5>\n      <div class=\"form-group row\">\n        <label for=\"signupEmail\" class=\"col-sm-1 col-form-label\"><img src=\"assets/envelope.png\" alt=\"\"></label>\n        <div class=\"col-sm-6\">\n          <input type=\"email\" class=\"form-control\" id=\"signupEmail\" placeholder=\"Email\">\n        </div>\n      </div>\n      <div class=\"form-group row\">\n        <label for=\"signupPasswd\" class=\"col-sm-1 col-form-label\"><img src=\"assets/padlock.png\" alt=\"\"></label>\n        <div class=\"col-sm-6\">\n          <input type=\"password\" class=\"form-control\" id=\"signupPasswd\" placeholder=\"Password\">\n        </div>\n      </div>\n    </form>\n    <button type=\"submit\" class=\"btn btn-light\" form=\"signupForm\" id=\"signupSubmit\">SIGN UP</button>\n  </div>\n  <h4 id=\"logOutCommunicate\" class=\"hidden\">\n    You are already logged in as <strong><span id=\"logUsername\"></span></strong>.<br>Please, log out at the bottom of\n    <a id=\"goToProfile\" routerLink=\"../profile\">this site</a> first, to log in to other account.\n  </h4>\n</div>\n"
 
 /***/ }),
 
@@ -1224,7 +1237,7 @@ module.exports = "#info{\n  font-size: 1vw;\n  padding: 0.6vw;\n  padding-left: 
 /***/ "./src/app/searchContainer/searchContainer.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"info\">You are looking for:<span class=\"special\"> {{searchTag}} </span>. Found<span class=\"special\"> {{articles.length}} </span>articles.</div>\n<article [tagx]=searchTag *ngFor=\"let article of articles; let i = index\" [articleId]=\"i\"></article>\n"
+module.exports = "<div id=\"info\">You are looking for:<span class=\"special\"> {{searchTag}} </span>. Found<span class=\"special\"> {{articles.length}} </span>articles.</div>\n<article [articleFromArray]=articles[i]  *ngFor=\"let article of articles; let i = index\" [articleId]=\"i\"></article>\n"
 
 /***/ }),
 
@@ -1255,9 +1268,9 @@ var SearchContainerComponent = /** @class */ (function () {
     }
     SearchContainerComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.articles = this.newsx.searchArticle(this.searchTag);
         this.route.params.subscribe(function (params) {
             _this.searchTag = params['tag'];
+            _this.articles = _this.newsx.searchArticle(_this.searchTag);
         });
     };
     SearchContainerComponent = __decorate([
@@ -1285,7 +1298,7 @@ module.exports = "* {-webkit-box-sizing: border-box;box-sizing: border-box;}\n\n
 /***/ "./src/app/slider/slider.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"slideshow-container\">\n  <div class=\"mySlides first w3-animate-opacity\">\n    <sliderArticle></sliderArticle>\n  </div>\n  <div class=\"mySlides w3-animate-opacity\">\n    <sliderArticle></sliderArticle>\n  </div>\n  <div class=\"mySlides w3-animate-opacity\">\n    <sliderArticle></sliderArticle>\n  </div>\n  <div class=\"mySlides w3-animate-opacity\">\n    <sliderArticle></sliderArticle>\n  </div>\n  <div class=\"mySlides w3-animate-opacity\">\n    <sliderArticle></sliderArticle>\n  </div>\n</div>\n\n<div class=\"dots\">\n  <span class=\"dot active\"></span>\n  <span class=\"dot\"></span>\n  <span class=\"dot\"></span>\n  <span class=\"dot\"></span>\n  <span class=\"dot\"></span>\n</div>\n"
+module.exports = "<div class=\"slideshow-container\">\n  <div class=\"mySlides first w3-animate-opacity\">\n    <sliderArticle [article]=articles[0]></sliderArticle>\n  </div>\n  <div class=\"mySlides w3-animate-opacity\">\n    <sliderArticle [article]=articles[1]></sliderArticle>\n  </div>\n  <div class=\"mySlides w3-animate-opacity\">\n    <sliderArticle [article]=articles[2]></sliderArticle>\n  </div>\n  <div class=\"mySlides w3-animate-opacity\">\n    <sliderArticle [article]=articles[3]></sliderArticle>\n  </div>\n  <div class=\"mySlides w3-animate-opacity\">\n    <sliderArticle [article]=articles[4]></sliderArticle>\n  </div>\n</div>\n\n<div class=\"dots\">\n  <span class=\"dot active\"></span>\n  <span class=\"dot\"></span>\n  <span class=\"dot\"></span>\n  <span class=\"dot\"></span>\n  <span class=\"dot\"></span>\n</div>\n"
 
 /***/ }),
 
@@ -1295,6 +1308,7 @@ module.exports = "<div class=\"slideshow-container\">\n  <div class=\"mySlides f
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SliderComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__logic_news__ = __webpack_require__("./src/app/logic/news.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1305,9 +1319,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var SliderComponent = /** @class */ (function () {
     function SliderComponent() {
         this.slideIndex = 1;
+        this.newsx = new __WEBPACK_IMPORTED_MODULE_1__logic_news__["a" /* NewsProvider */]();
     }
     SliderComponent.prototype.showSlides = function () {
         var i;
@@ -1325,6 +1341,9 @@ var SliderComponent = /** @class */ (function () {
         }
         slides[this.slideIndex - 1].style.display = "block";
         dots[this.slideIndex - 1].className += " active";
+    };
+    SliderComponent.prototype.ngOnInit = function () {
+        this.articles = this.newsx.getArticles(6);
     };
     SliderComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -1366,6 +1385,7 @@ module.exports = "<div class=\"imageContainer\">\n  <img src=\"{{sliderArticle.u
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SliderArticleComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__logic_news__ = __webpack_require__("./src/app/logic/news.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__logic_article__ = __webpack_require__("./src/app/logic/article.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1377,13 +1397,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var SliderArticleComponent = /** @class */ (function () {
     function SliderArticleComponent() {
         this.newsx = new __WEBPACK_IMPORTED_MODULE_1__logic_news__["a" /* NewsProvider */]();
     }
-    SliderArticleComponent.prototype.ngOnInit = function () {
-        this.sliderArticle = this.newsx.getArticles(6)[1];
+    SliderArticleComponent.prototype.ngOnChanges = function (chang) {
+        this.sliderArticle = chang.sliderArticle.currentValue;
     };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])('article'),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__logic_article__["a" /* Article */])
+    ], SliderArticleComponent.prototype, "sliderArticle", void 0);
     SliderArticleComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'sliderArticle',
@@ -1402,14 +1427,14 @@ var SliderArticleComponent = /** @class */ (function () {
 /***/ "./src/app/userData/userData.css":
 /***/ (function(module, exports) {
 
-module.exports = "#userDataContent {\n  width: 96%;\n  height: 34vw;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 2vw;\n  border-bottom: 1px solid lightgray;\n  /*background-color: #1c94c4;*/\n}\n\nlabel {\n  text-align: right;\n  font-size: 0.9vw;\n}\n\n.leftContent {\n  float: left;\n  width: 14vw;\n  height: 32vw;\n  margin-left: 2%;\n  border-right: 1px solid gray;\n  /*background-color: #6FB1C8;*/\n}\n\n#userImage {\n  width: 7vw;\n  height: 7vw;\n  margin-left: 3.5vw;\n  margin-top: 10vw;\n  border-radius: 50%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n\n#username {\n  font-weight: 600;\n  font-size: 1.2vw;\n  text-align: center;\n}\n\nh5 {\n  display: inline-block;\n  font-size: 1vw;\n  font-weight: 700;\n  margin-left: 1.5vw;\n  margin-bottom: 0.8vw;\n}\n\n.form-control {\n  font-size: 0.9vw;\n}\n\n.dl .col-sm-2.col-form-label {\n  padding-top: 0;\n}\n\n.form-group.row {\n  height: 2.5vw;\n}\n\n#userSubmit {\n  float: right;\n  margin-top: 1vw;\n  border: none;\n  margin-right: 6.2vw;\n  color: white;\n  height: 2vw;\n  font-weight: 600;\n  -webkit-box-shadow: 0.1vw 1vw #000;\n  box-shadow: 0 0.1vw 5px #888888;\n  background-color: #FF8080;\n}\n\n#userSubmit:hover {\n  background-color: #DE6F6F;\n  text-shadow: 1px 2px #888888;\n}\n"
+module.exports = "#userDataContent {\n  width: 96%;\n  height: 22vw;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 2vw;\n  border-bottom: 1px solid lightgray;\n  /*background-color: #1c94c4;*/\n}\n\nlabel {\n  text-align: right;\n  font-size: 0.9vw;\n}\n\n.leftContent {\n  float: left;\n  width: 14vw;\n  height: 20vw;\n  margin-left: 2%;\n  border-right: 1px solid gray;\n  /*background-color: #6FB1C8;*/\n}\n\n#userImage {\n  width: 7vw;\n  height: 7vw;\n  margin-left: 3.5vw;\n  margin-top: 5vw;\n  border-radius: 50%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n\n#username {\n  font-weight: 600;\n  font-size: 1.2vw;\n  text-align: center;\n}\n\nh5 {\n  display: inline-block;\n  font-size: 1vw;\n  font-weight: 700;\n  margin-left: 1.5vw;\n  margin-bottom: 0.8vw;\n}\n\n.form-control {\n  font-size: 0.9vw;\n}\n\n.dl .col-sm-2.col-form-label {\n  padding-top: 0;\n}\n\n.form-group.row {\n  height: 2.5vw;\n}\n\n#userSubmit {\n  float: right;\n  margin-top: 1vw;\n  border: none;\n  margin-right: 6.2vw;\n  color: white;\n  height: 2vw;\n  font-weight: 600;\n  -webkit-box-shadow: 0.1vw 1vw #000;\n  box-shadow: 0 0.1vw 5px #888888;\n  background-color: #FF8080;\n}\n\n#userSubmit:hover {\n  background-color: #DE6F6F;\n  text-shadow: 1px 2px #888888;\n}\n"
 
 /***/ }),
 
 /***/ "./src/app/userData/userData.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"userDataContent\">\n  <div class=\"leftContent\">\n    <img id=\"userImage\" src=\"assets/user_color.png\" alt=\"user_image\">\n    <h3 id=\"username\">janek99</h3>\n  </div>\n\n  <form id=\"userDataForm\">\n    <h5>User data</h5>\n    <div class=\"form-group row\">\n      <label for=\"inputName\" class=\"col-sm-2 col-form-label\">First name</label>\n      <div class=\"col-sm-4\">\n        <input type=\"text\" class=\"form-control\" id=\"inputName\" placeholder=\"\">\n      </div>\n    </div>\n    <div class=\"form-group row\">\n      <label for=\"inputSurname\" class=\"col-sm-2 col-form-label\">Last name</label>\n      <div class=\"col-sm-4\">\n        <input type=\"text\" class=\"form-control\" id=\"inputSurname\" placeholder=\"\">\n      </div>\n    </div>\n    <div class=\"form-group row dl\">\n      <label for=\"inputUsername\" class=\"col-sm-2 col-form-label\">Username</label>\n      <div class=\"col-sm-4\">\n        <input type=\"text\" class=\"form-control\" id=\"inputUsername\" placeholder=\"\">\n      </div>\n    </div>\n    <div class=\"form-group row\">\n      <label for=\"inputEmail\" class=\"col-sm-2 col-form-label\">E-mail</label>\n      <div class=\"col-sm-4\">\n        <input type=\"email\" class=\"form-control\" id=\"inputEmail\" placeholder=\"\">\n      </div>\n    </div>\n    <h5>Password change</h5>\n    <div class=\"form-group row\">\n      <label for=\"inputPasswd\" class=\"col-sm-2 col-form-label\">Old password</label>\n      <div class=\"col-sm-4\">\n        <input type=\"password\" class=\"form-control\" id=\"inputPasswd\" placeholder=\"\">\n      </div>\n    </div>\n    <div class=\"form-group row\">\n      <label for=\"inputNewPasswd\" class=\"col-sm-2 col-form-label\">New password</label>\n      <div class=\"col-sm-4\">\n        <input type=\"password\" class=\"form-control\" id=\"inputNewPasswd\" placeholder=\"\">\n      </div>\n    </div>\n    <div class=\"form-group row dl\">\n      <label for=\"inputNewPasswdAgain\" class=\"col-sm-2 col-form-label\">Confirm password</label>\n      <div class=\"col-sm-4\">\n        <input type=\"password\" class=\"form-control\" id=\"inputNewPasswdAgain\" placeholder=\"\">\n      </div>\n    </div>\n  </form>\n  <button type=\"submit\" class=\"btn btn-light\" form=\"userDataForm\" id=\"userSubmit\">SAVE</button>\n</div>\n\n"
+module.exports = "<div id=\"userDataContent\">\n  <div class=\"leftContent\">\n    <img id=\"userImage\" src=\"assets/user_color.png\" alt=\"user_image\">\n    <h3 id=\"username\">janek99</h3>\n  </div>\n\n  <form id=\"userDataForm\">\n    <h5>User data</h5>\n    <div class=\"form-group row\">\n      <label for=\"inputName\" class=\"col-sm-2 col-form-label\">First name</label>\n      <div class=\"col-sm-4\">\n        <input type=\"text\" class=\"form-control\" id=\"inputName\" placeholder=\"\">\n      </div>\n    </div>\n    <div class=\"form-group row\">\n      <label for=\"inputSurname\" class=\"col-sm-2 col-form-label\">Last name</label>\n      <div class=\"col-sm-4\">\n        <input type=\"text\" class=\"form-control\" id=\"inputSurname\" placeholder=\"\">\n      </div>\n    </div>\n    <div class=\"form-group row dl\">\n      <label for=\"inputUsername\" class=\"col-sm-2 col-form-label\">Username</label>\n      <div class=\"col-sm-4\">\n        <input type=\"text\" class=\"form-control\" id=\"inputUsername\" placeholder=\"\" disabled>\n      </div>\n    </div>\n    <div class=\"form-group row\">\n      <label for=\"inputEmail\" class=\"col-sm-2 col-form-label\">E-mail</label>\n      <div class=\"col-sm-4\">\n        <input type=\"email\" class=\"form-control\" id=\"inputEmail\" placeholder=\"\" disabled>\n      </div>\n    </div>\n  </form>\n  <button type=\"submit\" class=\"btn btn-light\" form=\"userDataForm\" id=\"userSubmit\">SAVE</button>\n</div>\n\n"
 
 /***/ }),
 
@@ -1453,7 +1478,7 @@ module.exports = "@media only screen and (max-width: 1300px) {\n  #weatherContai
 /***/ "./src/app/weather/weather.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"weatherContainer\">\n  <div id=\"top\">\n    <h3>Weather for today</h3>\n    <p id=\"dateCity\"><date-pipe></date-pipe>, {{weather.name}}</p>\n  </div>\n  <div id=\"middle\">\n    <img src=\"{{weather.icon}}\" id=\"weatherImage\">\n    <h2 id=\"temperature\">{{weather.temp}}°C</h2>\n    <h6 id=\"description\">{{weather.description}}</h6>\n  </div>\n  <p class=\"weatherInfo\" id=\"wind\">Wind speed: <span>{{weather.speed}} km/h</span></p>\n  <p class=\"weatherInfo\" id=\"pressure\">Pressure: <span>{{weather.pressure}} hPa</span></p>\n  <p class=\"weatherInfo\" id=\"humidity\">Humidity: <span>{{weather.humidity}}%</span></p>\n</div>\n"
+module.exports = "<div id=\"weatherContainer\">\n  <div id=\"top\">\n    <h3>Current weather</h3>\n    <p id=\"dateCity\"><date-pipe></date-pipe>, {{weather.name}}</p>\n  </div>\n  <div id=\"middle\">\n    <img src=\"{{weather.icon}}\" id=\"weatherImage\">\n    <h2 id=\"temperature\">{{weather.temp}}°C</h2>\n    <h6 id=\"description\">{{weather.description}}</h6>\n  </div>\n  <p class=\"weatherInfo\" id=\"wind\">Wind speed: <span>{{weather.speed}} m/s</span></p>\n  <p class=\"weatherInfo\" id=\"pressure\">Pressure: <span>{{weather.pressure}} hPa</span></p>\n  <p class=\"weatherInfo\" id=\"humidity\">Humidity: <span>{{weather.humidity}}%</span></p>\n</div>\n"
 
 /***/ }),
 
