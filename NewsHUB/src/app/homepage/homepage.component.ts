@@ -13,18 +13,11 @@ export class HomepageComponent implements OnInit {
   constructor(private route: ActivatedRoute) {
     this.newsx = new NewsProvider()
   }
-  articlesForSlider: Article[];
   articles: Article[];
   newsx: NewsProvider;
   catId: number;
 
-
-
-
-
   ngOnInit() {
-    if(this.articlesForSlider===undefined)
-      this.articlesForSlider = this.newsx.getArticles(6);
     this.route.params.subscribe((params) => {
       this.catId = params['cat'];
       this.articles = this.newsx.getArticles(this.catId);

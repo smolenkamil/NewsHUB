@@ -1,24 +1,24 @@
-import {Component, Input, SimpleChanges} from '@angular/core';
+import {Component, Input, OnInit, SimpleChanges} from '@angular/core';
 import {Article} from "../logic/article";
+import {NewsProvider} from "../logic/news";
 
 @Component({
   selector: 'slider',
   templateUrl: './slider.html',
   styleUrls: ['./slider.css']
 })
-export class SliderComponent {
+export class SliderComponent implements OnInit{
 
   slideIndex:number;
 
   constructor(){
     this.slideIndex = 1;
+    this.newsx = new NewsProvider()
   }
 
-  @Input('articles')articles:Article[];
+  newsx: NewsProvider;
+  articles:Article[];
 
-  ngOnChanges(chang: SimpleChanges){
-    this.articles = chang.articles.currentValue;
-  }
 
   showSlides() {
     let i;
@@ -36,6 +36,10 @@ export class SliderComponent {
     }
     slides[this.slideIndex - 1].style.display = "block";
     dots[this.slideIndex - 1].className += " active";
+  }
+
+  ngOnInit(): void {
+    this.articles = this.newsx.getArticles(6);
   }
 }
 

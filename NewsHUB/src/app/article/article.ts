@@ -15,7 +15,7 @@ export class ArticleComponent implements OnInit, OnChanges{
   @Input('tagx')tag:string;
 
   ngOnChanges(chang: SimpleChanges){
-    this.article = chang.article.currentValue;
+      this.article = chang.article.currentValue;
   }
 
   constructor(){

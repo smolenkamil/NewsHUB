@@ -14,7 +14,7 @@ export class SliderArticleComponent {
   @Input('article') sliderArticle: Article;
 
   ngOnChanges(chang: SimpleChanges) {
-    this.sliderArticle = chang.article.currentValue;
+    this.sliderArticle = chang.sliderArticle.currentValue;
   }
 
   constructor() {
