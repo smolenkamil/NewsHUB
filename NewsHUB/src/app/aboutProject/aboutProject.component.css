@@ -2,7 +2,7 @@
 
 #aboutContent {
   width: 70%;
-  height: 76vw;
+  height: 120vw;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2vw;
@@ -45,9 +45,10 @@ p a {
 
 #squadInfo {
   width: auto;
-  height: 32vw;
+  height: 34vw;
   margin-top: 2vw;
   padding-bottom: 2vw;
+  border-bottom: 1px solid #888888;
   /*background-color: #6FB1C8;*/
 }
 
@@ -82,4 +83,13 @@ p a {
   border-radius: 50%;
   object-fit: cover;
   margin-left: 6vw;
+}
+
+#workInfo {
+  width: auto;
+  height: auto;
+  margin-top: 2vw;
+  padding-bottom: 2vw;
+  border-bottom: 1px solid #888888;
+  /*background-color: #6FB1C8;*/
 }
