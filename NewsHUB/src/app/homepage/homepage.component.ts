@@ -1,3 +1,4 @@
+
 import {Component, OnInit, SimpleChanges} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {NewsProvider} from "../logic/news";
@@ -12,20 +13,22 @@ export class HomepageComponent implements OnInit {
   constructor(private route: ActivatedRoute) {
     this.newsx = new NewsProvider()
   }
-
+  numbersForSlider: number[];
+  articlesForSlider: Article[];
   articles: Article[];
   newsx: NewsProvider;
   catId: number;
 
 
-  ngOnChanges(chang: SimpleChanges){
-    this.articles = this.newsx.getArticles(chang.catNumber.currentValue);
-  }
+
+
 
   ngOnInit() {
-    this.articles = this.newsx.getArticles(this.catId);
+    this.articlesForSlider = this.newsx.getArticles(6);
+
     this.route.params.subscribe((params) => {
       this.catId = params['cat'];
+      this.articles = this.newsx.getArticles(this.catId);
     })
 
   }

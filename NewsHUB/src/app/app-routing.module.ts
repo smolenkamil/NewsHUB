@@ -8,10 +8,10 @@ import {SearchContainerComponent} from "./searchContainer/searchContainer";
 import {LoginContainerComponent} from "./loginContainer/loginContainer.component";
 
 const routes: Routes = [
-  {path: '', redirectTo: 'homepage', pathMatch: 'full'},
+  {path: '', redirectTo: 'homepage/6', pathMatch: 'full'},
   {path: 'search/:tag', component: SearchContainerComponent},
   {path: 'homepage/:cat', component: HomepageComponent},
-  {path: 'homepage', component: HomepageComponent},
+  {path: 'homepage/6', component: HomepageComponent},
   {path: 'profile', component: ProfileContainerComponent},
   {path: 'about', component: AboutProjectComponent},
   {path: 'login', component: LoginContainerComponent}
