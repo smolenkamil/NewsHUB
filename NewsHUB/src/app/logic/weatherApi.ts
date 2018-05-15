@@ -39,20 +39,22 @@ export class WeatherProvider {
   humidityx: string;
   descriptionx: string;
   iconx: string;
+  cloudsx: string;
 
   getWeather():Weather {
-    let tempxx, namexx, speedxx, pressxx, humxx, descxx, iconxx;
+    let tempxx, namexx, speedxx, pressxx, humxx, descxx, iconxx, cloudsxx;
     $.ajaxSetup({'async': false});
     $.getJSON(this.MAIN_URL+this.ENDPOINT+this.cityId+this.metricUnits+this.langPl+this.APIKEY, (data) => {
       if(data.main.temp !== null && data.name !== null && data.wind.speed !== null
           && data.main.pressure !== null && data.main.humidity !== null && data.weather[0].description !== null
-          && data.weather[0].icon !== null) {
+          && data.weather[0].icon !== null && data.clouds.all !== null) {
         this.tempx = data.main.temp
         this.namex = data.name
         this.windSpeedx = data.wind.speed
         this.pressurex = data.main.pressure
         this.humidityx = data.main.humidity
         this.descriptionx = data.weather[0].description
+        this.cloudsx = data.clouds.all
 
         switch(data.weather[0].icon) {
           //day
@@ -123,8 +125,9 @@ export class WeatherProvider {
       humxx = this.humidityx;
       descxx = this.descriptionx;
       iconxx = this.iconx;
+      cloudsxx = this.cloudsx;
     });
 
-    return new Weather(tempxx, namexx, speedxx, pressxx, humxx, descxx, iconxx);
+    return new Weather(tempxx, namexx, speedxx, pressxx, humxx, descxx, iconxx, cloudsxx);
   }
 }
