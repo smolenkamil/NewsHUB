@@ -2,7 +2,7 @@
 
 #aboutContent {
   width: 70%;
-  height: 120vw;
+  height: 150vw;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2vw;
@@ -90,6 +90,5 @@ p a {
   height: auto;
   margin-top: 2vw;
   padding-bottom: 2vw;
-  border-bottom: 1px solid #888888;
   /*background-color: #6FB1C8;*/
 }
