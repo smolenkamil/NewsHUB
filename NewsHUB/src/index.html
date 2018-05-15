@@ -24,8 +24,8 @@
   firebase.initializeApp(config);
   </script>
 
-  <script  src="https://www.gstatic.com/firebasejs/ui/3.0.0/firebase-ui-auth__pl.js"> </script>
-  <link  type="text/css"  rel = "stylesheet"  href="https://www.gstatic.com/firebasejs/ui/3.0.0/firebase-ui-auth.css"/>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.css" />
 
   <script type="text/javascript">
     // FirebaseUI config.
@@ -60,6 +60,11 @@
               document.getElementById('userImage').setAttribute('src', user.photoURL);
               document.getElementById('profileFiller').classList.add('hidden');
             }
+            if (document.getElementById('loginDiv')) {
+              document.getElementById('logUsername').innerHTML = user.displayName;
+              document.getElementById('fireAuthCont').classList.add('hidden');
+              document.getElementById('logOutCommunicate').classList.remove('hidden');
+            }
           });
         } else {
           // User is signed out.
@@ -89,10 +94,21 @@
             document.getElementById('inputEmail').setAttribute('placeholder', user.email);
             document.getElementById('userImage').setAttribute('src', user.photoURL);
             document.getElementById('profileFiller').classList.add('hidden');
+
           } else {
             document.getElementById('profileMain').classList.add('hidden');
             document.getElementById('logInCommunicate').classList.remove('hidden');
           }
+        })
+      }
+      if (document.getElementById('loginDiv')) {
+        firebase.auth().onAuthStateChanged(function(user) {
+          if (user) {
+            document.getElementById('logUsername').innerHTML = user.displayName;
+            document.getElementById('fireAuthCont').classList.add('hidden');
+            document.getElementById('logOutCommunicate').classList.remove('hidden');
+
+          } else {}
         })
       }
     });

@@ -8,6 +8,11 @@
   /*background-color: #1c94c4;*/
 }
 
+#profileContent {
+  width: 100%;
+  overflow: hidden;
+}
+
 #napis{
   text-align: center;
   font-size: 1.8vw;
@@ -21,4 +26,22 @@
   margin-top: 1vw;
   margin-bottom: 1vw;
   margin-left: 30%;
+}
+
+#fireAuthCont {
+  width: 100%;
+  height: auto;
+}
+
+#logOutCommunicate {
+  text-align: center;
+}
+
+#goToProfile {
+  color: dodgerblue;
+}
+
+#goToProfile:hover, #goToProfile:focus {
+  text-decoration: underline;
+  cursor: pointer;
 }
