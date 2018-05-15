@@ -72,6 +72,10 @@
           if (document.getElementById('profileDiv')) {
             document.getElementById('profileMain').classList.add('hidden');
             document.getElementById('logInCommunicate').classList.remove('hidden');
+            document.getElementById('catMenu').classList.add('hidden');
+          }
+          if (document.getElementById('catDiv')) {
+            document.getElementById('catMenu').classList.add('hidden');
           }
         }
       }, function(error) {
@@ -107,8 +111,15 @@
             document.getElementById('logUsername').innerHTML = user.displayName;
             document.getElementById('fireAuthCont').classList.add('hidden');
             document.getElementById('logOutCommunicate').classList.remove('hidden');
-
           } else {}
+        })
+      }
+      if (document.getElementById('catDiv')) {
+        firebase.auth().onAuthStateChanged(function(user) {
+          if (user) {
+          } else {
+            document.getElementById('catMenu').classList.add('hidden');
+          }
         })
       }
     });

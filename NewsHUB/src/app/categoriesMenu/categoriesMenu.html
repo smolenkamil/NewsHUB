@@ -1,3 +1,4 @@
+<div id="catDiv"></div>
 <nav id="catMenu">
   <a class="cat" [routerLink]="['/homepage',category.id]" [ngStyle]="{'color': 'white'}" *ngFor="let category of categories">{{category.name}}</a>
 </nav>
