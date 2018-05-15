@@ -12,7 +12,7 @@ export class NewsProvider{
   wantedArticles: Article[];
 
   getArticles(cat):Article[]{
-    this.articles = [];
+    // this.articles = [];
     // $.ajaxSetup({'async': false});
     // $.getJSON(this.MAIN_URL+"?category="+this.CATEGORIES[cat]+"&country=gb"+this.APIKEY, (data) => {
     //   let ix = 0;

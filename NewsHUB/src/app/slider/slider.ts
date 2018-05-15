@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input, SimpleChanges} from '@angular/core';
+import {Article} from "../logic/article";
 
 @Component({
   selector: 'slider',
@@ -11,6 +12,12 @@ export class SliderComponent {
 
   constructor(){
     this.slideIndex = 1;
+  }
+
+  @Input('articles')articles:Article[];
+
+  ngOnChanges(chang: SimpleChanges){
+    this.articles = chang.articles.currentValue;
   }
 
   showSlides() {

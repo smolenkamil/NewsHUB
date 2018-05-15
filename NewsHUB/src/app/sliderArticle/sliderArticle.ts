@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit, SimpleChanges} from '@angular/core';
 import {NewsProvider} from "../logic/news";
 import {Article} from "../logic/article";
 
@@ -8,16 +8,17 @@ import {Article} from "../logic/article";
   styleUrls: ['./sliderArticle.css']
 })
 
-export class SliderArticleComponent implements OnInit{
+export class SliderArticleComponent {
 
   newsx: NewsProvider;
-  sliderArticle: Article;
+  @Input('article') sliderArticle: Article;
 
-  constructor(){
+  ngOnChanges(chang: SimpleChanges) {
+    this.sliderArticle = chang.article.currentValue;
+  }
+
+  constructor() {
     this.newsx = new NewsProvider();
   }
-
-  ngOnInit(){
-    this.sliderArticle = this.newsx.getArticles(6)[1];
-  }
 }
+
