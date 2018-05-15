@@ -20,9 +20,9 @@ export class SearchContainerComponent {
 
 
   ngOnInit() {
-    this.articles = this.newsx.searchArticle(this.searchTag);
     this.route.params.subscribe((params) => {
       this.searchTag = params['tag'];
+      this.articles = this.newsx.searchArticle(this.searchTag);
     })
 
   }
