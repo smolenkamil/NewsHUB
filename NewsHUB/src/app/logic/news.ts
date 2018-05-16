@@ -9,10 +9,10 @@ export class NewsProvider{
 
   articles: Article[] = [];
 
-  wantedArticles: Article[];
+  wantedArticles: Article[] = [];
 
   getArticles(cat):Article[]{
-    this.articles = [];
+    // this.articles = [];
     // $.ajaxSetup({'async': false});
     // $.getJSON(this.MAIN_URL+"?category="+this.CATEGORIES[cat]+"&country=gb"+this.APIKEY, (data) => {
     //   let ix = 0;
@@ -33,35 +33,37 @@ export class NewsProvider{
     //     }
     //   }
     // });
-
+    // console.log("+2")
     for(let i=0;i<17;i++){
       this.articles[i] = new Article(this.CATEGORIES[cat]+"  "+ i+ "    !!","bleb belb bleb elbelb bleblebel belbeblbel blebelblebl ebe blebleble bb lebleb lebleblbel. Bblelblelblbelbbellbleb eblebleb lbelebl l elblebblelb blele. lblbelbelellbleble!","http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg" )
     }
-
-    console.log(this.articles.length)
+    //
+    // console.log(this.articles.length)
     return this.articles;
   }
 
 
 
   searchArticle(tag):Article[]{
-      this.wantedArticles = []
+      // this.wantedArticles = []
     // $.ajaxSetup({'async': false});
-    // $.getJSON("https://newsapi.org/v2/everything?q="+tag+this.APIKEY, (data) => {
+    // $.getJSON("https://newsapi.org/v2/top-headlines?q="+tag+"&pageSize=100"+this.APIKEY, (data) => {
+    //   console.log(data.status+data.totalResults)
     //   let ix = 0;
     //   for(let i=0;i<data.articles.length;i++){
     //     if(data.articles[i].title!==null && data.articles[i].urlToImage !== null && data.articles[i].description !== null ) {
-    //       this.articles[ix] = new Article(data.articles[i].title,data.articles[i].description,data.articles[i].urlToImage )
+    //       this.wantedArticles[ix] = new Article(data.articles[i].title,data.articles[i].description,data.articles[i].urlToImage )
     //       ix++;
     //
     //     }
     //   }
     // });
-
+    //
+    // console.log("+1")
     for(let i=0;i<5;i++){
       this.wantedArticles[i] = new Article(tag+"  "+ i+ "    !!","bleb belb bleb elbelb bleblebel belbeblbel blebelblebl ebe blebleble bb lebleb lebleblbel. Bblelblelblbelbbellbleb eblebleb lbelebl l elblebblelb blele. lblbelbelellbleble!","http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg" )
     }
-
+    console.log(this.wantedArticles.length)
       return this.wantedArticles;
   }
 
