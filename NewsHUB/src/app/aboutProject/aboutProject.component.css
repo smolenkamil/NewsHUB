@@ -25,6 +25,7 @@
 h1 {
   text-align: center;
   margin-bottom: 1.5vw;
+  font-size: 1.8vw;
   font-weight: 700;
   font-family: 'Lora', serif;
 }
@@ -72,6 +73,7 @@ p a {
 
 .person h4 {
   text-align: center;
+  font-size: 1vw;
   font-weight: 700;
   font-family: 'Lora', serif;
 }
@@ -91,4 +93,12 @@ p a {
   margin-top: 2vw;
   padding-bottom: 2vw;
   /*background-color: #6FB1C8;*/
+}
+
+th {
+  font-size: 0.9vw;
+}
+
+td {
+  font-size: 0.8vw;
 }
