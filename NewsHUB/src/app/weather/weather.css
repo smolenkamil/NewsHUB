@@ -103,3 +103,10 @@
   float: left;
   position: relative;
 }
+
+.charts p {
+  text-align: center;
+  margin-top: 0.3vw;
+  font-weight: 600;
+  font-size: 0.9vw;
+}
