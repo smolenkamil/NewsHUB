@@ -25,7 +25,7 @@ h5 {
 
 .leftContent {
   float: left;
-  width: 14vw;
+  width: 16vw;
   height: 23vw;
   margin-left: 2%;
   border-right: 1px solid gray;
@@ -49,6 +49,18 @@ h5 {
   margin-left: 1.5vw;
 }
 
+.second{
+  margin-left: 2.5vw;
+}
+
+.third{
+  margin-left: 3.75vw;
+}
+
+.fourth{
+  margin-left: 4.25vw;
+}
+
 .form-check-label {
   font-size: 1.1vw;
 }
@@ -69,12 +81,12 @@ h5 {
 }
 
 #categoriesSubmit {
-  float: right;
+  float: left;
   margin-top: 0.5vw;
   border: none;
-  margin-right: 0;
+  margin-left: 36vw;
   color: white;
-  height: 2vw;
+  height: 30px;
   font-weight: 600;
   -webkit-box-shadow: 0.1vw 1vw #000;
   -moz-box-shadow: 1vw 1vw #000;
