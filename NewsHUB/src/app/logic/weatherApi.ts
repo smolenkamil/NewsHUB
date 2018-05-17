@@ -35,7 +35,7 @@ export class WeatherProvider {
 
   tempx: string;
   namex: string;
-  windSpeedx: string;
+  windSpeedx: number;
   pressurex: string;
   humidityx: string;
   descriptionx: string;
@@ -51,7 +51,7 @@ export class WeatherProvider {
           && data.weather[0].icon !== null && data.clouds.all !== null) {
         this.tempx = data.main.temp
         this.namex = data.name
-        this.windSpeedx = data.wind.speed
+        this.windSpeedx = parseInt(data.wind.speed) * 3.6
         this.pressurex = data.main.pressure
         this.humidityx = data.main.humidity
         this.descriptionx = data.weather[0].description
