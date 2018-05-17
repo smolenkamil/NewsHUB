@@ -28,5 +28,10 @@ export class ArticleComponent implements OnInit, OnChanges{
       this.catNumber=6;
   }
 
+  goToFullArticle(){
+    window.open(this.article.urlOutside,'_blank');
+
+  }
+
 
 }

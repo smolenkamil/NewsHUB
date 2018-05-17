@@ -18,7 +18,8 @@ export class NewsProvider{
     //   let ix = 0;
     //   for(let i=0;i<data.articles.length;i++){
     //     if(data.articles[i].title!==null && data.articles[i].urlToImage !== null && data.articles[i].description !== null ) {
-    //       this.articles[ix] = new Article(data.articles[i].title,data.articles[i].description,data.articles[i].urlToImage )
+    //       console.log(data)
+    //       this.articles[ix] = new Article(data.articles[i].title,data.articles[i].description,data.articles[i].urlToImage,data.articles[i].url )
     //       ix++;
     //
     //     }
@@ -28,17 +29,17 @@ export class NewsProvider{
     //   let ix = this.articles.length;
     //   for(let i=0;i<data.articles.length;i++){
     //     if(data.articles[i].title!==null && data.articles[i].urlToImage !== null && data.articles[i].description !== null ) {
-    //       this.articles[ix] = new Article(data.articles[i].title,data.articles[i].description,data.articles[i].urlToImage )
+    //       this.articles[ix] = new Article(data.articles[i].title,data.articles[i].description,data.articles[i].urlToImage,data.articles[i].url )
     //       ix++;
     //     }
     //   }
     // });
     // console.log("+2")
     for(let i=0;i<17;i++){
-      this.articles[i] = new Article(this.CATEGORIES[cat]+"  "+ i+ "    !!","bleb belb bleb elbelb bleblebel belbeblbel blebelblebl ebe blebleble bb lebleb lebleblbel. Bblelblelblbelbbellbleb eblebleb lbelebl l elblebblelb blele. lblbelbelellbleble!","http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg" )
+      this.articles[i] = new Article(this.CATEGORIES[cat]+"  "+ i+ "    !!","bleb belb bleb elbelb bleblebel belbeblbel blebelblebl ebe blebleble bb lebleb lebleblbel. Bblelblelblbelbbellbleb eblebleb lbelebl l elblebblelb blele. lblbelbelellbleble!","http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg", "https://www.google.pl/search?q=kotek&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj3hMCYxY3bAhVIb1AKHcZrBVUQ_AUICigB&biw=1920&bih=987#imgrc=CtsdztmOS92ERM:" )
     }
-    //
-    // console.log(this.articles.length)
+
+    console.log(this.articles.length)
     return this.articles;
   }
 
@@ -52,7 +53,7 @@ export class NewsProvider{
     //   let ix = 0;
     //   for(let i=0;i<data.articles.length;i++){
     //     if(data.articles[i].title!==null && data.articles[i].urlToImage !== null && data.articles[i].description !== null ) {
-    //       this.wantedArticles[ix] = new Article(data.articles[i].title,data.articles[i].description,data.articles[i].urlToImage )
+    //       this.wantedArticles[ix] = new Article(data.articles[i].title,data.articles[i].description,data.articles[i].urlToImage,data.articles[i].url )
     //       ix++;
     //
     //     }
@@ -61,7 +62,7 @@ export class NewsProvider{
     //
     // console.log("+1")
     for(let i=0;i<5;i++){
-      this.wantedArticles[i] = new Article(tag+"  "+ i+ "    !!","bleb belb bleb elbelb bleblebel belbeblbel blebelblebl ebe blebleble bb lebleb lebleblbel. Bblelblelblbelbbellbleb eblebleb lbelebl l elblebblelb blele. lblbelbelellbleble!","http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg" )
+      this.wantedArticles[i] = new Article(tag+"  "+ i+ "    !!","bleb belb bleb elbelb bleblebel belbeblbel blebelblebl ebe blebleble bb lebleb lebleblbel. Bblelblelblbelbbellbleb eblebleb lbelebl l elblebblelb blele. lblbelbelellbleble!","http://www.koty.pl/wp-content/uploads/2017/11/shutterstock_589722092-e1510059950350.jpg","https://www.google.pl/search?q=kotek&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj3hMCYxY3bAhVIb1AKHcZrBVUQ_AUICigB&biw=1920&bih=987#imgrc=CtsdztmOS92ERM:" )
     }
     console.log(this.wantedArticles.length)
       return this.wantedArticles;
