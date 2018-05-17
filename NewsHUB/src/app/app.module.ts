@@ -17,7 +17,7 @@ import {DatePipeComponent, WeatherComponent} from './weather/weather';
 import {SliderArticleComponent} from "./sliderArticle/sliderArticle";
 import {AppComponent} from './app.component';
 import {ProfileContainerComponent} from "./profileContainer/profileContainer.component";
-import {UserDataComponent} from "./userData/userData";
+import {UserDataComponent, UsersDataComponent} from "./userData/userData";
 import {CategoriesChoiceComponent} from "./categoriesChoice/categoriesChoice";
 import {WeatherChoiceComponent} from "./weatherChoice/weatherChoice";
 import {HomepageComponent} from "./homepage/homepage.component";
@@ -28,15 +28,16 @@ import {BtnAboutProjectComponent} from "./btnAboutProject/btnAboutProject";
 import {SearchContainerComponent} from "./searchContainer/searchContainer";
 import {LoginContainerComponent} from "./loginContainer/loginContainer.component";
 import {WeatherService} from "./weatherService/weather.service";
+import { environment } from '../environments/environment';
 
-const firebaseConfig = {
-  apiKey: "AIzaSyAMc1KI-zlkosp7qLKeMB4_F5Nvv82C-FM",
-  authDomain: "newshub-3011.firebaseapp.com",
-  databaseURL: "https://newshub-3011.firebaseio.com",
-  projectId: "newshub-3011",
-  storageBucket: "newshub-3011.appspot.com",
-  messagingSenderId: "159798983174"
-};
+// const firebaseConfig = {
+//   apiKey: "AIzaSyAMc1KI-zlkosp7qLKeMB4_F5Nvv82C-FM",
+//   authDomain: "newshub-3011.firebaseapp.com",
+//   databaseURL: "https://newshub-3011.firebaseio.com",
+//   projectId: "newshub-3011",
+//   storageBucket: "newshub-3011.appspot.com",
+//   messagingSenderId: "159798983174"
+// };
 
 @NgModule({
   declarations: [
@@ -58,13 +59,14 @@ const firebaseConfig = {
     HomepageComponent,
     AboutProjectComponent,
     BtnAboutProjectComponent,
-    LoginContainerComponent
+    LoginContainerComponent,
+    UsersDataComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebase, 'NewsHUB'),
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireDatabaseModule,
