@@ -110,3 +110,11 @@
   font-weight: 600;
   font-size: 0.9vw;
 }
+
+.charts h6 {
+  position: absolute;
+  top: 0.9vw;
+  left: 3.25vw;
+  font-size: 0.7vw;
+  font-weight: 700;
+}

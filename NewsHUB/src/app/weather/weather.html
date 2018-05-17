@@ -14,10 +14,12 @@
   <div *ngIf="chart">
     <div class="charts">
       <canvas id="humidity">{{ chart }}</canvas>
+      <h6>{{weather.humidity}}%</h6>
       <p>Humidity</p>
     </div>
     <div class="charts">
       <canvas id="clouds">{{ chart }}</canvas>
+      <h6>{{weather.clouds}}%</h6>
       <p>Clouds</p>
     </div>
   </div>
