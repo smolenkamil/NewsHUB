@@ -27,6 +27,7 @@ import {CatMenuComponent} from "./categoriesMenu/categoriesMenu";
 import {BtnAboutProjectComponent} from "./btnAboutProject/btnAboutProject";
 import {SearchContainerComponent} from "./searchContainer/searchContainer";
 import {LoginContainerComponent} from "./loginContainer/loginContainer.component";
+import {WeatherService} from "./weatherService/weather.service";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAMc1KI-zlkosp7qLKeMB4_F5Nvv82C-FM",
@@ -70,7 +71,8 @@ const firebaseConfig = {
     HttpClientModule
   ],
   providers: [
-    AuthService
+    AuthService,
+    WeatherService
   ],
   bootstrap: [
     AppComponent
