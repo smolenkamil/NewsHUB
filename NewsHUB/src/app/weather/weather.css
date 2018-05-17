@@ -7,7 +7,8 @@
 #weatherContainer {
   width: 27%;
   max-width: 300px;
-  max-height: 19vw;
+  height: 24vw;
+  max-height: 35vw;
   position: absolute;
   right: -27%;
   top: 0;
@@ -94,4 +95,11 @@
 
 .weatherInfo span {
   font-weight: 600;
+}
+
+.charts {
+  width: 7.8vw;
+  margin-top: 1vw;
+  float: left;
+  position: relative;
 }
