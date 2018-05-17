@@ -10,5 +10,8 @@
   </div>
   <p class="weatherInfo" id="wind">Wind speed: <span>{{weather.speed}} m/s</span></p>
   <p class="weatherInfo" id="pressure">Pressure: <span>{{weather.pressure}} hPa</span></p>
-  <p class="weatherInfo" id="humidity">Humidity: <span>{{weather.humidity}}%</span></p>
+  <!--<p class="weatherInfo" id="humidity">Humidity: <span>{{weather.humidity}}%</span></p>-->
+  <div *ngIf="chart">
+    <canvas id="humidity">{{ chart }}</canvas>
+  </div>
 </div>
