@@ -1,34 +1,52 @@
-@media only screen and (max-width: 1300px) {
-  #weatherContainer {
-    visibility: hidden;
-  }
+.slideout-widget {
+  position: fixed;
+  right: -305px;
+  transition: right .4s;
+  max-width: 300px;
+  z-index: 10;
+  box-shadow: 0 3px 10px #888888;
 }
 
-#weatherContainer {
-  width: 27%;
-  max-width: 300px;
-  height: 24.5vw;
-  max-height: 35vw;
-  position: absolute;
-  right: -27%;
-  top: 0;
-  padding-bottom: 1vw;
-  box-shadow: 0 3px 10px #888888;
+.slideout-widget:hover {
+  right: 0;
+  cursor: pointer;
+}
+
+.slideout-widget-handler, .slideout-widget-content {
+  border: 1px solid #ddd;
   background-color: #9ECBDA;
 }
 
+.slideout-widget-handler {
+  border-right: none;
+  left: -5em;
+  position: absolute;
+  text-align: center;
+  width: 5em;
+  padding-left: 6px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.slideout-widget-content {
+  border-width: 1px 0;
+  overflow: hidden;
+  width: 100%;
+  z-index: 11;
+  height: 460px;
+}
+
 #top {
-  padding-top: 1vw;
-  padding-bottom: 1vw;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 #top h3 {
   text-align: center;
-  font-size: 1.8vw;
+  font-size: 34px;
   font-weight: 700;
   margin-top: 0;
-  color: #00506D;
   margin-bottom: 0;
+  color: #00506D;
 }
 
 #top p {
@@ -37,25 +55,25 @@
 
 #dateCity {
   text-align: center;
-  font-size: 0.8vw;
+  font-size: 15px;
   font-weight: 600;
   color: #00506D;
 }
 
 #middle {
-  padding-top: 0.6vw;
-  padding-bottom: 1.1vw;
+  padding-top: 10px;
+  padding-bottom: 18px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1vw;
+  margin-bottom: 20px;
   width: 95%;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
 #weatherImage {
-  width: 4.5vw;
-  height: 4.5vw;
+  width: 84px;
+  height: 84px;
   float: left;
   margin-left: 5%;
   margin-bottom: 20px;
@@ -71,7 +89,7 @@
   vertical-align: baseline;
   margin-top: 7px;
   margin-bottom: 0;
-  font-size: 2.5vw;
+  font-size: 54px;
   font-weight: 700;
   color: #333333;
 }
@@ -79,7 +97,7 @@
 #description {
   text-align: center;
   margin: 0;
-  font-size: 1.1vw;
+  font-size: 18px;
   font-weight: 600;
   color: #333333;
 }
@@ -89,7 +107,7 @@
   margin: 0;
   padding: 0;
   margin-left: 7%;
-  font-size: 0.9vw;
+  font-size: 16px;
 }
 
 .weatherInfo span {
@@ -97,36 +115,38 @@
 }
 
 .charts {
-  width: 7.8vw;
-  margin-top: 1vw;
+  width: 50%;
+  margin-top: 20px;
   float: left;
   position: relative;
 }
 
 .charts p {
   text-align: center;
-  margin-top: 0.3vw;
+  margin-top: 6px;
   font-weight: 600;
-  font-size: 0.9vw;
+  font-size: 16px;
 }
 
 .charts h6 {
   position: absolute;
-  top: 0.9vw;
-  left: 3.25vw;
-  font-size: 0.7vw;
+  top: 18px;
+  left: 59px;
+  font-size: 13px;
   font-weight: 700;
 }
 
 #timeContainer {
   float: left;
   width: 100%;
-  margin-top: 0.2vw;
+  height: 34px;
+  margin-top: 2px;
+  padding-top: 8px;
 }
 
 #timeContainer img {
   float: right;
-  width: 0.9vw;
+  width: 17px;
 }
 
 #syncTime {
@@ -134,4 +154,14 @@
   font-size: 0.63vw;
   font-weight: 600;
   margin-right: 1vw;
+}
+
+#weatherImage2 {
+  width: 45px;
+  height: 45px;
+  float: left;
+  margin-left: 5%;
+  margin-bottom: 5px;
+  filter: drop-shadow(2px 3px 2px gray);
+
 }
