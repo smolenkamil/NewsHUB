@@ -17,6 +17,7 @@ export class WeatherComponent implements OnInit {
 
   constructor(private _weather: WeatherService) {
     this.weatherx = new WeatherProvider();
+    // console.log(this.weather.clouds);
   }
 
   ngOnInit() {
@@ -24,8 +25,8 @@ export class WeatherComponent implements OnInit {
 
     this._weather.dailyForecast()
       .subscribe(res => {
-        let hum = res.main.humidity;
-        let clou = res.clouds.all;
+        let hum = res.main.humidity || 0;
+        let clou = res.clouds.all || 0;
         let restHum = 100 - hum;
         let restClou = 100 - clou;
         this.chart = new Chart('humidity', {
