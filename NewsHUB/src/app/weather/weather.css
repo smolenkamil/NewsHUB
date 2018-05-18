@@ -130,8 +130,8 @@
 
 .charts h6 {
   position: absolute;
-  top: 18px;
-  left: 59px;
+  top: 20px;
+  left: 62px;
   font-size: 13px;
   font-weight: 700;
 }
@@ -151,9 +151,9 @@
 
 #syncTime {
   float: right;
-  font-size: 0.63vw;
+  font-size: 12px;
   font-weight: 600;
-  margin-right: 1vw;
+  margin-right: 20px;
 }
 
 #weatherImage2 {
