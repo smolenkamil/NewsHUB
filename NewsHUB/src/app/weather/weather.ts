@@ -34,7 +34,7 @@ export class WeatherComponent implements OnInit {
             labels: ['Humid', 'Dry'],
             datasets: [
               {
-                data: [hum, restHum],
+                data: [80, 20],
                 backgroundColor: ['#00506D', 'rgba(255, 255, 255, 0.3)']
               }
             ]
@@ -51,7 +51,7 @@ export class WeatherComponent implements OnInit {
             labels: ['Clouds', 'Clear'],
             datasets: [
               {
-                data: [clou, restClou],
+                data: [70, 30],
                 backgroundColor: ['#00506D', 'rgba(255, 255, 255, 0.3)']
               }
             ]
