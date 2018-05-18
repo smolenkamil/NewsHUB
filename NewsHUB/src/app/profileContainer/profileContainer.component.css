@@ -6,18 +6,19 @@
 #profileFiller {
   width: 100%;
   height: 60vh;
-  /*background-color: #9ECBDA;*/
 }
 
-h1 {
+#profileContent h1 {
   font-weight: 700;
+  font-size: 2.1vw;
   text-align: center;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
+  margin-top: 4vw;
+  margin-bottom: 3vw;
 }
 
 #logInCommunicate {
   text-align: center;
+  font-size: 1.2vw;
 }
 
 

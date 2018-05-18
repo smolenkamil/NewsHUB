@@ -78,6 +78,9 @@
           if (document.getElementById('catDiv')) {
             document.getElementById('catMenu').classList.add('hidden');
           }
+          if (document.getElementById('searchDiv')) {
+            document.getElementById('searchContent').classList.add('hidden');
+          }
         }
       }, function(error) {
         console.log(error);
@@ -120,6 +123,14 @@
           if (user) {
           } else {
             document.getElementById('catMenu').classList.add('hidden');
+          }
+        })
+      }
+      if (document.getElementById('searchDiv')) {
+        firebase.auth().onAuthStateChanged(function(user) {
+          if (user) {
+          } else {
+            document.getElementById('searchContent').classList.add('hidden');
           }
         })
       }

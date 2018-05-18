@@ -41,14 +41,15 @@ export class WeatherProvider {
   descriptionx: string;
   iconx: string;
   cloudsx: string;
+  timex: string;
 
   getWeather():Weather {
-    let tempxx, namexx, speedxx, pressxx, humxx, descxx, iconxx, cloudsxx;
+    let tempxx, namexx, speedxx, pressxx, humxx, descxx, iconxx, cloudsxx, timexx;
     $.ajaxSetup({'async': false});
     $.getJSON(this.MAIN_URL+this.ENDPOINT+this.cityId+this.metricUnits+this.langPl+this.APIKEY, (data) => {
       if(data.main.temp !== null && data.name !== null && data.wind.speed !== null
           && data.main.pressure !== null && data.main.humidity !== null && data.weather[0].description !== null
-          && data.weather[0].icon !== null && data.clouds.all !== null) {
+          && data.weather[0].icon !== null && data.clouds.all !== null && data.dt !== null) {
         this.tempx = data.main.temp
         this.namex = data.name
         this.windSpeedx = parseInt(data.wind.speed) * 3.6
@@ -56,6 +57,8 @@ export class WeatherProvider {
         this.humidityx = data.main.humidity
         this.descriptionx = data.weather[0].description
         this.cloudsx = data.clouds.all
+        let jsdate = new Date(data.dt * 1000)
+        this.timex = jsdate.toLocaleTimeString('pl', { hour:'numeric', minute:'numeric' })
 
         switch(data.weather[0].icon) {
           //day
@@ -127,8 +130,9 @@ export class WeatherProvider {
       descxx = this.descriptionx;
       iconxx = this.iconx;
       cloudsxx = this.cloudsx;
+      timexx = this.timex;
     });
 
-    return new Weather(tempxx, namexx, speedxx, pressxx, humxx, descxx, iconxx, cloudsxx);
+    return new Weather(tempxx, namexx, speedxx, pressxx, humxx, descxx, iconxx, cloudsxx, timexx);
   }
 }

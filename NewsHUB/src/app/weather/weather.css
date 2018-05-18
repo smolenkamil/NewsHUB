@@ -7,7 +7,7 @@
 #weatherContainer {
   width: 27%;
   max-width: 300px;
-  height: 24vw;
+  height: 24.5vw;
   max-height: 35vw;
   position: absolute;
   right: -27%;
@@ -29,7 +29,6 @@
   margin-top: 0;
   color: #00506D;
   margin-bottom: 0;
-  margin-top: 0;
 }
 
 #top p {
@@ -117,4 +116,22 @@
   left: 3.25vw;
   font-size: 0.7vw;
   font-weight: 700;
+}
+
+#timeContainer {
+  float: left;
+  width: 100%;
+  margin-top: 0.2vw;
+}
+
+#timeContainer img {
+  float: right;
+  width: 0.9vw;
+}
+
+#syncTime {
+  float: right;
+  font-size: 0.63vw;
+  font-weight: 600;
+  margin-right: 1vw;
 }
