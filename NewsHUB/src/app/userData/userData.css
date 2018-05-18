@@ -67,6 +67,7 @@ h5 {
   color: white;
   height: 2vw;
   font-weight: 600;
+  font-size: 0.8vw;
   -webkit-box-shadow: 0.1vw 1vw #000;
   -moz-box-shadow: 1vw 1vw #000;
   box-shadow: 0 0.1vw 5px #888888;
