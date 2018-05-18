@@ -7,8 +7,9 @@ export class Weather{
   private _description: string;
   private _icon: string;
   private _clouds: string;
+  private _time: string;
 
-  constructor(temp, name, windSpeed, pressure, humidity, description, icon, clouds){
+  constructor(temp, name, windSpeed, pressure, humidity, description, icon, clouds, time){
     this._temp = temp;
     this._name = name;
     this._speed = windSpeed;
@@ -17,6 +18,7 @@ export class Weather{
     this._description = description;
     this._icon = icon;
     this._clouds = clouds;
+    this._time = time;
   }
 
   get temp(): string {
@@ -42,5 +44,8 @@ export class Weather{
   }
   get clouds(): string {
     return this._clouds;
+  }
+  get time(): string {
+    return this._time;
   }
 }
