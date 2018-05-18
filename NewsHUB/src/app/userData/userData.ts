@@ -1,6 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {AngularFireDatabase, FirebaseObjectObservable} from 'angularfire2/database-deprecated';
-import { FirebaseListObservable } from 'angularfire2/database-deprecated';
+import {Component} from '@angular/core';
+import {AngularFireDatabase} from 'angularfire2/database-deprecated';
 import {FirebaseDatabase} from '@firebase/database-types';
 import {AngularFireAuth} from "angularfire2/auth";
 
@@ -11,22 +10,17 @@ import {AngularFireAuth} from "angularfire2/auth";
   styleUrls: ['./userData.css']
 })
 export class UserDataComponent {
-  // public userDataa: FirebaseObjectObservable;
 
   db:FirebaseDatabase;
-  auth:AngularFireAuth;
   userID:string;
 
   constructor(db: AngularFireDatabase, auth: AngularFireAuth) {
-    // this.userDatas = db.list('/usersData');
     this.db=db.database;
-    this.auth=auth;
-    this.auth.authState.subscribe((user) => {
+    auth.authState.subscribe((user) => {
       if(user) this.userID = user.uid;
       this.getUserData()
     });
   }
-
 
   getUserData(){
     let userName = <HTMLInputElement> document.getElementById("inputName");
@@ -45,33 +39,4 @@ export class UserDataComponent {
       surname:userSurname.value
     })
   }
-
-
-
-
 }
-
-class UsersData {
-  name:string;
-  surname:string;
-  constructor(name, surname) {
-    this.name=name;
-    this.surname=surname;
-  }
-}
-
-// @Component({
-//   selector: 'usersData',
-//   template: `
-//     <ul>
-//       <li *ngFor="let data of userDatas | async">
-//         <pre>{{ data | json }}</pre>
-//       </li>
-//     </ul>
-//
-//   `
-// })
-//
-// export class UsersDataComponent {
-// }
-
