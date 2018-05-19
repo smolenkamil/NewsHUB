@@ -1,7 +1,7 @@
 #categoriesChoiceContent {
   width: 96%;
-  height: 25vw;
-  margin-left: auto;
+  height: 18vw;
+  margin-left: 0;
   margin-right: auto;
   margin-top: 2vw;
   border-bottom: 1px solid lightgray;
@@ -25,9 +25,9 @@ h5 {
 
 .leftContent {
   float: left;
-  width: 14vw;
-  height: 23vw;
-  margin-left: 2%;
+  width: 18.5vw;
+  height: 16vw;
+  margin-left: 0;
   border-right: 1px solid gray;
   /*background-color: #6FB1C8;*/
 }
@@ -35,18 +35,30 @@ h5 {
 #newsImage {
   width: 8vw;
   height: 8vw;
-  margin-left: 2.8vw;
-  margin-top: 6.5vw;
+  margin-left: 5vw;
+  margin-top: 2.5vw;
 }
 
 .rightContent {
   float: left;
-  height: 20vw;
+  height: 16vw;
   /*background-color: #1c94c4;*/
 }
 
 .first {
   margin-left: 1.5vw;
+}
+
+.second{
+  margin-left: 2.5vw;
+}
+
+.third{
+  margin-left: 3.75vw;
+}
+
+.fourth{
+  margin-left: 4.25vw;
 }
 
 .form-check-label {
@@ -69,12 +81,12 @@ h5 {
 }
 
 #categoriesSubmit {
-  float: right;
+  float: left;
   margin-top: 0.5vw;
   border: none;
-  margin-right: 0;
+  margin-left: 36vw;
   color: white;
-  height: 2vw;
+  height: 30px;
   font-weight: 600;
   font-size: 0.8vw;
   -webkit-box-shadow: 0.1vw 1vw #000;

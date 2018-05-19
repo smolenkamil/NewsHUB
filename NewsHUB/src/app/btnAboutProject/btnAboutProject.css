@@ -1,6 +1,7 @@
 .btnAboutProject {
   position: relative;
   display: inline;
+  cursor: pointer;
 }
 
 .btnAboutProject:hover {
