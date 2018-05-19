@@ -1,7 +1,7 @@
 #weatherChoiceContent {
   width: 96%;
   height: 22vw;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
   margin-top: 2vw;
   border-bottom: 1px solid lightgray;
@@ -25,23 +25,23 @@ h5 {
 
 .leftContent {
   float: left;
-  width: 16vw;
+  width: 18.5vw;
   height: 20vw;
-  margin-left: 2%;
+  margin-left: 0;
   border-right: 1px solid gray;
   /*background-color: #6FB1C8;*/
 }
 
 #weatherImage {
-  width: 9vw;
+  width: 8vw;
   height: 8vw;
-  margin-left: 2.5vw;
+  margin-left: 5vw;
   margin-top: 4.2vw;
 }
 
 .rightContent {
   float: left;
-  height: 16vw;
+  height: 20vw;
   /*background-color: #1c94c4;*/
 }
 
