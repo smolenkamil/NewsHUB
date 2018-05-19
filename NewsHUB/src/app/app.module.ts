@@ -19,7 +19,6 @@ import {AppComponent} from './app.component';
 import {ProfileContainerComponent} from "./profileContainer/profileContainer.component";
 import {UserDataComponent} from "./userData/userData";
 import {CategoriesChoiceComponent} from "./categoriesChoice/categoriesChoice";
-import {WeatherChoiceComponent} from "./weatherChoice/weatherChoice";
 import {HomepageComponent} from "./homepage/homepage.component";
 import {ArticleComponent} from "./article/article";
 import {AboutProjectComponent} from "./aboutProject/aboutProject.component";
@@ -55,12 +54,10 @@ import { environment } from '../environments/environment';
     ProfileContainerComponent,
     UserDataComponent,
     CategoriesChoiceComponent,
-    WeatherChoiceComponent,
     HomepageComponent,
     AboutProjectComponent,
     BtnAboutProjectComponent,
     LoginContainerComponent
-    // UsersDataComponent
   ],
   imports: [
     BrowserModule,
