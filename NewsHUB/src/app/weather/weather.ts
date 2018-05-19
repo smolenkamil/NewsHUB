@@ -24,8 +24,8 @@ export class WeatherComponent implements OnInit {
 
     this._weather.dailyForecast()
       .subscribe(res => {
-        let hum = res.main.humidity || 0;
-        let clou = res.clouds.all || 0;
+        let hum = parseInt(this.weather.humidity);
+        let clou = parseInt(this.weather.clouds);
         let restHum = 100 - hum;
         let restClou = 100 - clou;
         this.chart = new Chart('humidity', {
@@ -34,7 +34,7 @@ export class WeatherComponent implements OnInit {
             labels: ['Humid', 'Dry'],
             datasets: [
               {
-                data: [80, 20],
+                data: [hum, restHum],
                 backgroundColor: ['#00506D', 'rgba(255, 255, 255, 0.3)']
               }
             ]
@@ -51,7 +51,7 @@ export class WeatherComponent implements OnInit {
             labels: ['Clouds', 'Clear'],
             datasets: [
               {
-                data: [70, 30],
+                data: [clou, restClou],
                 backgroundColor: ['#00506D', 'rgba(255, 255, 255, 0.3)']
               }
             ]
