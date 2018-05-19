@@ -1,4 +1,6 @@
 <div id="catDiv"></div>
 <nav id="catMenu">
-  <a class="cat" [routerLink]="['/homepage',category.id]" [ngStyle]="{'color': 'white'}" *ngFor="let category of categories">{{category.name}}</a>
+  <span *ngFor="let category of categories">
+  <a class="cat" [routerLink]="['/homepage',category.id]" [ngStyle]="{'color': 'white'}" *ngIf="category.visible">{{category.name}}</a>
+  </span>
 </nav>
