@@ -15,6 +15,7 @@ export class CategoriesChoiceComponent {
 
   constructor(db: AngularFireDatabase, auth: AngularFireAuth) {
     this.db=db.database;
+    this.userID= "default"
     auth.authState.subscribe((user) => {
       if(user) this.userID = user.uid;
       this.getCatChoice()
