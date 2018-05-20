@@ -19,4 +19,5 @@
 #btnAboutProject:hover, #btnAboutProject:focus {
   background-color: #707070;
   padding: 20px;
+  outline: none;
 }
