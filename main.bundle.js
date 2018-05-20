@@ -798,6 +798,7 @@ var CategoriesChoiceComponent = /** @class */ (function () {
     function CategoriesChoiceComponent(db, auth) {
         var _this = this;
         this.db = db.database;
+        this.userID = "default";
         auth.authState.subscribe(function (user) {
             if (user)
                 _this.userID = user.uid;
@@ -1832,6 +1833,7 @@ var UserDataComponent = /** @class */ (function () {
     function UserDataComponent(db, auth) {
         var _this = this;
         this.db = db.database;
+        this.userID = "default";
         auth.authState.subscribe(function (user) {
             if (user)
                 _this.userID = user.uid;
